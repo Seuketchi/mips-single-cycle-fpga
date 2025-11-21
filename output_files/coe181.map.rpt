@@ -1,0 +1,666 @@
+Analysis & Synthesis report for coe181
+Fri Nov 21 00:06:54 2025
+Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Parameter Settings for User Entity Instance: program_counter:pc
+ 11. Parameter Settings for User Entity Instance: adder:pc_adder
+ 12. Parameter Settings for User Entity Instance: inst_rom:instruction_memory
+ 13. Parameter Settings for User Entity Instance: mux2:write_reg_mux
+ 14. Parameter Settings for User Entity Instance: sign_extender:sign_ext
+ 15. Parameter Settings for User Entity Instance: mux2:alu_b_mux
+ 16. Parameter Settings for User Entity Instance: data_memory:data_mem
+ 17. Parameter Settings for User Entity Instance: data_memory:data_mem|async_memory:data_seg
+ 18. Parameter Settings for User Entity Instance: data_memory:data_mem|async_memory:stack_seg
+ 19. Parameter Settings for User Entity Instance: data_memory:data_mem|serial_buffer:ser
+ 20. Parameter Settings for User Entity Instance: mux2:write_data_mux
+ 21. Port Connectivity Checks: "mux2:write_data_mux"
+ 22. Port Connectivity Checks: "data_memory:data_mem"
+ 23. Port Connectivity Checks: "alu:alu_unit"
+ 24. Port Connectivity Checks: "mux2:alu_b_mux"
+ 25. Port Connectivity Checks: "register:register_file"
+ 26. Port Connectivity Checks: "mux2:write_reg_mux"
+ 27. Port Connectivity Checks: "inst_rom:instruction_memory"
+ 28. Port Connectivity Checks: "adder:pc_adder"
+ 29. Post-Synthesis Netlist Statistics for Top Partition
+ 30. Elapsed Time Per Partition
+ 31. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Fri Nov 21 00:06:54 2025       ;
+; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
+; Revision Name                   ; coe181                                      ;
+; Top-level Entity Name           ; processor                                   ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 0                                           ;
+; Total pins                      ; 22                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CEBA2F17A7        ;                    ;
+; Top-level entity name                                                           ; processor          ; coe181             ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 12          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                             ;
++----------------------------------+-----------------+------------------------+--------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path               ; Library ;
++----------------------------------+-----------------+------------------------+--------------------------------------------+---------+
+; alu.v                            ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/18.0/new/alu.v           ;         ;
+; async_memory.v                   ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/18.0/new/async_memory.v  ;         ;
+; data_memory.v                    ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/18.0/new/data_memory.v   ;         ;
+; inst_rom.v                       ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/18.0/new/inst_rom.v      ;         ;
+; pc.v                             ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/18.0/new/pc.v            ;         ;
+; register.v                       ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/18.0/new/register.v      ;         ;
+; serial_buf.v                     ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/18.0/new/serial_buf.v    ;         ;
+; mux2.v                           ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/18.0/new/mux2.v          ;         ;
+; adder.v                          ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/18.0/new/adder.v         ;         ;
+; sign_extender.v                  ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/18.0/new/sign_extender.v ;         ;
+; processor.v                      ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/18.0/new/processor.v     ;         ;
++----------------------------------+-----------------+------------------------+--------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimate of Logic utilization (ALMs needed) ; 0     ;
+;                                             ;       ;
+; Combinational ALUT usage for logic          ; 0     ;
+;     -- 7 input functions                    ; 0     ;
+;     -- 6 input functions                    ; 0     ;
+;     -- 5 input functions                    ; 0     ;
+;     -- 4 input functions                    ; 0     ;
+;     -- <=3 input functions                  ; 0     ;
+;                                             ;       ;
+; Dedicated logic registers                   ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 22    ;
+;                                             ;       ;
+; Total DSP Blocks                            ; 0     ;
+;                                             ;       ;
+; Maximum fan-out node                        ; clk   ;
+; Maximum fan-out                             ; 1     ;
+; Total fan-out                               ; 22    ;
+; Average fan-out                             ; 0.50  ;
++---------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                    ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+; |processor                 ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 22   ; 0            ; |processor          ; processor   ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                          ;
++----------------------------------------------------+----------------------------------------+
+; Register name                                      ; Reason for Removal                     ;
++----------------------------------------------------+----------------------------------------+
+; data_memory:data_mem|async_memory:data_seg|rd[31]  ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:stack_seg|rd[31] ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:data_seg|rd[30]  ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:stack_seg|rd[30] ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:data_seg|rd[29]  ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:stack_seg|rd[29] ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:data_seg|rd[28]  ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:stack_seg|rd[28] ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:data_seg|rd[27]  ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:stack_seg|rd[27] ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:data_seg|rd[26]  ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:stack_seg|rd[26] ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:data_seg|rd[25]  ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:stack_seg|rd[25] ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:data_seg|rd[24]  ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:stack_seg|rd[24] ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:data_seg|rd[23]  ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:stack_seg|rd[23] ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:data_seg|rd[22]  ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:stack_seg|rd[22] ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:data_seg|rd[21]  ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:stack_seg|rd[21] ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:data_seg|rd[20]  ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:stack_seg|rd[20] ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:data_seg|rd[19]  ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:stack_seg|rd[19] ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:data_seg|rd[18]  ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:stack_seg|rd[18] ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:data_seg|rd[17]  ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:stack_seg|rd[17] ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:data_seg|rd[16]  ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:stack_seg|rd[16] ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:data_seg|rd[15]  ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:stack_seg|rd[15] ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:data_seg|rd[14]  ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:stack_seg|rd[14] ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:data_seg|rd[13]  ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:stack_seg|rd[13] ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:data_seg|rd[12]  ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:stack_seg|rd[12] ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:data_seg|rd[11]  ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:stack_seg|rd[11] ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:data_seg|rd[10]  ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:stack_seg|rd[10] ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:data_seg|rd[9]   ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:stack_seg|rd[9]  ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:data_seg|rd[8]   ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:stack_seg|rd[8]  ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:data_seg|rd[7]   ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:stack_seg|rd[7]  ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:data_seg|rd[6]   ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:stack_seg|rd[6]  ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:data_seg|rd[5]   ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:stack_seg|rd[5]  ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:data_seg|rd[4]   ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:stack_seg|rd[4]  ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:data_seg|rd[3]   ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:stack_seg|rd[3]  ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:data_seg|rd[2]   ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:stack_seg|rd[2]  ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:data_seg|rd[1]   ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:stack_seg|rd[1]  ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:data_seg|rd[0]   ; Lost fanout                            ;
+; data_memory:data_mem|async_memory:stack_seg|rd[0]  ; Lost fanout                            ;
+; data_memory:data_mem|serial_buffer:ser|write_en    ; Stuck at GND due to stuck port data_in ;
+; data_memory:data_mem|serial_buffer:ser|read_en     ; Stuck at GND due to stuck port data_in ;
+; inst_rom:instruction_memory|out[0,1,8..31]         ; Lost fanout                            ;
+; program_counter:pc|pc_out[0..31]                   ; Lost fanout                            ;
+; data_memory:data_mem|serial_buffer:ser|sbyte[0..7] ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 132            ;                                        ;
++----------------------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: program_counter:pc     ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; RESET_ADDR     ; 00000000010000000000000000000000 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: adder:pc_adder ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                     ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: inst_rom:instruction_memory ;
++----------------+---------------------------------------+-----------------+
+; Parameter Name ; Value                                 ; Type            ;
++----------------+---------------------------------------+-----------------+
+; ADDR_WIDTH     ; 8                                     ; Signed Integer  ;
+; INIT_PROGRAM   ; C:/intelFPGA_lite/18.0/new/blank.memh ; String          ;
++----------------+---------------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux2:write_reg_mux ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; WIDTH          ; 5     ; Signed Integer                         ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sign_extender:sign_ext ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; IN_WIDTH       ; 16    ; Signed Integer                             ;
+; OUT_WIDTH      ; 32    ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux2:alu_b_mux ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                     ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: data_memory:data_mem ;
++----------------+---------------------------------------+----------+
+; Parameter Name ; Value                                 ; Type     ;
++----------------+---------------------------------------+----------+
+; INIT_PROGRAM0  ; C:/intelFPGA_lite/18.0/new/blank.memh ; String   ;
+; INIT_PROGRAM1  ; C:/intelFPGA_lite/18.0/new/blank.memh ; String   ;
+; INIT_PROGRAM2  ; C:/intelFPGA_lite/18.0/new/blank.memh ; String   ;
+; INIT_PROGRAM3  ; C:/intelFPGA_lite/18.0/new/blank.memh ; String   ;
++----------------+---------------------------------------+----------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: data_memory:data_mem|async_memory:data_seg ;
++----------------+---------------------------------------+--------------------------------+
+; Parameter Name ; Value                                 ; Type                           ;
++----------------+---------------------------------------+--------------------------------+
+; MEM_ADDR       ; 0001000000000000                      ; Unsigned Binary                ;
+; DO_INIT        ; 1                                     ; Signed Integer                 ;
+; INIT_PROGRAM0  ; C:/intelFPGA_lite/18.0/new/blank.memh ; String                         ;
+; INIT_PROGRAM1  ; C:/intelFPGA_lite/18.0/new/blank.memh ; String                         ;
+; INIT_PROGRAM2  ; C:/intelFPGA_lite/18.0/new/blank.memh ; String                         ;
+; INIT_PROGRAM3  ; C:/intelFPGA_lite/18.0/new/blank.memh ; String                         ;
++----------------+---------------------------------------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: data_memory:data_mem|async_memory:stack_seg ;
++----------------+--------------------------------------------------+----------------------+
+; Parameter Name ; Value                                            ; Type                 ;
++----------------+--------------------------------------------------+----------------------+
+; MEM_ADDR       ; 0111111111111111                                 ; Unsigned Binary      ;
+; DO_INIT        ; 0                                                ; Signed Integer       ;
+; INIT_PROGRAM0  ; c:/altera/11.1sp1/141/hello_world.data_ram0.memh ; String               ;
+; INIT_PROGRAM1  ; c:/altera/11.1sp1/141/hello_world.data_ram1.memh ; String               ;
+; INIT_PROGRAM2  ; c:/altera/11.1sp1/141/hello_world.data_ram2.memh ; String               ;
+; INIT_PROGRAM3  ; c:/altera/11.1sp1/141/hello_world.data_ram3.memh ; String               ;
++----------------+--------------------------------------------------+----------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: data_memory:data_mem|serial_buffer:ser ;
++----------------+------------------+-------------------------------------------------+
+; Parameter Name ; Value            ; Type                                            ;
++----------------+------------------+-------------------------------------------------+
+; MEM_ADDR       ; 1111111111111111 ; Unsigned Binary                                 ;
++----------------+------------------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux2:write_data_mux ;
++----------------+-------+-----------------------------------------+
+; Parameter Name ; Value ; Type                                    ;
++----------------+-------+-----------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                          ;
++----------------+-------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------+
+; Port Connectivity Checks: "mux2:write_data_mux" ;
++------+-------+----------+-----------------------+
+; Port ; Type  ; Severity ; Details               ;
++------+-------+----------+-----------------------+
+; sel  ; Input ; Info     ; Stuck at GND          ;
++------+-------+----------+-----------------------+
+
+
++--------------------------------------------------+
+; Port Connectivity Checks: "data_memory:data_mem" ;
++---------+-------+----------+---------------------+
+; Port    ; Type  ; Severity ; Details             ;
++---------+-------+----------+---------------------+
+; re_in   ; Input ; Info     ; Stuck at GND        ;
+; we_in   ; Input ; Info     ; Stuck at GND        ;
+; size_in ; Input ; Info     ; Stuck at VCC        ;
++---------+-------+----------+---------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:alu_unit"                                                                                ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port          ; Type   ; Severity ; Details                                                                             ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; Func_in[4..0] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; Func_in[5]    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; Branch_out    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; Jump_out      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------+
+; Port Connectivity Checks: "mux2:alu_b_mux" ;
++------+-------+----------+------------------+
+; Port ; Type  ; Severity ; Details          ;
++------+-------+----------+------------------+
+; sel  ; Input ; Info     ; Stuck at GND     ;
++------+-------+----------+------------------+
+
+
++----------------------------------------------------+
+; Port Connectivity Checks: "register:register_file" ;
++------+-------+----------+--------------------------+
+; Port ; Type  ; Severity ; Details                  ;
++------+-------+----------+--------------------------+
+; we   ; Input ; Info     ; Stuck at GND             ;
++------+-------+----------+--------------------------+
+
+
++------------------------------------------------+
+; Port Connectivity Checks: "mux2:write_reg_mux" ;
++------+-------+----------+----------------------+
+; Port ; Type  ; Severity ; Details              ;
++------+-------+----------+----------------------+
+; sel  ; Input ; Info     ; Stuck at GND         ;
++------+-------+----------+----------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "inst_rom:instruction_memory"                                                                    ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port             ; Type   ; Severity ; Details                                                                             ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
+; data_out[31..26] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------+
+; Port Connectivity Checks: "adder:pc_adder" ;
++----------+-------+----------+--------------+
+; Port     ; Type  ; Severity ; Details      ;
++----------+-------+----------+--------------+
+; b[31..3] ; Input ; Info     ; Stuck at GND ;
+; b[1..0]  ; Input ; Info     ; Stuck at GND ;
+; b[2]     ; Input ; Info     ; Stuck at VCC ;
++----------+-------+----------+--------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_lcell_comb     ; 1                           ;
+;     normal            ; 1                           ;
+;         0 data inputs ; 1                           ;
+; boundary_port         ; 22                          ;
+;                       ;                             ;
+; Max LUT depth         ; 0.00                        ;
+; Average LUT depth     ; 0.00                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+    Info: Processing started: Fri Nov 21 00:06:37 2025
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off coe181 -c coe181
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file alu.v
+    Info (12023): Found entity 1: alu File: C:/intelFPGA_lite/18.0/new/alu.v Line: 11
+Info (12021): Found 1 design units, including 1 entities, in source file async_memory.v
+    Info (12023): Found entity 1: async_memory File: C:/intelFPGA_lite/18.0/new/async_memory.v Line: 20
+Info (12021): Found 1 design units, including 1 entities, in source file data_memory.v
+    Info (12023): Found entity 1: data_memory File: C:/intelFPGA_lite/18.0/new/data_memory.v Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file inst_rom.v
+    Info (12023): Found entity 1: inst_rom File: C:/intelFPGA_lite/18.0/new/inst_rom.v Line: 14
+Info (12021): Found 1 design units, including 1 entities, in source file pc.v
+    Info (12023): Found entity 1: program_counter File: C:/intelFPGA_lite/18.0/new/pc.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file register.v
+    Info (12023): Found entity 1: register File: C:/intelFPGA_lite/18.0/new/register.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file register_file_tb.v
+    Info (12023): Found entity 1: reg_file_tb File: C:/intelFPGA_lite/18.0/new/register_file_tb.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file serial_buf.v
+    Info (12023): Found entity 1: serial_buffer File: C:/intelFPGA_lite/18.0/new/serial_buf.v Line: 16
+Info (12021): Found 1 design units, including 1 entities, in source file testbench.v
+    Info (12023): Found entity 1: testbench File: C:/intelFPGA_lite/18.0/new/testbench.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file program_counter_tb.v
+    Info (12023): Found entity 1: tb_program_counter File: C:/intelFPGA_lite/18.0/new/program_counter_tb.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file mux2.v
+    Info (12023): Found entity 1: mux2 File: C:/intelFPGA_lite/18.0/new/mux2.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux2_tb.v
+    Info (12023): Found entity 1: mux2_tb File: C:/intelFPGA_lite/18.0/new/mux2_tb.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file adder.v
+    Info (12023): Found entity 1: adder File: C:/intelFPGA_lite/18.0/new/adder.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file adder_tb.v
+    Info (12023): Found entity 1: adder_tb File: C:/intelFPGA_lite/18.0/new/adder_tb.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file sign_extender.v
+    Info (12023): Found entity 1: sign_extender File: C:/intelFPGA_lite/18.0/new/sign_extender.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file sign_extender_tb.v
+    Info (12023): Found entity 1: sign_extender_tb File: C:/intelFPGA_lite/18.0/new/sign_extender_tb.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file processor.v
+    Info (12023): Found entity 1: processor File: C:/intelFPGA_lite/18.0/new/processor.v Line: 12
+Info (12127): Elaborating entity "processor" for the top level hierarchy
+Info (12128): Elaborating entity "program_counter" for hierarchy "program_counter:pc" File: C:/intelFPGA_lite/18.0/new/processor.v Line: 91
+Info (12128): Elaborating entity "adder" for hierarchy "adder:pc_adder" File: C:/intelFPGA_lite/18.0/new/processor.v Line: 100
+Info (12128): Elaborating entity "inst_rom" for hierarchy "inst_rom:instruction_memory" File: C:/intelFPGA_lite/18.0/new/processor.v Line: 113
+Warning (10850): Verilog HDL warning at inst_rom.v(30): number of words (0) in memory file does not match the number of elements in the address range [0:255] File: C:/intelFPGA_lite/18.0/new/inst_rom.v Line: 30
+Warning (10030): Net "rom.data_a" at inst_rom.v(23) has no driver or initial value, using a default initial value '0' File: C:/intelFPGA_lite/18.0/new/inst_rom.v Line: 23
+Warning (10030): Net "rom.waddr_a" at inst_rom.v(23) has no driver or initial value, using a default initial value '0' File: C:/intelFPGA_lite/18.0/new/inst_rom.v Line: 23
+Warning (10030): Net "rom.we_a" at inst_rom.v(23) has no driver or initial value, using a default initial value '0' File: C:/intelFPGA_lite/18.0/new/inst_rom.v Line: 23
+Info (12128): Elaborating entity "mux2" for hierarchy "mux2:write_reg_mux" File: C:/intelFPGA_lite/18.0/new/processor.v Line: 127
+Info (12128): Elaborating entity "register" for hierarchy "register:register_file" File: C:/intelFPGA_lite/18.0/new/processor.v Line: 138
+Info (12128): Elaborating entity "sign_extender" for hierarchy "sign_extender:sign_ext" File: C:/intelFPGA_lite/18.0/new/processor.v Line: 150
+Info (12128): Elaborating entity "mux2" for hierarchy "mux2:alu_b_mux" File: C:/intelFPGA_lite/18.0/new/processor.v Line: 164
+Info (12128): Elaborating entity "alu" for hierarchy "alu:alu_unit" File: C:/intelFPGA_lite/18.0/new/processor.v Line: 177
+Info (12128): Elaborating entity "data_memory" for hierarchy "data_memory:data_mem" File: C:/intelFPGA_lite/18.0/new/processor.v Line: 203
+Info (12128): Elaborating entity "async_memory" for hierarchy "data_memory:data_mem|async_memory:data_seg" File: C:/intelFPGA_lite/18.0/new/data_memory.v Line: 92
+Warning (10850): Verilog HDL warning at async_memory.v(44): number of words (0) in memory file does not match the number of elements in the address range [0:1023] File: C:/intelFPGA_lite/18.0/new/async_memory.v Line: 44
+Warning (10850): Verilog HDL warning at async_memory.v(45): number of words (0) in memory file does not match the number of elements in the address range [0:1023] File: C:/intelFPGA_lite/18.0/new/async_memory.v Line: 45
+Warning (10850): Verilog HDL warning at async_memory.v(46): number of words (0) in memory file does not match the number of elements in the address range [0:1023] File: C:/intelFPGA_lite/18.0/new/async_memory.v Line: 46
+Warning (10850): Verilog HDL warning at async_memory.v(47): number of words (0) in memory file does not match the number of elements in the address range [0:1023] File: C:/intelFPGA_lite/18.0/new/async_memory.v Line: 47
+Info (12128): Elaborating entity "async_memory" for hierarchy "data_memory:data_mem|async_memory:stack_seg" File: C:/intelFPGA_lite/18.0/new/data_memory.v Line: 110
+Info (12128): Elaborating entity "serial_buffer" for hierarchy "data_memory:data_mem|serial_buffer:ser" File: C:/intelFPGA_lite/18.0/new/data_memory.v Line: 134
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "serial_out[0]" is stuck at GND File: C:/intelFPGA_lite/18.0/new/processor.v Line: 20
+    Warning (13410): Pin "serial_out[1]" is stuck at GND File: C:/intelFPGA_lite/18.0/new/processor.v Line: 20
+    Warning (13410): Pin "serial_out[2]" is stuck at GND File: C:/intelFPGA_lite/18.0/new/processor.v Line: 20
+    Warning (13410): Pin "serial_out[3]" is stuck at GND File: C:/intelFPGA_lite/18.0/new/processor.v Line: 20
+    Warning (13410): Pin "serial_out[4]" is stuck at GND File: C:/intelFPGA_lite/18.0/new/processor.v Line: 20
+    Warning (13410): Pin "serial_out[5]" is stuck at GND File: C:/intelFPGA_lite/18.0/new/processor.v Line: 20
+    Warning (13410): Pin "serial_out[6]" is stuck at GND File: C:/intelFPGA_lite/18.0/new/processor.v Line: 20
+    Warning (13410): Pin "serial_out[7]" is stuck at GND File: C:/intelFPGA_lite/18.0/new/processor.v Line: 20
+    Warning (13410): Pin "serial_rden_out" is stuck at GND File: C:/intelFPGA_lite/18.0/new/processor.v Line: 21
+    Warning (13410): Pin "serial_wren_out" is stuck at GND File: C:/intelFPGA_lite/18.0/new/processor.v Line: 23
+Info (17049): 122 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 12 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clk" File: C:/intelFPGA_lite/18.0/new/processor.v Line: 13
+    Warning (15610): No output dependent on input pin "reset" File: C:/intelFPGA_lite/18.0/new/processor.v Line: 14
+    Warning (15610): No output dependent on input pin "serial_in[0]" File: C:/intelFPGA_lite/18.0/new/processor.v Line: 17
+    Warning (15610): No output dependent on input pin "serial_in[1]" File: C:/intelFPGA_lite/18.0/new/processor.v Line: 17
+    Warning (15610): No output dependent on input pin "serial_in[2]" File: C:/intelFPGA_lite/18.0/new/processor.v Line: 17
+    Warning (15610): No output dependent on input pin "serial_in[3]" File: C:/intelFPGA_lite/18.0/new/processor.v Line: 17
+    Warning (15610): No output dependent on input pin "serial_in[4]" File: C:/intelFPGA_lite/18.0/new/processor.v Line: 17
+    Warning (15610): No output dependent on input pin "serial_in[5]" File: C:/intelFPGA_lite/18.0/new/processor.v Line: 17
+    Warning (15610): No output dependent on input pin "serial_in[6]" File: C:/intelFPGA_lite/18.0/new/processor.v Line: 17
+    Warning (15610): No output dependent on input pin "serial_in[7]" File: C:/intelFPGA_lite/18.0/new/processor.v Line: 17
+    Warning (15610): No output dependent on input pin "serial_ready_in" File: C:/intelFPGA_lite/18.0/new/processor.v Line: 18
+    Warning (15610): No output dependent on input pin "serial_valid_in" File: C:/intelFPGA_lite/18.0/new/processor.v Line: 19
+Info (21057): Implemented 22 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 12 input pins
+    Info (21059): Implemented 10 output pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 33 warnings
+    Info: Peak virtual memory: 4802 megabytes
+    Info: Processing ended: Fri Nov 21 00:06:54 2025
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:36
+
+

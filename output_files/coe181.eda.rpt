@@ -1,5 +1,5 @@
 EDA Netlist Writer report for coe181
-Fri Nov 21 00:07:50 2025
+Sat Nov 29 02:09:17 2025
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Fri Nov 21 00:07:50 2025 ;
+; EDA Netlist Writer Status ; Successful - Sat Nov 29 02:09:17 2025 ;
 ; Revision Name             ; coe181                                ;
 ; Top-level Entity Name     ; processor                             ;
 ; Family                    ; Cyclone V                             ;
@@ -81,15 +81,15 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Fri Nov 21 00:07:48 2025
+    Info: Processing started: Sat Nov 29 02:09:14 2025
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off coe181 -c coe181
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Warning (10905): Generated the EDA functional simulation netlist because it is the only supported netlist type for this device.
 Info (204019): Generated file coe181.vo in folder "C:/intelFPGA_lite/18.0/new/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4717 megabytes
-    Info: Processing ended: Fri Nov 21 00:07:50 2025
-    Info: Elapsed time: 00:00:02
+    Info: Peak virtual memory: 4729 megabytes
+    Info: Processing ended: Sat Nov 29 02:09:17 2025
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 
 

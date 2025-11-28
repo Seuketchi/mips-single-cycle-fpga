@@ -16,14 +16,15 @@ initial begin
 end
 
 //Drop reset after 200 ns
-always begin
-	#200 reset <= 1'b0;
+initial begin
+    reset <= 1'b1;
+    #200 reset <= 1'b0;
 end
-	
+
 	
 //instantiate the processor  "DUT"
 processor dut(
-	.clock(clock),
+	.clk(clock),
 	.reset(reset),
 	
 	.serial_in(8'b0),

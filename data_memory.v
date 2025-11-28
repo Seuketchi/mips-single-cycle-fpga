@@ -41,10 +41,10 @@ module data_memory(
 	output				serial_wren_out
 );
 
-parameter INIT_PROGRAM0 = "C:/intelFPGA_lite/18.0/new/blank.memh";
-parameter INIT_PROGRAM1 = "C:/intelFPGA_lite/18.0/new/blank.memh";
-parameter INIT_PROGRAM2 = "C:/intelFPGA_lite/18.0/new/blank.memh";
-parameter INIT_PROGRAM3 = "C:/intelFPGA_lite/18.0/new/blank.memh";
+parameter INIT_PROGRAM0 = "C:/intelFPGA_lite/18.0/new/lab7-test.data_ram0.memh";
+parameter INIT_PROGRAM1 = "C:/intelFPGA_lite/18.0/new/lab7-test.data_ram1.memh";
+parameter INIT_PROGRAM2 = "C:/intelFPGA_lite/18.0/new/lab7-test.data_ram2.memh";
+parameter INIT_PROGRAM3 = "C:/intelFPGA_lite/18.0/new/lab7-test.data_ram3.memh";
 
 
 	wire	[31:0]	data_readdata_serial;

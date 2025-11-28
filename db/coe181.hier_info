@@ -2684,3 +2684,50 @@ y[30] <= y.DB_MAX_OUTPUT_PORT_TYPE
 y[31] <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
+|processor|control_unit:CU
+instruction[0] => ALUOp.DATAB
+instruction[1] => ALUOp.DATAB
+instruction[2] => ALUOp.DATAB
+instruction[3] => ALUOp.DATAB
+instruction[4] => ALUOp.DATAB
+instruction[5] => Selector2.IN5
+instruction[6] => ~NO_FANOUT~
+instruction[7] => ~NO_FANOUT~
+instruction[8] => ~NO_FANOUT~
+instruction[9] => ~NO_FANOUT~
+instruction[10] => ~NO_FANOUT~
+instruction[11] => ~NO_FANOUT~
+instruction[12] => ~NO_FANOUT~
+instruction[13] => ~NO_FANOUT~
+instruction[14] => ~NO_FANOUT~
+instruction[15] => ~NO_FANOUT~
+instruction[16] => ~NO_FANOUT~
+instruction[17] => ~NO_FANOUT~
+instruction[18] => ~NO_FANOUT~
+instruction[19] => ~NO_FANOUT~
+instruction[20] => ~NO_FANOUT~
+instruction[21] => ~NO_FANOUT~
+instruction[22] => ~NO_FANOUT~
+instruction[23] => ~NO_FANOUT~
+instruction[24] => ~NO_FANOUT~
+instruction[25] => ~NO_FANOUT~
+instruction[26] => Decoder0.IN5
+instruction[27] => Decoder0.IN4
+instruction[28] => Decoder0.IN3
+instruction[29] => Decoder0.IN2
+instruction[30] => Decoder0.IN1
+instruction[31] => Decoder0.IN0
+RegWrite <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+RegDst <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+ALUSrc <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+MemRead <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+MemWrite <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+MemToReg <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+ALUOp[0] <= ALUOp.DB_MAX_OUTPUT_PORT_TYPE
+ALUOp[1] <= ALUOp.DB_MAX_OUTPUT_PORT_TYPE
+ALUOp[2] <= ALUOp.DB_MAX_OUTPUT_PORT_TYPE
+ALUOp[3] <= ALUOp.DB_MAX_OUTPUT_PORT_TYPE
+ALUOp[4] <= ALUOp.DB_MAX_OUTPUT_PORT_TYPE
+ALUOp[5] <= Selector2.DB_MAX_OUTPUT_PORT_TYPE
+
+

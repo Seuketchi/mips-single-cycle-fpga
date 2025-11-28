@@ -1,5 +1,5 @@
 Assembler report for coe181
-Fri Nov 21 00:07:37 2025
+Sat Nov 29 02:08:57 2025
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Fri Nov 21 00:07:37 2025 ;
+; Assembler Status      ; Successful - Sat Nov 29 02:08:57 2025 ;
 ; Revision Name         ; coe181                                ;
 ; Top-level Entity Name ; processor                             ;
 ; Family                ; Cyclone V                             ;
@@ -66,8 +66,8 @@ refer to the applicable agreement for further details.
 +----------------+-------------------------------------------------------------+
 ; Option         ; Setting                                                     ;
 +----------------+-------------------------------------------------------------+
-; JTAG usercode  ; 0x004E6102                                                  ;
-; Checksum       ; 0x004E6102                                                  ;
+; JTAG usercode  ; 0x007745DE                                                  ;
+; Checksum       ; 0x007745DE                                                  ;
 +----------------+-------------------------------------------------------------+
 
 
@@ -77,14 +77,14 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Fri Nov 21 00:07:31 2025
+    Info: Processing started: Sat Nov 29 02:08:48 2025
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off coe181 -c coe181
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4815 megabytes
-    Info: Processing ended: Fri Nov 21 00:07:37 2025
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:05
+    Info: Peak virtual memory: 4817 megabytes
+    Info: Processing ended: Sat Nov 29 02:08:57 2025
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:06
 
 

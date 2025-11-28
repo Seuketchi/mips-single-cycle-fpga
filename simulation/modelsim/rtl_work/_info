@@ -1,0 +1,296 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA_lite/18.0/new/simulation/modelsim
+vadder
+Z1 !s110 1764353419
+!i10b 1
+!s100 L25J?cQWU7WR?0:nKI;a;1
+I71gl5D9PLY4lX7_^@M9LS2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1763644253
+8C:/intelFPGA_lite/18.0/new/adder.v
+FC:/intelFPGA_lite/18.0/new/adder.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1764353419.000000
+!s107 C:/intelFPGA_lite/18.0/new/adder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.0/new|C:/intelFPGA_lite/18.0/new/adder.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.0/new
+Z7 tCvgOpt 0
+valu
+!s110 1764353415
+!i10b 1
+!s100 GjUzRCN3lWm>HLN7;G6@M2
+IUi?=0;e9eGIl9S[U7<RO?2
+R2
+R0
+w1730654458
+8C:/intelFPGA_lite/18.0/new/alu.v
+FC:/intelFPGA_lite/18.0/new/alu.v
+L0 11
+R3
+r1
+!s85 0
+31
+!s108 1764353415.000000
+!s107 C:/intelFPGA_lite/18.0/new/alu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.0/new|C:/intelFPGA_lite/18.0/new/alu.v|
+!i113 1
+R5
+R6
+R7
+vasync_memory
+Z8 !s110 1764353416
+!i10b 1
+!s100 GKMOD4L6jYi`C0XaF8a?Z0
+I0kTl`BQ53jlRVjZEP5Kf40
+R2
+R0
+w1764301148
+8C:/intelFPGA_lite/18.0/new/async_memory.v
+FC:/intelFPGA_lite/18.0/new/async_memory.v
+L0 22
+R3
+r1
+!s85 0
+31
+Z9 !s108 1764353416.000000
+!s107 C:/intelFPGA_lite/18.0/new/async_memory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.0/new|C:/intelFPGA_lite/18.0/new/async_memory.v|
+!i113 1
+R5
+R6
+R7
+vcontrol_unit
+Z10 !s110 1764353421
+!i10b 1
+!s100 a?iG:^PaVCJGg<ACI]=mi3
+I4D5SO<QWYC9`SVLXS:0[]3
+R2
+R0
+w1764317352
+8C:/intelFPGA_lite/18.0/new/control_unit.v
+FC:/intelFPGA_lite/18.0/new/control_unit.v
+L0 15
+R3
+r1
+!s85 0
+31
+Z11 !s108 1764353421.000000
+!s107 C:/intelFPGA_lite/18.0/new/control_unit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.0/new|C:/intelFPGA_lite/18.0/new/control_unit.v|
+!i113 1
+R5
+R6
+R7
+vdata_memory
+R8
+!i10b 1
+!s100 Bc2JQbIliYI@:gg_m@`;B1
+I_i?o9Ik3iGPa`?]o6E2Y<1
+R2
+R0
+w1764296584
+8C:/intelFPGA_lite/18.0/new/data_memory.v
+FC:/intelFPGA_lite/18.0/new/data_memory.v
+L0 24
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/intelFPGA_lite/18.0/new/data_memory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.0/new|C:/intelFPGA_lite/18.0/new/data_memory.v|
+!i113 1
+R5
+R6
+R7
+vinst_rom
+Z12 !s110 1764353417
+!i10b 1
+!s100 SZ6lcT=EhWeA`6kA`dZ<a0
+I<P7gLQBPCj5So24Ug:@Bl0
+R2
+R0
+w1764296591
+8C:/intelFPGA_lite/18.0/new/inst_rom.v
+FC:/intelFPGA_lite/18.0/new/inst_rom.v
+L0 14
+R3
+r1
+!s85 0
+31
+Z13 !s108 1764353417.000000
+!s107 C:/intelFPGA_lite/18.0/new/inst_rom.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.0/new|C:/intelFPGA_lite/18.0/new/inst_rom.v|
+!i113 1
+R5
+R6
+R7
+vmux2
+R1
+!i10b 1
+!s100 ]dKMhU0j46NN5CZOFTm4d0
+IWbgJ7I`>?nh72bWzDdCKT2
+R2
+R0
+w1763629840
+8C:/intelFPGA_lite/18.0/new/mux2.v
+FC:/intelFPGA_lite/18.0/new/mux2.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/intelFPGA_lite/18.0/new/mux2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.0/new|C:/intelFPGA_lite/18.0/new/mux2.v|
+!i113 1
+R5
+R6
+R7
+vprocessor
+Z14 !s110 1764353420
+!i10b 1
+!s100 mPOJ0nKzMbQUX@PYRJ2P=0
+I>?@4BAd>b95I;<64zNXBj0
+R2
+R0
+w1764353089
+8C:/intelFPGA_lite/18.0/new/processor.v
+FC:/intelFPGA_lite/18.0/new/processor.v
+L0 3
+R3
+r1
+!s85 0
+31
+Z15 !s108 1764353420.000000
+!s107 C:/intelFPGA_lite/18.0/new/processor.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.0/new|C:/intelFPGA_lite/18.0/new/processor.v|
+!i113 1
+R5
+R6
+R7
+vprogram_counter
+R12
+!i10b 1
+!s100 >Ood4X;RbWOWHN?EEGgBI1
+IPgCXQh1H;;D_QO?Q?S9DG3
+R2
+R0
+w1763645568
+8C:/intelFPGA_lite/18.0/new/pc.v
+FC:/intelFPGA_lite/18.0/new/pc.v
+L0 1
+R3
+r1
+!s85 0
+31
+R13
+!s107 C:/intelFPGA_lite/18.0/new/pc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.0/new|C:/intelFPGA_lite/18.0/new/pc.v|
+!i113 1
+R5
+R6
+R7
+vregister
+Z16 !s110 1764353418
+!i10b 1
+!s100 ?L]__cP>M_KP5fmKka?l@3
+IZ=dL;I5G>[5_mnK2S;F_E3
+R2
+R0
+w1763612245
+8C:/intelFPGA_lite/18.0/new/register.v
+FC:/intelFPGA_lite/18.0/new/register.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z17 !s108 1764353418.000000
+!s107 C:/intelFPGA_lite/18.0/new/register.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.0/new|C:/intelFPGA_lite/18.0/new/register.v|
+!i113 1
+R5
+R6
+R7
+vserial_buffer
+R16
+!i10b 1
+!s100 YaME58hfJc]5fhZUDS;W[2
+IVbcE0C3`IzN:]io^M4U>N0
+R2
+R0
+w1730654506
+8C:/intelFPGA_lite/18.0/new/serial_buf.v
+FC:/intelFPGA_lite/18.0/new/serial_buf.v
+L0 16
+R3
+r1
+!s85 0
+31
+R17
+!s107 C:/intelFPGA_lite/18.0/new/serial_buf.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.0/new|C:/intelFPGA_lite/18.0/new/serial_buf.v|
+!i113 1
+R5
+R6
+R7
+vsign_extender
+R14
+!i10b 1
+!s100 HAc[_ICi@AMaTE2>F?QU11
+I0GhWJMTCL>3l?=d_?k0AH3
+R2
+R0
+w1763644823
+8C:/intelFPGA_lite/18.0/new/sign_extender.v
+FC:/intelFPGA_lite/18.0/new/sign_extender.v
+L0 1
+R3
+r1
+!s85 0
+31
+R15
+!s107 C:/intelFPGA_lite/18.0/new/sign_extender.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.0/new|C:/intelFPGA_lite/18.0/new/sign_extender.v|
+!i113 1
+R5
+R6
+R7
+vtestbench
+R10
+!i10b 1
+!s100 mJZAOKUQj2dbmeBF_DAeh0
+IOjcE1FIe;Ie>[VV^7YIng2
+R2
+R0
+w1764300569
+8C:/intelFPGA_lite/18.0/new/testbench.v
+FC:/intelFPGA_lite/18.0/new/testbench.v
+L0 3
+R3
+r1
+!s85 0
+31
+R11
+!s107 C:/intelFPGA_lite/18.0/new/testbench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.0/new|C:/intelFPGA_lite/18.0/new/testbench.v|
+!i113 1
+R5
+R6
+R7

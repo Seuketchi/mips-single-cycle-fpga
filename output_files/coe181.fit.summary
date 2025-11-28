@@ -1,16 +1,16 @@
-Fitter Status : Successful - Fri Nov 21 00:07:29 2025
+Fitter Status : Successful - Sat Nov 29 02:08:45 2025
 Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 Revision Name : coe181
 Top-level Entity Name : processor
 Family : Cyclone V
 Device : 5CEBA2F17A7
 Timing Models : Final
-Logic utilization (in ALMs) : 1 / 9,430 ( < 1 % )
-Total registers : 0
+Logic utilization (in ALMs) : 250 / 9,430 ( 3 % )
+Total registers : 108
 Total pins : 22 / 128 ( 17 % )
 Total virtual pins : 0
-Total block memory bits : 0 / 1,802,240 ( 0 % )
-Total RAM Blocks : 0 / 176 ( 0 % )
+Total block memory bits : 67,584 / 1,802,240 ( 4 % )
+Total RAM Blocks : 10 / 176 ( 6 % )
 Total DSP Blocks : 0 / 25 ( 0 % )
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0

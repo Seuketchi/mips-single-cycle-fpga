@@ -57,6 +57,11 @@ module alu(
 	reg [31:0] SltOut;
 	
 	//----------------------------------------------------------------------------
+	
+	//shifts
+	//---------------------------------------------------------------------------
+	reg [31:0] ShiftOut;
+
 	//branches
 	reg [31:0] BranchOut;
 	reg Sign;
@@ -99,6 +104,16 @@ module alu(
 		end else begin
 			SltOut = $signed(A_in) < $signed(B_in);
 		end
+		
+		//shifts
+		//------------------------------------------------
+		// A_in = shift amount (shamt), B_in = value to shift (rt)
+		case (Func_in[1:0])
+			2'b00: ShiftOut = B_in << A_in[4:0];           // SLL
+			2'b10: ShiftOut = B_in >> A_in[4:0];           // SRL
+			2'b11: ShiftOut = $signed(B_in) >>> A_in[4:0]; // SRA
+			default: ShiftOut = B_in;
+		endcase
 
 		//branches and jumps
 		//---------------------------------------------------------
@@ -150,9 +165,10 @@ module alu(
 			O_out = BranchOut;
 			Branch_out = DoBranch;
 			Jump_out = DoJump;
+		end else if (Func_in[5:2] == 4'b0000) begin
+			O_out = ShiftOut;
 		end else begin
 			O_out = 32'bxxxxxxxx_xxxxxxxx_xxxxxxxx_xxxxxxxx;
 		end
 	end
-			
 endmodule

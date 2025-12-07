@@ -1,5 +1,5 @@
 Fitter report for coe181
-Sat Nov 29 02:08:45 2025
+Sun Dec 07 14:54:31 2025
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -34,10 +34,8 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
  26. I/O Rules Matrix
  27. Fitter Device Options
  28. Operating Settings and Conditions
- 29. Estimated Delay Added for Hold Timing Summary
- 30. Estimated Delay Added for Hold Timing Details
- 31. Fitter Messages
- 32. Fitter Suppressed Messages
+ 29. Fitter Messages
+ 30. Fitter Suppressed Messages
 
 
 
@@ -63,15 +61,15 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Sat Nov 29 02:08:45 2025       ;
+; Fitter Status                   ; Successful - Sun Dec 07 14:54:31 2025       ;
 ; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                   ; coe181                                      ;
 ; Top-level Entity Name           ; processor                                   ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CEBA2F17A7                                 ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 250 / 9,430 ( 3 % )                         ;
-; Total registers                 ; 108                                         ;
+; Logic utilization (in ALMs)     ; 919 / 9,430 ( 10 % )                        ;
+; Total registers                 ; 156                                         ;
 ; Total pins                      ; 22 / 128 ( 17 % )                           ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 67,584 / 1,802,240 ( 4 % )                  ;
@@ -181,19 +179,19 @@ refer to the applicable agreement for further details.
 +------------------+---------+-----------+----------------------------+-----------+----------------+------------------+------------------+-----------------------+
 
 
-+--------------------------------------------------------------------------------------------------+
-; Incremental Compilation Preservation Summary                                                     ;
-+---------------------+--------------------+----------------------------+--------------------------+
-; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
-+---------------------+--------------------+----------------------------+--------------------------+
-; Placement (by node) ;                    ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 674 ) ; 0.00 % ( 0 / 674 )         ; 0.00 % ( 0 / 674 )       ;
-;     -- Achieved     ; 0.00 % ( 0 / 674 ) ; 0.00 % ( 0 / 674 )         ; 0.00 % ( 0 / 674 )       ;
-;                     ;                    ;                            ;                          ;
-; Routing (by net)    ;                    ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
-;     -- Achieved     ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
-+---------------------+--------------------+----------------------------+--------------------------+
++---------------------------------------------------------------------------------------------------+
+; Incremental Compilation Preservation Summary                                                      ;
++---------------------+---------------------+----------------------------+--------------------------+
+; Type                ; Total [A + B]       ; From Design Partitions [A] ; From Rapid Recompile [B] ;
++---------------------+---------------------+----------------------------+--------------------------+
+; Placement (by node) ;                     ;                            ;                          ;
+;     -- Requested    ; 0.00 % ( 0 / 1587 ) ; 0.00 % ( 0 / 1587 )        ; 0.00 % ( 0 / 1587 )      ;
+;     -- Achieved     ; 0.00 % ( 0 / 1587 ) ; 0.00 % ( 0 / 1587 )        ; 0.00 % ( 0 / 1587 )      ;
+;                     ;                     ;                            ;                          ;
+; Routing (by net)    ;                     ;                            ;                          ;
+;     -- Requested    ; 0.00 % ( 0 / 0 )    ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
+;     -- Achieved     ; 0.00 % ( 0 / 0 )    ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
++---------------------+---------------------+----------------------------+--------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -211,7 +209,7 @@ refer to the applicable agreement for further details.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 674 )    ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 1587 )   ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 0 )      ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -227,45 +225,45 @@ The pin-out file can be found in C:/intelFPGA_lite/18.0/new/output_files/coe181.
 +-------------------------------------------------------------+-----------------------+-------+
 ; Resource                                                    ; Usage                 ; %     ;
 +-------------------------------------------------------------+-----------------------+-------+
-; Logic utilization (ALMs needed / total ALMs on device)      ; 250 / 9,430           ; 3 %   ;
-; ALMs needed [=A-B+C]                                        ; 250                   ;       ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 267 / 9,430           ; 3 %   ;
-;         [a] ALMs used for LUT logic and registers           ; 36                    ;       ;
-;         [b] ALMs used for LUT logic                         ; 213                   ;       ;
-;         [c] ALMs used for registers                         ; 18                    ;       ;
+; Logic utilization (ALMs needed / total ALMs on device)      ; 919 / 9,430           ; 10 %  ;
+; ALMs needed [=A-B+C]                                        ; 919                   ;       ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 948 / 9,430           ; 10 %  ;
+;         [a] ALMs used for LUT logic and registers           ; 48                    ;       ;
+;         [b] ALMs used for LUT logic                         ; 869                   ;       ;
+;         [c] ALMs used for registers                         ; 31                    ;       ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                     ;       ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 17 / 9,430            ; < 1 % ;
-;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 9,430             ; 0 %   ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 37 / 9,430            ; < 1 % ;
+;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 8 / 9,430             ; < 1 % ;
 ;         [a] Due to location constrained logic               ; 0                     ;       ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                     ;       ;
-;         [c] Due to LAB input limits                         ; 0                     ;       ;
+;         [c] Due to LAB input limits                         ; 8                     ;       ;
 ;         [d] Due to virtual I/Os                             ; 0                     ;       ;
 ;                                                             ;                       ;       ;
 ; Difficulty packing design                                   ; Low                   ;       ;
 ;                                                             ;                       ;       ;
-; Total LABs:  partially or completely used                   ; 32 / 943              ; 3 %   ;
-;     -- Logic LABs                                           ; 32                    ;       ;
+; Total LABs:  partially or completely used                   ; 110 / 943             ; 12 %  ;
+;     -- Logic LABs                                           ; 110                   ;       ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                     ;       ;
 ;                                                             ;                       ;       ;
-; Combinational ALUT usage for logic                          ; 393                   ;       ;
-;     -- 7 input functions                                    ; 4                     ;       ;
-;     -- 6 input functions                                    ; 176                   ;       ;
-;     -- 5 input functions                                    ; 85                    ;       ;
-;     -- 4 input functions                                    ; 55                    ;       ;
-;     -- <=3 input functions                                  ; 73                    ;       ;
-; Combinational ALUT usage for route-throughs                 ; 3                     ;       ;
+; Combinational ALUT usage for logic                          ; 1,258                 ;       ;
+;     -- 7 input functions                                    ; 51                    ;       ;
+;     -- 6 input functions                                    ; 546                   ;       ;
+;     -- 5 input functions                                    ; 247                   ;       ;
+;     -- 4 input functions                                    ; 238                   ;       ;
+;     -- <=3 input functions                                  ; 176                   ;       ;
+; Combinational ALUT usage for route-throughs                 ; 2                     ;       ;
 ;                                                             ;                       ;       ;
-; Dedicated logic registers                                   ; 108                   ;       ;
+; Dedicated logic registers                                   ; 156                   ;       ;
 ;     -- By type:                                             ;                       ;       ;
-;         -- Primary logic registers                          ; 108 / 18,860          ; < 1 % ;
+;         -- Primary logic registers                          ; 156 / 18,860          ; < 1 % ;
 ;         -- Secondary logic registers                        ; 0 / 18,860            ; 0 %   ;
 ;     -- By function:                                         ;                       ;       ;
-;         -- Design implementation registers                  ; 108                   ;       ;
+;         -- Design implementation registers                  ; 156                   ;       ;
 ;         -- Routing optimization registers                   ; 0                     ;       ;
 ;                                                             ;                       ;       ;
 ; Virtual pins                                                ; 0                     ;       ;
 ; I/O pins                                                    ; 22 / 128              ; 17 %  ;
-;     -- Clock pins                                           ; 1 / 5                 ; 20 %  ;
+;     -- Clock pins                                           ; 2 / 5                 ; 40 %  ;
 ;     -- Dedicated input pins                                 ; 0 / 11                ; 0 %   ;
 ;                                                             ;                       ;       ;
 ; M10K blocks                                                 ; 10 / 176              ; 6 %   ;
@@ -287,12 +285,12 @@ The pin-out file can be found in C:/intelFPGA_lite/18.0/new/output_files/coe181.
 ; Remote update blocks                                        ; 0 / 1                 ; 0 %   ;
 ; Oscillator blocks                                           ; 0 / 1                 ; 0 %   ;
 ; Impedance control blocks                                    ; 0 / 3                 ; 0 %   ;
-; Average interconnect usage (total/H/V)                      ; 0.6% / 0.6% / 0.6%    ;       ;
-; Peak interconnect usage (total/H/V)                         ; 11.1% / 11.1% / 11.1% ;       ;
-; Maximum fan-out                                             ; 128                   ;       ;
-; Highest non-global fan-out                                  ; 76                    ;       ;
-; Total fan-out                                               ; 2472                  ;       ;
-; Average fan-out                                             ; 4.42                  ;       ;
+; Average interconnect usage (total/H/V)                      ; 2.0% / 2.0% / 2.2%    ;       ;
+; Peak interconnect usage (total/H/V)                         ; 15.3% / 15.0% / 16.2% ;       ;
+; Maximum fan-out                                             ; 189                   ;       ;
+; Highest non-global fan-out                                  ; 189                   ;       ;
+; Total fan-out                                               ; 6929                  ;       ;
+; Average fan-out                                             ; 4.71                  ;       ;
 +-------------------------------------------------------------+-----------------------+-------+
 
 
@@ -301,43 +299,43 @@ The pin-out file can be found in C:/intelFPGA_lite/18.0/new/output_files/coe181.
 +-------------------------------------------------------------+-----------------------+--------------------------------+
 ; Statistic                                                   ; Top                   ; hard_block:auto_generated_inst ;
 +-------------------------------------------------------------+-----------------------+--------------------------------+
-; Logic utilization (ALMs needed / total ALMs on device)      ; 250 / 9430 ( 3 % )    ; 0 / 9430 ( 0 % )               ;
-; ALMs needed [=A-B+C]                                        ; 250                   ; 0                              ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 267 / 9430 ( 3 % )    ; 0 / 9430 ( 0 % )               ;
-;         [a] ALMs used for LUT logic and registers           ; 36                    ; 0                              ;
-;         [b] ALMs used for LUT logic                         ; 213                   ; 0                              ;
-;         [c] ALMs used for registers                         ; 18                    ; 0                              ;
+; Logic utilization (ALMs needed / total ALMs on device)      ; 919 / 9430 ( 10 % )   ; 0 / 9430 ( 0 % )               ;
+; ALMs needed [=A-B+C]                                        ; 919                   ; 0                              ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 948 / 9430 ( 10 % )   ; 0 / 9430 ( 0 % )               ;
+;         [a] ALMs used for LUT logic and registers           ; 48                    ; 0                              ;
+;         [b] ALMs used for LUT logic                         ; 869                   ; 0                              ;
+;         [c] ALMs used for registers                         ; 31                    ; 0                              ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                     ; 0                              ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 17 / 9430 ( < 1 % )   ; 0 / 9430 ( 0 % )               ;
-;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 9430 ( 0 % )      ; 0 / 9430 ( 0 % )               ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 37 / 9430 ( < 1 % )   ; 0 / 9430 ( 0 % )               ;
+;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 8 / 9430 ( < 1 % )    ; 0 / 9430 ( 0 % )               ;
 ;         [a] Due to location constrained logic               ; 0                     ; 0                              ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                     ; 0                              ;
-;         [c] Due to LAB input limits                         ; 0                     ; 0                              ;
+;         [c] Due to LAB input limits                         ; 8                     ; 0                              ;
 ;         [d] Due to virtual I/Os                             ; 0                     ; 0                              ;
 ;                                                             ;                       ;                                ;
 ; Difficulty packing design                                   ; Low                   ; Low                            ;
 ;                                                             ;                       ;                                ;
-; Total LABs:  partially or completely used                   ; 32 / 943 ( 3 % )      ; 0 / 943 ( 0 % )                ;
-;     -- Logic LABs                                           ; 32                    ; 0                              ;
+; Total LABs:  partially or completely used                   ; 110 / 943 ( 12 % )    ; 0 / 943 ( 0 % )                ;
+;     -- Logic LABs                                           ; 110                   ; 0                              ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                     ; 0                              ;
 ;                                                             ;                       ;                                ;
-; Combinational ALUT usage for logic                          ; 393                   ; 0                              ;
-;     -- 7 input functions                                    ; 4                     ; 0                              ;
-;     -- 6 input functions                                    ; 176                   ; 0                              ;
-;     -- 5 input functions                                    ; 85                    ; 0                              ;
-;     -- 4 input functions                                    ; 55                    ; 0                              ;
-;     -- <=3 input functions                                  ; 73                    ; 0                              ;
-; Combinational ALUT usage for route-throughs                 ; 3                     ; 0                              ;
+; Combinational ALUT usage for logic                          ; 1258                  ; 0                              ;
+;     -- 7 input functions                                    ; 51                    ; 0                              ;
+;     -- 6 input functions                                    ; 546                   ; 0                              ;
+;     -- 5 input functions                                    ; 247                   ; 0                              ;
+;     -- 4 input functions                                    ; 238                   ; 0                              ;
+;     -- <=3 input functions                                  ; 176                   ; 0                              ;
+; Combinational ALUT usage for route-throughs                 ; 2                     ; 0                              ;
 ; Memory ALUT usage                                           ; 0                     ; 0                              ;
 ;     -- 64-address deep                                      ; 0                     ; 0                              ;
 ;     -- 32-address deep                                      ; 0                     ; 0                              ;
 ;                                                             ;                       ;                                ;
 ; Dedicated logic registers                                   ; 0                     ; 0                              ;
 ;     -- By type:                                             ;                       ;                                ;
-;         -- Primary logic registers                          ; 108 / 18860 ( < 1 % ) ; 0 / 18860 ( 0 % )              ;
+;         -- Primary logic registers                          ; 156 / 18860 ( < 1 % ) ; 0 / 18860 ( 0 % )              ;
 ;         -- Secondary logic registers                        ; 0 / 18860 ( 0 % )     ; 0 / 18860 ( 0 % )              ;
 ;     -- By function:                                         ;                       ;                                ;
-;         -- Design implementation registers                  ; 108                   ; 0                              ;
+;         -- Design implementation registers                  ; 156                   ; 0                              ;
 ;         -- Routing optimization registers                   ; 0                     ; 0                              ;
 ;                                                             ;                       ;                                ;
 ;                                                             ;                       ;                                ;
@@ -356,8 +354,8 @@ The pin-out file can be found in C:/intelFPGA_lite/18.0/new/output_files/coe181.
 ;     -- Registered Output Connections                        ; 0                     ; 0                              ;
 ;                                                             ;                       ;                                ;
 ; Internal Connections                                        ;                       ;                                ;
-;     -- Total Connections                                    ; 2677                  ; 0                              ;
-;     -- Registered Connections                               ; 543                   ; 0                              ;
+;     -- Total Connections                                    ; 7125                  ; 0                              ;
+;     -- Registered Connections                               ; 530                   ; 0                              ;
 ;                                                             ;                       ;                                ;
 ; External Connections                                        ;                       ;                                ;
 ;     -- Top                                                  ; 0                     ; 0                              ;
@@ -389,18 +387,18 @@ The pin-out file can be found in C:/intelFPGA_lite/18.0/new/output_files/coe181.
 +-----------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 ; Name            ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +-----------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
-; clk             ; G12   ; 5B       ; 54           ; 18           ; 60           ; 128                   ; 0                  ; yes    ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; reset           ; K4    ; 2A       ; 0            ; 18           ; 60           ; 32                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; serial_in[0]    ; F3    ; 2A       ; 0            ; 21           ; 54           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; serial_in[1]    ; F2    ; 2A       ; 0            ; 20           ; 37           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; serial_in[2]    ; H3    ; 2A       ; 0            ; 21           ; 3            ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; serial_in[3]    ; H1    ; 2A       ; 0            ; 18           ; 94           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; serial_in[4]    ; J14   ; 5A       ; 54           ; 17           ; 37           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; serial_in[5]    ; J2    ; 2A       ; 0            ; 19           ; 20           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; serial_in[6]    ; F4    ; 2A       ; 0            ; 21           ; 37           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; serial_in[7]    ; H5    ; 2A       ; 0            ; 20           ; 3            ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; clk             ; G12   ; 5B       ; 54           ; 18           ; 60           ; 176                   ; 0                  ; yes    ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; reset           ; A4    ; 8A       ; 20           ; 45           ; 51           ; 75                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; serial_in[0]    ; K5    ; 2A       ; 0            ; 18           ; 43           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; serial_in[1]    ; B11   ; 7A       ; 34           ; 45           ; 51           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; serial_in[2]    ; T4    ; 3B       ; 23           ; 0            ; 74           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; serial_in[3]    ; R2    ; 3A       ; 12           ; 0            ; 34           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; serial_in[4]    ; N14   ; 4A       ; 34           ; 0            ; 34           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; serial_in[5]    ; G3    ; 2A       ; 0            ; 21           ; 20           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; serial_in[6]    ; H3    ; 2A       ; 0            ; 21           ; 3            ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; serial_in[7]    ; F3    ; 2A       ; 0            ; 21           ; 54           ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
 ; serial_ready_in ; J3    ; 2A       ; 0            ; 19           ; 3            ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; serial_valid_in ; G1    ; 2A       ; 0            ; 19           ; 54           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; serial_valid_in ; H4    ; 2A       ; 0            ; 20           ; 20           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
 +-----------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 
 
@@ -409,33 +407,33 @@ The pin-out file can be found in C:/intelFPGA_lite/18.0/new/output_files/coe181.
 +-----------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+---------------------+-----------------------------+----------------------+----------------------+---------------------+
 ; Name            ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Output Register ; Output Enable Register ; Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination                       ; Termination Control Block ; Output Buffer Pre-emphasis ; Voltage Output Differential ; Output Buffer Delay ; Output Buffer Delay Control ; Location assigned by ; Output Enable Source ; Output Enable Group ;
 +-----------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+---------------------+-----------------------------+----------------------+----------------------+---------------------+
-; serial_out[0]   ; G2    ; 2A       ; 0            ; 19           ; 37           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; serial_out[1]   ; P4    ; 3A       ; 10           ; 0            ; 40           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; serial_out[2]   ; H4    ; 2A       ; 0            ; 20           ; 20           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; serial_out[3]   ; E2    ; 2A       ; 0            ; 20           ; 54           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; serial_out[4]   ; L7    ; 3A       ; 11           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; serial_out[5]   ; R1    ; 3A       ; 11           ; 0            ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; serial_out[6]   ; J1    ; 2A       ; 0            ; 18           ; 77           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; serial_out[7]   ; K5    ; 2A       ; 0            ; 18           ; 43           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; serial_rden_out ; L9    ; 3B       ; 24           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; serial_wren_out ; G3    ; 2A       ; 0            ; 21           ; 20           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; serial_out[0]   ; T12   ; 3B       ; 25           ; 0            ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; serial_out[1]   ; P9    ; 3B       ; 29           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; serial_out[2]   ; T13   ; 3B       ; 25           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; serial_out[3]   ; P8    ; 3B       ; 23           ; 0            ; 40           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; serial_out[4]   ; R11   ; 3B       ; 25           ; 0            ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; serial_out[5]   ; K4    ; 2A       ; 0            ; 18           ; 60           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; serial_out[6]   ; A3    ; 8A       ; 18           ; 45           ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; serial_out[7]   ; T8    ; 3B       ; 24           ; 0            ; 34           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; serial_rden_out ; P4    ; 3A       ; 10           ; 0            ; 40           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; serial_wren_out ; F4    ; 2A       ; 0            ; 21           ; 37           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
 +-----------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+---------------------+-----------------------------+----------------------+----------------------+---------------------+
 
 
-+-----------------------------------------------------------------------------+
-; I/O Bank Usage                                                              ;
-+----------+-------------------+---------------+--------------+---------------+
-; I/O Bank ; Usage             ; VCCIO Voltage ; VREF Voltage ; VCCPD Voltage ;
-+----------+-------------------+---------------+--------------+---------------+
-; 2A       ; 16 / 16 ( 100 % ) ; 2.5V          ; --           ; 2.5V          ;
-; 3A       ; 3 / 16 ( 19 % )   ; 2.5V          ; --           ; 2.5V          ;
-; 3B       ; 1 / 16 ( 6 % )    ; 2.5V          ; --           ; 2.5V          ;
-; 4A       ; 0 / 16 ( 0 % )    ; 2.5V          ; --           ; 2.5V          ;
-; 5A       ; 1 / 16 ( 6 % )    ; 2.5V          ; --           ; 2.5V          ;
-; 5B       ; 1 / 16 ( 6 % )    ; 2.5V          ; --           ; 2.5V          ;
-; 7A       ; 0 / 16 ( 0 % )    ; 2.5V          ; --           ; 2.5V          ;
-; 8A       ; 0 / 16 ( 0 % )    ; 2.5V          ; --           ; 2.5V          ;
-+----------+-------------------+---------------+--------------+---------------+
++---------------------------------------------------------------------------+
+; I/O Bank Usage                                                            ;
++----------+-----------------+---------------+--------------+---------------+
+; I/O Bank ; Usage           ; VCCIO Voltage ; VREF Voltage ; VCCPD Voltage ;
++----------+-----------------+---------------+--------------+---------------+
+; 2A       ; 8 / 16 ( 50 % ) ; 2.5V          ; --           ; 2.5V          ;
+; 3A       ; 2 / 16 ( 13 % ) ; 2.5V          ; --           ; 2.5V          ;
+; 3B       ; 7 / 16 ( 44 % ) ; 2.5V          ; --           ; 2.5V          ;
+; 4A       ; 1 / 16 ( 6 % )  ; 2.5V          ; --           ; 2.5V          ;
+; 5A       ; 0 / 16 ( 0 % )  ; 2.5V          ; --           ; 2.5V          ;
+; 5B       ; 1 / 16 ( 6 % )  ; 2.5V          ; --           ; 2.5V          ;
+; 7A       ; 1 / 16 ( 6 % )  ; 2.5V          ; --           ; 2.5V          ;
+; 8A       ; 2 / 16 ( 13 % ) ; 2.5V          ; --           ; 2.5V          ;
++----------+-----------------+---------------+--------------+---------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -445,8 +443,8 @@ The pin-out file can be found in C:/intelFPGA_lite/18.0/new/output_files/coe181.
 +----------+------------+----------+---------------------------------+--------+--------------+---------------------+--------------+-----------------+----------+--------------+
 ; A1       ;            ;          ; GND                             ;        ;              ;                     ; --           ;                 ; --       ; --           ;
 ; A2       ;            ;          ; DNU                             ;        ;              ;                     ; --           ;                 ; --       ; --           ;
-; A3       ; 262        ; 8A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; A4       ; 258        ; 8A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; A3       ; 262        ; 8A       ; serial_out[6]                   ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; A4       ; 258        ; 8A       ; reset                           ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; A5       ; 256        ; 8A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; A6       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; A7       ; 257        ; 8A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -469,7 +467,7 @@ The pin-out file can be found in C:/intelFPGA_lite/18.0/new/output_files/coe181.
 ; B8       ; 255        ; 8A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; B9       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; B10      ; 248        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; B11      ; 246        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; B11      ; 246        ; 7A       ; serial_in[1]                    ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; B12      ; 244        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; B13      ;            ; 7A       ; VREFB7AN0                       ; power  ;              ;                     ; --           ;                 ; --       ; --           ;
 ; B14      ;            ; 7A       ; VCCIO7A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
@@ -508,7 +506,7 @@ The pin-out file can be found in C:/intelFPGA_lite/18.0/new/output_files/coe181.
 ; D15      ;            ; 5B       ; VCCIO5B                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; D16      ; 173        ; 5B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; E1       ; 287        ; 9A       ; ^nCE                            ;        ;              ;                     ; --           ;                 ; --       ; --           ;
-; E2       ; 21         ; 2A       ; serial_out[3]                   ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; E2       ; 21         ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; E3       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; E4       ; 285        ; 9A       ; ^MSEL1                          ;        ;              ;                     ; --           ;                 ; --       ; --           ;
 ; E5       ; 283        ; 9A       ; ^MSEL0                          ;        ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -524,9 +522,9 @@ The pin-out file can be found in C:/intelFPGA_lite/18.0/new/output_files/coe181.
 ; E15      ; 185        ; 5B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; E16      ; 171        ; 5B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; F1       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; F2       ; 23         ; 2A       ; serial_in[1]                    ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
-; F3       ; 16         ; 2A       ; serial_in[0]                    ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
-; F4       ; 18         ; 2A       ; serial_in[6]                    ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; F2       ; 23         ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
+; F3       ; 16         ; 2A       ; serial_in[7]                    ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; F4       ; 18         ; 2A       ; serial_wren_out                 ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
 ; F5       ;            ; --       ; VCCA_FPLL                       ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; F6       ; 291        ; 9A       ; ^MSEL4                          ;        ;              ;                     ; --           ;                 ; --       ; --           ;
 ; F7       ; 253        ; 8A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -539,9 +537,9 @@ The pin-out file can be found in C:/intelFPGA_lite/18.0/new/output_files/coe181.
 ; F14      ; 182        ; 5B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; F15      ; 184        ; 5B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; F16      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; G1       ; 24         ; 2A       ; serial_valid_in                 ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
-; G2       ; 26         ; 2A       ; serial_out[0]                   ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
-; G3       ; 17         ; 2A       ; serial_wren_out                 ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; G1       ; 24         ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
+; G2       ; 26         ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
+; G3       ; 17         ; 2A       ; serial_in[5]                    ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
 ; G4       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; G5       ;            ; --       ; VCCA_FPLL                       ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; G6       ;            ; --       ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
@@ -555,11 +553,11 @@ The pin-out file can be found in C:/intelFPGA_lite/18.0/new/output_files/coe181.
 ; G14      ;            ; 5B       ; VCCIO5B                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; G15      ; 162        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; G16      ; 164        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
-; H1       ; 29         ; 2A       ; serial_in[3]                    ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; H1       ; 29         ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; H2       ;            ; 2A       ; VCCIO2A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; H3       ; 19         ; 2A       ; serial_in[2]                    ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
-; H4       ; 20         ; 2A       ; serial_out[2]                   ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
-; H5       ; 22         ; 2A       ; serial_in[7]                    ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; H3       ; 19         ; 2A       ; serial_in[6]                    ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; H4       ; 20         ; 2A       ; serial_valid_in                 ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; H5       ; 22         ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; H6       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; H7       ;            ; --       ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
 ; H8       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -571,8 +569,8 @@ The pin-out file can be found in C:/intelFPGA_lite/18.0/new/output_files/coe181.
 ; H14      ;            ; 5B       ; VCCPD5B                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; H15      ; 168        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; H16      ; 158        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
-; J1       ; 31         ; 2A       ; serial_out[6]                   ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
-; J2       ; 25         ; 2A       ; serial_in[5]                    ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; J1       ; 31         ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
+; J2       ; 25         ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; J3       ; 27         ; 2A       ; serial_ready_in                 ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
 ; J4       ;            ; 1A, 2A   ; VCCPD1A2A                       ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; J5       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -584,14 +582,14 @@ The pin-out file can be found in C:/intelFPGA_lite/18.0/new/output_files/coe181.
 ; J11      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; J12      ; 165        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; J13      ;            ; 5A       ; VCCPD5A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; J14      ; 166        ; 5A       ; serial_in[4]                    ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; J14      ; 166        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; J15      ;            ; 5A       ; VCCIO5A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; J16      ; 160        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; K1       ; 55         ; 3A       ; ^AS_DATA1, DATA1                ;        ;              ;                     ; Weak Pull Up ;                 ; --       ; On           ;
 ; K2       ;            ; 2A       ; VREFB2AN0                       ; power  ;              ;                     ; --           ;                 ; --       ; --           ;
 ; K3       ;            ; 2A       ; VCCIO2A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; K4       ; 28         ; 2A       ; reset                           ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
-; K5       ; 30         ; 2A       ; serial_out[7]                   ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; K4       ; 28         ; 2A       ; serial_out[5]                   ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; K5       ; 30         ; 2A       ; serial_in[0]                    ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
 ; K6       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; K7       ;            ; --       ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
 ; K8       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -609,9 +607,9 @@ The pin-out file can be found in C:/intelFPGA_lite/18.0/new/output_files/coe181.
 ; L4       ; 54         ; 3A       ; #TDI                            ; input  ;              ;                     ; --           ;                 ; --       ; --           ;
 ; L5       ;            ; --       ; VCCA_FPLL                       ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; L6       ; 50         ; 3A       ; #TMS                            ; input  ;              ;                     ; --           ;                 ; --       ; --           ;
-; L7       ; 64         ; 3A       ; serial_out[4]                   ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; L7       ; 64         ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; L8       ;            ; --       ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
-; L9       ; 96         ; 3B       ; serial_rden_out                 ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; L9       ; 96         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; L10      ; 112        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; L11      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; L12      ;            ; --       ; VCCA_FPLL                       ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
@@ -648,18 +646,18 @@ The pin-out file can be found in C:/intelFPGA_lite/18.0/new/output_files/coe181.
 ; N11      ; 120        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; N12      ;            ; 4A       ; VCCIO4A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; N13      ;            ; --       ; VCC_AUX                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; N14      ; 113        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; N14      ; 113        ; 4A       ; serial_in[4]                    ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; N15      ; 154        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; N16      ; 156        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; P1       ; 61         ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; P2       ; 65         ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; P3       ; 66         ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; P4       ; 60         ; 3A       ; serial_out[1]                   ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; P4       ; 60         ; 3A       ; serial_rden_out                 ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; P5       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; P6       ;            ; --       ; VCCPGM                          ; power  ;              ; 1.8V/2.5V/3.0V/3.3V ; --           ;                 ; --       ; --           ;
 ; P7       ; 72         ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; P8       ; 93         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; P9       ; 104        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; P8       ; 93         ; 3B       ; serial_out[3]                   ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; P9       ; 104        ; 3B       ; serial_out[1]                   ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; P10      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; P11      ; 118        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; P12      ;            ; 4A       ; VREFB4AN0                       ; power  ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -667,8 +665,8 @@ The pin-out file can be found in C:/intelFPGA_lite/18.0/new/output_files/coe181.
 ; P14      ; 114        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; P15      ;            ; 4A       ; VCCIO4A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; P16      ; 108        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; R1       ; 63         ; 3A       ; serial_out[5]                   ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; R2       ; 69         ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; R1       ; 63         ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; R2       ; 69         ; 3A       ; serial_in[3]                    ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; R3       ;            ; 3A       ; VCCIO3A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; R4       ; 73         ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; R5       ;            ; 3A       ; VREFB3AN0                       ; power  ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -677,7 +675,7 @@ The pin-out file can be found in C:/intelFPGA_lite/18.0/new/output_files/coe181.
 ; R8       ;            ; 3B       ; VCCIO3B                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; R9       ; 102        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; R10      ; 105        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; R11      ; 98         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; R11      ; 98         ; 3B       ; serial_out[4]                   ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; R12      ; 100        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; R13      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; R14      ; 121        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -686,16 +684,16 @@ The pin-out file can be found in C:/intelFPGA_lite/18.0/new/output_files/coe181.
 ; T1       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; T2       ; 67         ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; T3       ; 71         ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; T4       ; 92         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; T4       ; 92         ; 3B       ; serial_in[2]                    ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; T5       ; 90         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; T6       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; T7       ; 95         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; T8       ; 97         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; T8       ; 97         ; 3B       ; serial_out[7]                   ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; T9       ;            ; 3B       ; VREFB3BN0                       ; power  ;              ;                     ; --           ;                 ; --       ; --           ;
 ; T10      ; 103        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; T11      ;            ; 3B       ; VCCIO3B                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; T12      ; 99         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; T13      ; 101        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; T12      ; 99         ; 3B       ; serial_out[0]                   ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; T13      ; 101        ; 3B       ; serial_out[2]                   ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; T14      ; 119        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; T15      ; 107        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; T16      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -720,16 +718,16 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; serial_wren_out ; Incomplete set of assignments ;
 ; clk             ; Incomplete set of assignments ;
 ; reset           ; Incomplete set of assignments ;
-; serial_ready_in ; Incomplete set of assignments ;
-; serial_valid_in ; Incomplete set of assignments ;
 ; serial_in[0]    ; Incomplete set of assignments ;
-; serial_in[2]    ; Incomplete set of assignments ;
-; serial_in[3]    ; Incomplete set of assignments ;
-; serial_in[1]    ; Incomplete set of assignments ;
+; serial_valid_in ; Incomplete set of assignments ;
+; serial_ready_in ; Incomplete set of assignments ;
+; serial_in[7]    ; Incomplete set of assignments ;
 ; serial_in[4]    ; Incomplete set of assignments ;
+; serial_in[1]    ; Incomplete set of assignments ;
 ; serial_in[5]    ; Incomplete set of assignments ;
 ; serial_in[6]    ; Incomplete set of assignments ;
-; serial_in[7]    ; Incomplete set of assignments ;
+; serial_in[3]    ; Incomplete set of assignments ;
+; serial_in[2]    ; Incomplete set of assignments ;
 ; serial_out[0]   ; Missing location assignment   ;
 ; serial_out[1]   ; Missing location assignment   ;
 ; serial_out[2]   ; Missing location assignment   ;
@@ -742,16 +740,16 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; serial_wren_out ; Missing location assignment   ;
 ; clk             ; Missing location assignment   ;
 ; reset           ; Missing location assignment   ;
-; serial_ready_in ; Missing location assignment   ;
-; serial_valid_in ; Missing location assignment   ;
 ; serial_in[0]    ; Missing location assignment   ;
-; serial_in[2]    ; Missing location assignment   ;
-; serial_in[3]    ; Missing location assignment   ;
-; serial_in[1]    ; Missing location assignment   ;
+; serial_valid_in ; Missing location assignment   ;
+; serial_ready_in ; Missing location assignment   ;
+; serial_in[7]    ; Missing location assignment   ;
 ; serial_in[4]    ; Missing location assignment   ;
+; serial_in[1]    ; Missing location assignment   ;
 ; serial_in[5]    ; Missing location assignment   ;
 ; serial_in[6]    ; Missing location assignment   ;
-; serial_in[7]    ; Missing location assignment   ;
+; serial_in[3]    ; Missing location assignment   ;
+; serial_in[2]    ; Missing location assignment   ;
 +-----------------+-------------------------------+
 
 
@@ -760,36 +758,40 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node                   ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M10Ks ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                         ; Entity Name     ; Library Name ;
 +----------------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------+-----------------+--------------+
-; |processor                                   ; 249.5 (0.5)          ; 267.0 (0.5)                      ; 17.5 (0.0)                                        ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 393 (1)             ; 108 (0)                   ; 0 (0)         ; 67584             ; 10    ; 0          ; 22   ; 0            ; |processor                                                                                                  ; processor       ; work         ;
-;    |adder:pc_adder|                          ; 2.0 (2.0)            ; 2.0 (2.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 8 (8)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |processor|adder:pc_adder                                                                                   ; adder           ; work         ;
-;    |alu:alu_unit|                            ; 84.2 (84.2)          ; 84.2 (84.2)                      ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 146 (146)           ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |processor|alu:alu_unit                                                                                     ; alu             ; work         ;
-;    |control_unit:CU|                         ; 1.7 (1.7)            ; 2.0 (2.0)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 4 (4)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |processor|control_unit:CU                                                                                  ; control_unit    ; work         ;
-;    |data_memory:data_mem|                    ; 25.7 (17.5)          ; 32.5 (23.0)                      ; 6.8 (5.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 32 (24)             ; 9 (0)                     ; 0 (0)         ; 65536             ; 8     ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem                                                                             ; data_memory     ; work         ;
-;       |async_memory:data_seg|                ; 3.0 (3.0)            ; 3.5 (3.5)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 4 (4)               ; 0 (0)                     ; 0 (0)         ; 32768             ; 4     ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:data_seg                                                       ; async_memory    ; work         ;
-;          |altsyncram:mem0_rtl_0|             ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 8192              ; 3     ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:data_seg|altsyncram:mem0_rtl_0                                 ; altsyncram      ; work         ;
-;             |altsyncram_obo1:auto_generated| ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 8192              ; 3     ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:data_seg|altsyncram:mem0_rtl_0|altsyncram_obo1:auto_generated  ; altsyncram_obo1 ; work         ;
+; |processor                                   ; 918.5 (3.0)          ; 946.5 (3.0)                      ; 36.0 (0.0)                                        ; 8.0 (0.0)                        ; 0.0 (0.0)            ; 1258 (4)            ; 156 (0)                   ; 0 (0)         ; 67584             ; 10    ; 0          ; 22   ; 0            ; |processor                                                                                                  ; processor       ; work         ;
+;    |adder:branch_adder|                      ; 15.0 (15.0)          ; 15.0 (15.0)                      ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 30 (30)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |processor|adder:branch_adder                                                                               ; adder           ; work         ;
+;    |adder:pc_adder|                          ; 15.0 (15.0)          ; 15.0 (15.0)                      ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 30 (30)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |processor|adder:pc_adder                                                                                   ; adder           ; work         ;
+;    |alu:alu_unit|                            ; 323.3 (323.3)        ; 327.2 (327.2)                    ; 8.0 (8.0)                                         ; 4.1 (4.1)                        ; 0.0 (0.0)            ; 428 (428)           ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |processor|alu:alu_unit                                                                                     ; alu             ; work         ;
+;    |control_unit:CU|                         ; 19.6 (19.6)          ; 19.3 (19.3)                      ; 0.0 (0.0)                                         ; 0.3 (0.3)                        ; 0.0 (0.0)            ; 36 (36)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |processor|control_unit:CU                                                                                  ; control_unit    ; work         ;
+;    |data_memory:data_mem|                    ; 69.4 (32.9)          ; 69.4 (33.7)                      ; 0.8 (1.2)                                         ; 0.7 (0.4)                        ; 0.0 (0.0)            ; 109 (55)            ; 9 (0)                     ; 0 (0)         ; 65536             ; 8     ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem                                                                             ; data_memory     ; work         ;
+;       |async_memory:data_seg|                ; 3.5 (3.5)            ; 4.0 (4.0)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 5 (5)               ; 0 (0)                     ; 0 (0)         ; 32768             ; 4     ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:data_seg                                                       ; async_memory    ; work         ;
+;          |altsyncram:mem0_rtl_0|             ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 8192              ; 1     ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:data_seg|altsyncram:mem0_rtl_0                                 ; altsyncram      ; work         ;
+;             |altsyncram_h8o1:auto_generated| ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 8192              ; 1     ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:data_seg|altsyncram:mem0_rtl_0|altsyncram_h8o1:auto_generated  ; altsyncram_h8o1 ; work         ;
 ;          |altsyncram:mem1_rtl_0|             ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 8192              ; 1     ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:data_seg|altsyncram:mem1_rtl_0                                 ; altsyncram      ; work         ;
-;             |altsyncram_pbo1:auto_generated| ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 8192              ; 1     ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:data_seg|altsyncram:mem1_rtl_0|altsyncram_pbo1:auto_generated  ; altsyncram_pbo1 ; work         ;
-;          |altsyncram:mem2_rtl_0|             ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 8192              ; 0     ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:data_seg|altsyncram:mem2_rtl_0                                 ; altsyncram      ; work         ;
-;             |altsyncram_qbo1:auto_generated| ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 8192              ; 0     ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:data_seg|altsyncram:mem2_rtl_0|altsyncram_qbo1:auto_generated  ; altsyncram_qbo1 ; work         ;
-;          |altsyncram:mem3_rtl_0|             ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 8192              ; 0     ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:data_seg|altsyncram:mem3_rtl_0                                 ; altsyncram      ; work         ;
-;             |altsyncram_rbo1:auto_generated| ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 8192              ; 0     ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:data_seg|altsyncram:mem3_rtl_0|altsyncram_rbo1:auto_generated  ; altsyncram_rbo1 ; work         ;
-;       |async_memory:stack_seg|               ; 0.5 (0.5)            ; 0.7 (0.7)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 32768             ; 4     ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:stack_seg                                                      ; async_memory    ; work         ;
-;          |altsyncram:mem0_rtl_0|             ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 8192              ; 3     ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:stack_seg|altsyncram:mem0_rtl_0                                ; altsyncram      ; work         ;
-;             |altsyncram_0do1:auto_generated| ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 8192              ; 3     ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:stack_seg|altsyncram:mem0_rtl_0|altsyncram_0do1:auto_generated ; altsyncram_0do1 ; work         ;
+;             |altsyncram_i8o1:auto_generated| ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 8192              ; 1     ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:data_seg|altsyncram:mem1_rtl_0|altsyncram_i8o1:auto_generated  ; altsyncram_i8o1 ; work         ;
+;          |altsyncram:mem2_rtl_0|             ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 8192              ; 1     ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:data_seg|altsyncram:mem2_rtl_0                                 ; altsyncram      ; work         ;
+;             |altsyncram_j8o1:auto_generated| ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 8192              ; 1     ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:data_seg|altsyncram:mem2_rtl_0|altsyncram_j8o1:auto_generated  ; altsyncram_j8o1 ; work         ;
+;          |altsyncram:mem3_rtl_0|             ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 8192              ; 1     ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:data_seg|altsyncram:mem3_rtl_0                                 ; altsyncram      ; work         ;
+;             |altsyncram_k8o1:auto_generated| ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 8192              ; 1     ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:data_seg|altsyncram:mem3_rtl_0|altsyncram_k8o1:auto_generated  ; altsyncram_k8o1 ; work         ;
+;       |async_memory:stack_seg|               ; 27.3 (27.3)          ; 27.3 (27.3)                      ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 47 (47)             ; 0 (0)                     ; 0 (0)         ; 32768             ; 4     ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:stack_seg                                                      ; async_memory    ; work         ;
+;          |altsyncram:mem0_rtl_0|             ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 8192              ; 1     ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:stack_seg|altsyncram:mem0_rtl_0                                ; altsyncram      ; work         ;
+;             |altsyncram_0do1:auto_generated| ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 8192              ; 1     ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:stack_seg|altsyncram:mem0_rtl_0|altsyncram_0do1:auto_generated ; altsyncram_0do1 ; work         ;
 ;          |altsyncram:mem1_rtl_0|             ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 8192              ; 1     ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:stack_seg|altsyncram:mem1_rtl_0                                ; altsyncram      ; work         ;
 ;             |altsyncram_1do1:auto_generated| ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 8192              ; 1     ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:stack_seg|altsyncram:mem1_rtl_0|altsyncram_1do1:auto_generated ; altsyncram_1do1 ; work         ;
-;          |altsyncram:mem2_rtl_0|             ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 8192              ; 0     ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:stack_seg|altsyncram:mem2_rtl_0                                ; altsyncram      ; work         ;
-;             |altsyncram_2do1:auto_generated| ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 8192              ; 0     ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:stack_seg|altsyncram:mem2_rtl_0|altsyncram_2do1:auto_generated ; altsyncram_2do1 ; work         ;
-;          |altsyncram:mem3_rtl_0|             ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 8192              ; 0     ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:stack_seg|altsyncram:mem3_rtl_0                                ; altsyncram      ; work         ;
-;             |altsyncram_3do1:auto_generated| ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 8192              ; 0     ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:stack_seg|altsyncram:mem3_rtl_0|altsyncram_3do1:auto_generated ; altsyncram_3do1 ; work         ;
-;       |serial_buffer:ser|                    ; 4.7 (4.7)            ; 5.3 (5.3)                        ; 0.7 (0.7)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 9 (9)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|serial_buffer:ser                                                           ; serial_buffer   ; work         ;
-;    |inst_rom:instruction_memory|             ; 14.4 (14.4)          ; 16.6 (16.6)                      ; 2.2 (2.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 18 (18)             ; 13 (13)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |processor|inst_rom:instruction_memory                                                                      ; inst_rom        ; work         ;
-;    |mux2:alu_b_mux|                          ; 14.3 (14.3)          ; 14.3 (14.3)                      ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 26 (26)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |processor|mux2:alu_b_mux                                                                                   ; mux2            ; work         ;
-;    |mux2:write_data_mux|                     ; 35.7 (35.7)          ; 40.2 (40.2)                      ; 4.5 (4.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 56 (56)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |processor|mux2:write_data_mux                                                                              ; mux2            ; work         ;
-;    |mux2:write_reg_mux|                      ; 0.6 (0.6)            ; 1.0 (1.0)                        ; 0.4 (0.4)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |processor|mux2:write_reg_mux                                                                               ; mux2            ; work         ;
-;    |program_counter:pc|                      ; 2.0 (2.0)            ; 2.0 (2.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 8 (8)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |processor|program_counter:pc                                                                               ; program_counter ; work         ;
-;    |register:register_file|                  ; 64.5 (64.5)          ; 71.7 (71.7)                      ; 7.3 (7.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 99 (99)             ; 78 (78)                   ; 0 (0)         ; 2048              ; 2     ; 0          ; 0    ; 0            ; |processor|register:register_file                                                                           ; register        ; work         ;
+;          |altsyncram:mem2_rtl_0|             ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 8192              ; 1     ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:stack_seg|altsyncram:mem2_rtl_0                                ; altsyncram      ; work         ;
+;             |altsyncram_2do1:auto_generated| ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 8192              ; 1     ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:stack_seg|altsyncram:mem2_rtl_0|altsyncram_2do1:auto_generated ; altsyncram_2do1 ; work         ;
+;          |altsyncram:mem3_rtl_0|             ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 8192              ; 1     ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:stack_seg|altsyncram:mem3_rtl_0                                ; altsyncram      ; work         ;
+;             |altsyncram_3do1:auto_generated| ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 8192              ; 1     ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:stack_seg|altsyncram:mem3_rtl_0|altsyncram_3do1:auto_generated ; altsyncram_3do1 ; work         ;
+;       |serial_buffer:ser|                    ; 4.5 (4.5)            ; 4.5 (4.5)                        ; 0.3 (0.3)                                         ; 0.4 (0.4)                        ; 0.0 (0.0)            ; 2 (2)               ; 9 (9)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|serial_buffer:ser                                                           ; serial_buffer   ; work         ;
+;    |inst_rom:instruction_memory|             ; 249.8 (249.8)        ; 251.8 (251.8)                    ; 2.2 (2.2)                                         ; 0.1 (0.1)                        ; 0.0 (0.0)            ; 295 (295)           ; 29 (29)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |processor|inst_rom:instruction_memory                                                                      ; inst_rom        ; work         ;
+;    |load_extender:load_ext|                  ; 7.5 (7.5)            ; 7.5 (7.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 11 (11)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |processor|load_extender:load_ext                                                                           ; load_extender   ; work         ;
+;    |mux2:alu_a_mux|                          ; 18.6 (18.6)          ; 21.0 (21.0)                      ; 2.5 (2.5)                                         ; 0.1 (0.1)                        ; 0.0 (0.0)            ; 36 (36)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |processor|mux2:alu_a_mux                                                                                   ; mux2            ; work         ;
+;    |mux2:alu_b_mux|                          ; 44.0 (44.0)          ; 45.2 (45.2)                      ; 1.2 (1.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 73 (73)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |processor|mux2:alu_b_mux                                                                                   ; mux2            ; work         ;
+;    |mux2:write_data_mux_pc|                  ; 60.5 (60.5)          ; 66.7 (66.7)                      ; 6.8 (6.8)                                         ; 0.6 (0.6)                        ; 0.0 (0.0)            ; 90 (90)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |processor|mux2:write_data_mux_pc                                                                           ; mux2            ; work         ;
+;    |mux2:write_reg_mux_ra|                   ; 1.3 (1.3)            ; 2.0 (2.0)                        ; 0.8 (0.8)                                         ; 0.1 (0.1)                        ; 0.0 (0.0)            ; 5 (5)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |processor|mux2:write_reg_mux_ra                                                                            ; mux2            ; work         ;
+;    |mux4:pc_mux|                             ; 10.0 (10.0)          ; 10.0 (10.0)                      ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 10 (10)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |processor|mux4:pc_mux                                                                                      ; mux4            ; work         ;
+;    |program_counter:pc|                      ; 25.5 (25.5)          ; 25.1 (25.1)                      ; 1.1 (1.1)                                         ; 1.5 (1.5)                        ; 0.0 (0.0)            ; 35 (35)             ; 32 (32)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |processor|program_counter:pc                                                                               ; program_counter ; work         ;
+;    |register:register_file|                  ; 55.1 (55.1)          ; 68.3 (68.3)                      ; 13.8 (13.8)                                       ; 0.5 (0.5)                        ; 0.0 (0.0)            ; 66 (66)             ; 86 (86)                   ; 0 (0)         ; 2048              ; 2     ; 0          ; 0    ; 0            ; |processor|register:register_file                                                                           ; register        ; work         ;
 ;       |altsyncram:regs_rtl_0|                ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 1024              ; 1     ; 0          ; 0    ; 0            ; |processor|register:register_file|altsyncram:regs_rtl_0                                                     ; altsyncram      ; work         ;
 ;          |altsyncram_6ji1:auto_generated|    ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 1024              ; 1     ; 0          ; 0    ; 0            ; |processor|register:register_file|altsyncram:regs_rtl_0|altsyncram_6ji1:auto_generated                      ; altsyncram_6ji1 ; work         ;
 ;       |altsyncram:regs_rtl_1|                ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 1024              ; 1     ; 0          ; 0    ; 0            ; |processor|register:register_file|altsyncram:regs_rtl_1                                                     ; altsyncram      ; work         ;
@@ -814,94 +816,145 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; serial_rden_out ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; serial_wren_out ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; clk             ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; reset           ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; reset           ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; serial_in[0]    ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; serial_valid_in ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; serial_ready_in ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; serial_valid_in ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; serial_in[0]    ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; serial_in[2]    ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; serial_in[3]    ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; serial_in[1]    ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; serial_in[4]    ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; serial_in[7]    ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; serial_in[4]    ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; serial_in[1]    ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; serial_in[5]    ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; serial_in[6]    ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; serial_in[7]    ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; serial_in[3]    ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; serial_in[2]    ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 +-----------------+----------+----+------+------+----+------+-------+--------+------------------------+--------------------------+
 
 
-+----------------------------------------------------------------------------------------+
-; Pad To Core Delay Chain Fanout                                                         ;
-+----------------------------------------------------------+-------------------+---------+
-; Source Pin / Fanout                                      ; Pad To Core Index ; Setting ;
-+----------------------------------------------------------+-------------------+---------+
-; clk                                                      ;                   ;         ;
-; reset                                                    ;                   ;         ;
-;      - inst_rom:instruction_memory|out[30]               ; 0                 ; 0       ;
-;      - inst_rom:instruction_memory|out[22]               ; 0                 ; 0       ;
-;      - inst_rom:instruction_memory|out[26]               ; 0                 ; 0       ;
-;      - inst_rom:instruction_memory|out[24]               ; 0                 ; 0       ;
-;      - inst_rom:instruction_memory|out[25]               ; 0                 ; 0       ;
-;      - inst_rom:instruction_memory|out[29]               ; 0                 ; 0       ;
-;      - inst_rom:instruction_memory|out[5]                ; 0                 ; 0       ;
-;      - inst_rom:instruction_memory|out[27]               ; 0                 ; 0       ;
-;      - inst_rom:instruction_memory|out[28]               ; 0                 ; 0       ;
-;      - data_memory:data_mem|serial_buffer:ser|sbyte[3]   ; 0                 ; 0       ;
-;      - data_memory:data_mem|serial_buffer:ser|sbyte[2]   ; 0                 ; 0       ;
-;      - data_memory:data_mem|serial_buffer:ser|sbyte[0]   ; 0                 ; 0       ;
-;      - data_memory:data_mem|serial_buffer:ser|sbyte[1]   ; 0                 ; 0       ;
-;      - data_memory:data_mem|serial_buffer:ser|sbyte[4]   ; 0                 ; 0       ;
-;      - data_memory:data_mem|serial_buffer:ser|sbyte[7]   ; 0                 ; 0       ;
-;      - data_memory:data_mem|serial_buffer:ser|sbyte[6]   ; 0                 ; 0       ;
-;      - data_memory:data_mem|serial_buffer:ser|sbyte[5]   ; 0                 ; 0       ;
-;      - data_memory:data_mem|serial_buffer:ser|write_en   ; 0                 ; 0       ;
-;      - program_counter:pc|pc_out[3]                      ; 0                 ; 0       ;
-;      - program_counter:pc|pc_out[4]                      ; 0                 ; 0       ;
-;      - program_counter:pc|pc_out[6]                      ; 0                 ; 0       ;
-;      - program_counter:pc|pc_out[2]                      ; 0                 ; 0       ;
-;      - program_counter:pc|pc_out[5]                      ; 0                 ; 0       ;
-;      - program_counter:pc|pc_out[7]                      ; 0                 ; 0       ;
-;      - program_counter:pc|pc_out[8]                      ; 0                 ; 0       ;
-;      - program_counter:pc|pc_out[9]                      ; 0                 ; 0       ;
-;      - data_memory:data_mem|serial_buffer:ser|sbyte[3]~1 ; 0                 ; 0       ;
-;      - inst_rom:instruction_memory|out~0                 ; 0                 ; 0       ;
-;      - inst_rom:instruction_memory|out~1                 ; 0                 ; 0       ;
-;      - inst_rom:instruction_memory|out~2                 ; 0                 ; 0       ;
-;      - inst_rom:instruction_memory|out~3                 ; 0                 ; 0       ;
-;      - data_memory:data_mem|async_memory:data_seg|mem3~0 ; 0                 ; 0       ;
-; serial_ready_in                                          ;                   ;         ;
-;      - mux2:write_data_mux|y[0]~3                        ; 0                 ; 0       ;
-; serial_valid_in                                          ;                   ;         ;
-;      - mux2:write_data_mux|y[0]~3                        ; 1                 ; 0       ;
-; serial_in[0]                                             ;                   ;         ;
-;      - mux2:write_data_mux|y[0]~3                        ; 1                 ; 0       ;
-; serial_in[2]                                             ;                   ;         ;
-;      - mux2:write_data_mux|y[2]~25                       ; 0                 ; 0       ;
-; serial_in[3]                                             ;                   ;         ;
-;      - mux2:write_data_mux|y[3]~28                       ; 1                 ; 0       ;
-; serial_in[1]                                             ;                   ;         ;
-;      - mux2:write_data_mux|y[1]~30                       ; 0                 ; 0       ;
-; serial_in[4]                                             ;                   ;         ;
-;      - mux2:write_data_mux|y[4]~32                       ; 1                 ; 0       ;
-; serial_in[5]                                             ;                   ;         ;
-;      - mux2:write_data_mux|y[5]~34                       ; 0                 ; 0       ;
-; serial_in[6]                                             ;                   ;         ;
-;      - mux2:write_data_mux|y[6]~36                       ; 0                 ; 0       ;
-; serial_in[7]                                             ;                   ;         ;
-;      - mux2:write_data_mux|y[7]~38                       ; 0                 ; 0       ;
-+----------------------------------------------------------+-------------------+---------+
++-----------------------------------------------------------------------------------------+
+; Pad To Core Delay Chain Fanout                                                          ;
++-----------------------------------------------------------+-------------------+---------+
+; Source Pin / Fanout                                       ; Pad To Core Index ; Setting ;
++-----------------------------------------------------------+-------------------+---------+
+; clk                                                       ;                   ;         ;
+; reset                                                     ;                   ;         ;
+;      - inst_rom:instruction_memory|out[19]                ; 1                 ; 0       ;
+;      - inst_rom:instruction_memory|out[22]                ; 1                 ; 0       ;
+;      - inst_rom:instruction_memory|out[23]                ; 1                 ; 0       ;
+;      - inst_rom:instruction_memory|out[21]                ; 1                 ; 0       ;
+;      - inst_rom:instruction_memory|out[20]                ; 1                 ; 0       ;
+;      - inst_rom:instruction_memory|out[30]                ; 1                 ; 0       ;
+;      - inst_rom:instruction_memory|out[29]                ; 1                 ; 0       ;
+;      - inst_rom:instruction_memory|out[28]                ; 1                 ; 0       ;
+;      - inst_rom:instruction_memory|out[27]                ; 1                 ; 0       ;
+;      - inst_rom:instruction_memory|out[26]                ; 1                 ; 0       ;
+;      - inst_rom:instruction_memory|out[24]                ; 1                 ; 0       ;
+;      - inst_rom:instruction_memory|out[31]                ; 1                 ; 0       ;
+;      - inst_rom:instruction_memory|out[7]                 ; 1                 ; 0       ;
+;      - inst_rom:instruction_memory|out[5]                 ; 1                 ; 0       ;
+;      - inst_rom:instruction_memory|out[4]                 ; 1                 ; 0       ;
+;      - inst_rom:instruction_memory|out[3]                 ; 1                 ; 0       ;
+;      - inst_rom:instruction_memory|out[2]                 ; 1                 ; 0       ;
+;      - inst_rom:instruction_memory|out[25]                ; 1                 ; 0       ;
+;      - inst_rom:instruction_memory|out[16]                ; 1                 ; 0       ;
+;      - data_memory:data_mem|serial_buffer:ser|sbyte[7]    ; 1                 ; 0       ;
+;      - data_memory:data_mem|serial_buffer:ser|sbyte[6]    ; 1                 ; 0       ;
+;      - data_memory:data_mem|serial_buffer:ser|sbyte[5]    ; 1                 ; 0       ;
+;      - data_memory:data_mem|serial_buffer:ser|sbyte[4]    ; 1                 ; 0       ;
+;      - data_memory:data_mem|serial_buffer:ser|sbyte[3]    ; 1                 ; 0       ;
+;      - data_memory:data_mem|serial_buffer:ser|sbyte[2]    ; 1                 ; 0       ;
+;      - data_memory:data_mem|serial_buffer:ser|sbyte[1]    ; 1                 ; 0       ;
+;      - data_memory:data_mem|serial_buffer:ser|sbyte[0]    ; 1                 ; 0       ;
+;      - data_memory:data_mem|serial_buffer:ser|write_en    ; 1                 ; 0       ;
+;      - program_counter:pc|pc_out[27]                      ; 1                 ; 0       ;
+;      - program_counter:pc|pc_out[26]                      ; 1                 ; 0       ;
+;      - program_counter:pc|pc_out[25]                      ; 1                 ; 0       ;
+;      - program_counter:pc|pc_out[24]                      ; 1                 ; 0       ;
+;      - program_counter:pc|pc_out[23]                      ; 1                 ; 0       ;
+;      - program_counter:pc|pc_out[22]                      ; 1                 ; 0       ;
+;      - program_counter:pc|pc_out[21]                      ; 1                 ; 0       ;
+;      - program_counter:pc|pc_out[20]                      ; 1                 ; 0       ;
+;      - program_counter:pc|pc_out[19]                      ; 1                 ; 0       ;
+;      - program_counter:pc|pc_out[18]                      ; 1                 ; 0       ;
+;      - program_counter:pc|pc_out[17]                      ; 1                 ; 0       ;
+;      - program_counter:pc|pc_out[16]                      ; 1                 ; 0       ;
+;      - program_counter:pc|pc_out[15]                      ; 1                 ; 0       ;
+;      - program_counter:pc|pc_out[14]                      ; 1                 ; 0       ;
+;      - program_counter:pc|pc_out[13]                      ; 1                 ; 0       ;
+;      - program_counter:pc|pc_out[12]                      ; 1                 ; 0       ;
+;      - data_memory:data_mem|serial_buffer:ser|sbyte[7]~0  ; 1                 ; 0       ;
+;      - inst_rom:instruction_memory|out~2                  ; 1                 ; 0       ;
+;      - inst_rom:instruction_memory|out~3                  ; 1                 ; 0       ;
+;      - inst_rom:instruction_memory|out~6                  ; 1                 ; 0       ;
+;      - inst_rom:instruction_memory|out~7                  ; 1                 ; 0       ;
+;      - inst_rom:instruction_memory|out~8                  ; 1                 ; 0       ;
+;      - inst_rom:instruction_memory|out~9                  ; 1                 ; 0       ;
+;      - inst_rom:instruction_memory|out~11                 ; 1                 ; 0       ;
+;      - inst_rom:instruction_memory|out~12                 ; 1                 ; 0       ;
+;      - inst_rom:instruction_memory|out~13                 ; 1                 ; 0       ;
+;      - inst_rom:instruction_memory|out~14                 ; 1                 ; 0       ;
+;      - data_memory:data_mem|async_memory:data_seg|mem0~0  ; 1                 ; 0       ;
+;      - data_memory:data_mem|async_memory:stack_seg|mem2~0 ; 1                 ; 0       ;
+;      - data_memory:data_mem|async_memory:data_seg|mem2~0  ; 1                 ; 0       ;
+;      - data_memory:data_mem|async_memory:stack_seg|mem3~0 ; 1                 ; 0       ;
+;      - data_memory:data_mem|async_memory:data_seg|mem3~0  ; 1                 ; 0       ;
+;      - data_memory:data_mem|async_memory:stack_seg|mem1~0 ; 1                 ; 0       ;
+;      - program_counter:pc|pc_out~1                        ; 1                 ; 0       ;
+;      - program_counter:pc|pc_out[1]~2                     ; 1                 ; 0       ;
+;      - program_counter:pc|pc_out~3                        ; 1                 ; 0       ;
+;      - program_counter:pc|pc_out~4                        ; 1                 ; 0       ;
+;      - program_counter:pc|pc_out~5                        ; 1                 ; 0       ;
+;      - program_counter:pc|pc_out~6                        ; 1                 ; 0       ;
+;      - program_counter:pc|pc_out~7                        ; 1                 ; 0       ;
+;      - program_counter:pc|pc_out~8                        ; 1                 ; 0       ;
+;      - program_counter:pc|pc_out~9                        ; 1                 ; 0       ;
+;      - program_counter:pc|pc_out~10                       ; 1                 ; 0       ;
+;      - program_counter:pc|pc_out~11                       ; 1                 ; 0       ;
+;      - program_counter:pc|pc_out~12                       ; 1                 ; 0       ;
+;      - program_counter:pc|pc_out[31]~13                   ; 1                 ; 0       ;
+;      - program_counter:pc|pc_out[31]~14                   ; 1                 ; 0       ;
+; serial_in[0]                                              ;                   ;         ;
+;      - data_memory:data_mem|Selector31~0                  ; 0                 ; 0       ;
+; serial_valid_in                                           ;                   ;         ;
+;      - data_memory:data_mem|Selector31~0                  ; 0                 ; 0       ;
+; serial_ready_in                                           ;                   ;         ;
+;      - data_memory:data_mem|Selector31~0                  ; 0                 ; 0       ;
+; serial_in[7]                                              ;                   ;         ;
+;      - load_extender:load_ext|Mux0~4                      ; 1                 ; 0       ;
+;      - data_memory:data_mem|Selector24~3                  ; 1                 ; 0       ;
+; serial_in[4]                                              ;                   ;         ;
+;      - mux2:write_data_mux_pc|y[4]~13                     ; 0                 ; 0       ;
+; serial_in[1]                                              ;                   ;         ;
+;      - mux2:write_data_mux_pc|y[1]~39                     ; 1                 ; 0       ;
+; serial_in[5]                                              ;                   ;         ;
+;      - mux2:write_data_mux_pc|y[5]~46                     ; 0                 ; 0       ;
+; serial_in[6]                                              ;                   ;         ;
+;      - mux2:write_data_mux_pc|y[6]~48                     ; 0                 ; 0       ;
+; serial_in[3]                                              ;                   ;         ;
+;      - mux2:write_data_mux_pc|y[3]~61                     ; 1                 ; 0       ;
+; serial_in[2]                                              ;                   ;         ;
+;      - mux2:write_data_mux_pc|y[2]~64                     ; 0                 ; 0       ;
++-----------------------------------------------------------+-------------------+---------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                                                                               ;
-+----------------------------------------------------+--------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
-; Name                                               ; Location           ; Fan-Out ; Usage                      ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+----------------------------------------------------+--------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
-; clk                                                ; PIN_G12            ; 118     ; Clock                      ; yes    ; Global Clock         ; GCLK9            ; --                        ;
-; data_memory:data_mem|async_memory:data_seg|mem3~3  ; LABCELL_X5_Y13_N30 ; 4       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
-; data_memory:data_mem|async_memory:stack_seg|mem3~0 ; LABCELL_X2_Y17_N15 ; 4       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
-; data_memory:data_mem|serial_buffer:ser|sbyte[3]~1  ; LABCELL_X6_Y17_N0  ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; register:register_file|always0~0                   ; LABCELL_X6_Y16_N0  ; 4       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
-; reset                                              ; PIN_K4             ; 32      ; Sync. clear, Sync. load    ; no     ; --                   ; --               ; --                        ;
-+----------------------------------------------------+--------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                                                                                ;
++----------------------------------------------------+---------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
+; Name                                               ; Location            ; Fan-Out ; Usage                      ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++----------------------------------------------------+---------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
+; clk                                                ; PIN_G12             ; 166     ; Clock                      ; yes    ; Global Clock         ; GCLK9            ; --                        ;
+; data_memory:data_mem|async_memory:data_seg|mem0~1  ; LABCELL_X19_Y25_N42 ; 1       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
+; data_memory:data_mem|async_memory:data_seg|mem1~0  ; LABCELL_X21_Y25_N18 ; 1       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
+; data_memory:data_mem|async_memory:data_seg|mem2~0  ; LABCELL_X21_Y25_N12 ; 1       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
+; data_memory:data_mem|async_memory:data_seg|mem3~0  ; LABCELL_X21_Y25_N0  ; 1       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
+; data_memory:data_mem|async_memory:stack_seg|mem0~0 ; LABCELL_X19_Y25_N15 ; 1       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
+; data_memory:data_mem|async_memory:stack_seg|mem1~0 ; LABCELL_X21_Y25_N48 ; 1       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
+; data_memory:data_mem|async_memory:stack_seg|mem2~0 ; LABCELL_X21_Y25_N45 ; 1       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
+; data_memory:data_mem|async_memory:stack_seg|mem3~0 ; LABCELL_X21_Y25_N27 ; 1       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
+; data_memory:data_mem|serial_buffer:ser|sbyte[7]~0  ; LABCELL_X21_Y25_N54 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; program_counter:pc|pc_out[1]~2                     ; LABCELL_X26_Y18_N54 ; 2       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; register:register_file|always0~1                   ; LABCELL_X26_Y19_N18 ; 4       ; Clock enable, Write enable ; no     ; --                   ; --               ; --                        ;
+; reset                                              ; PIN_A4              ; 75      ; Sync. clear, Sync. load    ; no     ; --                   ; --               ; --                        ;
++----------------------------------------------------+---------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
 
 
 +-------------------------------------------------------------------------------------------------+
@@ -909,52 +962,52 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+----------+---------+----------------------+------------------+---------------------------+
 ; Name ; Location ; Fan-Out ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +------+----------+---------+----------------------+------------------+---------------------------+
-; clk  ; PIN_G12  ; 118     ; Global Clock         ; GCLK9            ; --                        ;
+; clk  ; PIN_G12  ; 166     ; Global Clock         ; GCLK9            ; --                        ;
 +------+----------+---------+----------------------+------------------+---------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter RAM Summary                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
-+-------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+-------------+-------+----------------------------------------------+------------------------------------------------+----------------------+-----------------+-----------------+----------+------------------------+-----------------------+
-; Name                                                                                                        ; Type ; Mode             ; Clock Mode   ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Port A Input Registers ; Port A Output Registers ; Port B Input Registers ; Port B Output Registers ; Size ; Implementation Port A Depth ; Implementation Port A Width ; Implementation Port B Depth ; Implementation Port B Width ; Implementation Bits ; M10K blocks ; MLABs ; MIF                                          ; Location                                       ; Mixed Width RDW Mode ; Port A RDW Mode ; Port B RDW Mode ; ECC Mode ; ECC Pipeline Registers ; Fits in MLABs         ;
-+-------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+-------------+-------+----------------------------------------------+------------------------------------------------+----------------------+-----------------+-----------------+----------+------------------------+-----------------------+
-; data_memory:data_mem|async_memory:data_seg|altsyncram:mem0_rtl_0|altsyncram_obo1:auto_generated|ALTSYNCRAM  ; AUTO ; Simple Dual Port ; Single Clock ; 1024         ; 8            ; 1024         ; 8            ; yes                    ; no                      ; yes                    ; no                      ; 8192 ; 1024                        ; 8                           ; 1024                        ; 8                           ; 8192                ; 3           ; 0     ; db/coe181.ram0_async_memory_9d7ce1cf.hdl.mif ; M10K_X3_Y14_N0, M10K_X3_Y13_N0, M10K_X3_Y17_N0 ; Don't care           ; New data        ; New data        ; Off      ; No                     ; No - Address Too Wide ;
-; data_memory:data_mem|async_memory:data_seg|altsyncram:mem1_rtl_0|altsyncram_pbo1:auto_generated|ALTSYNCRAM  ; AUTO ; Simple Dual Port ; Single Clock ; 1024         ; 8            ; 1024         ; 8            ; yes                    ; no                      ; yes                    ; no                      ; 8192 ; 1024                        ; 8                           ; 1024                        ; 8                           ; 8192                ; 2           ; 0     ; db/coe181.ram1_async_memory_9d7ce1cf.hdl.mif ; M10K_X3_Y17_N0, M10K_X11_Y14_N0                ; Don't care           ; New data        ; New data        ; Off      ; No                     ; No - Address Too Wide ;
-; data_memory:data_mem|async_memory:data_seg|altsyncram:mem2_rtl_0|altsyncram_qbo1:auto_generated|ALTSYNCRAM  ; AUTO ; Simple Dual Port ; Single Clock ; 1024         ; 8            ; 1024         ; 8            ; yes                    ; no                      ; yes                    ; no                      ; 8192 ; 1024                        ; 8                           ; 1024                        ; 8                           ; 8192                ; 2           ; 0     ; db/coe181.ram2_async_memory_9d7ce1cf.hdl.mif ; M10K_X3_Y14_N0, M10K_X3_Y13_N0                 ; Don't care           ; New data        ; New data        ; Off      ; No                     ; No - Address Too Wide ;
-; data_memory:data_mem|async_memory:data_seg|altsyncram:mem3_rtl_0|altsyncram_rbo1:auto_generated|ALTSYNCRAM  ; AUTO ; Simple Dual Port ; Single Clock ; 1024         ; 8            ; 1024         ; 8            ; yes                    ; no                      ; yes                    ; no                      ; 8192 ; 1024                        ; 8                           ; 1024                        ; 8                           ; 8192                ; 2           ; 0     ; db/coe181.ram3_async_memory_9d7ce1cf.hdl.mif ; M10K_X3_Y14_N0, M10K_X3_Y13_N0                 ; Don't care           ; New data        ; New data        ; Off      ; No                     ; No - Address Too Wide ;
-; data_memory:data_mem|async_memory:stack_seg|altsyncram:mem0_rtl_0|altsyncram_0do1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; Single Clock ; 1024         ; 8            ; 1024         ; 8            ; yes                    ; no                      ; yes                    ; no                      ; 8192 ; 1024                        ; 8                           ; 1024                        ; 8                           ; 8192                ; 3           ; 0     ; db/coe181.ram0_async_memory_ea4acf6d.hdl.mif ; M10K_X3_Y18_N0, M10K_X3_Y12_N0, M10K_X3_Y11_N0 ; Don't care           ; New data        ; New data        ; Off      ; No                     ; No - Address Too Wide ;
-; data_memory:data_mem|async_memory:stack_seg|altsyncram:mem1_rtl_0|altsyncram_1do1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; Single Clock ; 1024         ; 8            ; 1024         ; 8            ; yes                    ; no                      ; yes                    ; no                      ; 8192 ; 1024                        ; 8                           ; 1024                        ; 8                           ; 8192                ; 2           ; 0     ; db/coe181.ram1_async_memory_ea4acf6d.hdl.mif ; M10K_X3_Y11_N0, M10K_X11_Y15_N0                ; Don't care           ; New data        ; New data        ; Off      ; No                     ; No - Address Too Wide ;
-; data_memory:data_mem|async_memory:stack_seg|altsyncram:mem2_rtl_0|altsyncram_2do1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; Single Clock ; 1024         ; 8            ; 1024         ; 8            ; yes                    ; no                      ; yes                    ; no                      ; 8192 ; 1024                        ; 8                           ; 1024                        ; 8                           ; 8192                ; 2           ; 0     ; db/coe181.ram2_async_memory_ea4acf6d.hdl.mif ; M10K_X3_Y18_N0, M10K_X3_Y12_N0                 ; Don't care           ; New data        ; New data        ; Off      ; No                     ; No - Address Too Wide ;
-; data_memory:data_mem|async_memory:stack_seg|altsyncram:mem3_rtl_0|altsyncram_3do1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; Single Clock ; 1024         ; 8            ; 1024         ; 8            ; yes                    ; no                      ; yes                    ; no                      ; 8192 ; 1024                        ; 8                           ; 1024                        ; 8                           ; 8192                ; 2           ; 0     ; db/coe181.ram3_async_memory_ea4acf6d.hdl.mif ; M10K_X3_Y18_N0, M10K_X3_Y12_N0                 ; Don't care           ; New data        ; New data        ; Off      ; No                     ; No - Address Too Wide ;
-; register:register_file|altsyncram:regs_rtl_0|altsyncram_6ji1:auto_generated|ALTSYNCRAM                      ; AUTO ; Simple Dual Port ; Single Clock ; 32           ; 32           ; 32           ; 32           ; yes                    ; no                      ; yes                    ; no                      ; 1024 ; 32                          ; 32                          ; 32                          ; 32                          ; 1024                ; 1           ; 0     ; None                                         ; M10K_X3_Y15_N0                                 ; Don't care           ; New data        ; New data        ; Off      ; No                     ; Yes                   ;
-; register:register_file|altsyncram:regs_rtl_1|altsyncram_6ji1:auto_generated|ALTSYNCRAM                      ; AUTO ; Simple Dual Port ; Single Clock ; 32           ; 32           ; 32           ; 32           ; yes                    ; no                      ; yes                    ; no                      ; 1024 ; 32                          ; 32                          ; 32                          ; 32                          ; 1024                ; 1           ; 0     ; None                                         ; M10K_X3_Y16_N0                                 ; Don't care           ; New data        ; New data        ; Off      ; No                     ; Yes                   ;
-+-------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+-------------+-------+----------------------------------------------+------------------------------------------------+----------------------+-----------------+-----------------+----------+------------------------+-----------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter RAM Summary                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ;
++-------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+-------------+-------+----------------------------------------------+-----------------+----------------------+-----------------+-----------------+----------+------------------------+-----------------------+
+; Name                                                                                                        ; Type ; Mode             ; Clock Mode   ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Port A Input Registers ; Port A Output Registers ; Port B Input Registers ; Port B Output Registers ; Size ; Implementation Port A Depth ; Implementation Port A Width ; Implementation Port B Depth ; Implementation Port B Width ; Implementation Bits ; M10K blocks ; MLABs ; MIF                                          ; Location        ; Mixed Width RDW Mode ; Port A RDW Mode ; Port B RDW Mode ; ECC Mode ; ECC Pipeline Registers ; Fits in MLABs         ;
++-------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+-------------+-------+----------------------------------------------+-----------------+----------------------+-----------------+-----------------+----------+------------------------+-----------------------+
+; data_memory:data_mem|async_memory:data_seg|altsyncram:mem0_rtl_0|altsyncram_h8o1:auto_generated|ALTSYNCRAM  ; AUTO ; Simple Dual Port ; Single Clock ; 1024         ; 8            ; 1024         ; 8            ; yes                    ; no                      ; yes                    ; no                      ; 8192 ; 1024                        ; 8                           ; 1024                        ; 8                           ; 8192                ; 1           ; 0     ; db/coe181.ram0_async_memory_ed3809b0.hdl.mif ; M10K_X22_Y22_N0 ; Don't care           ; New data        ; New data        ; Off      ; No                     ; No - Address Too Wide ;
+; data_memory:data_mem|async_memory:data_seg|altsyncram:mem1_rtl_0|altsyncram_i8o1:auto_generated|ALTSYNCRAM  ; AUTO ; Simple Dual Port ; Single Clock ; 1024         ; 8            ; 1024         ; 8            ; yes                    ; no                      ; yes                    ; no                      ; 8192 ; 1024                        ; 8                           ; 1024                        ; 8                           ; 8192                ; 1           ; 0     ; db/coe181.ram1_async_memory_ed3809b0.hdl.mif ; M10K_X22_Y20_N0 ; Don't care           ; New data        ; New data        ; Off      ; No                     ; No - Address Too Wide ;
+; data_memory:data_mem|async_memory:data_seg|altsyncram:mem2_rtl_0|altsyncram_j8o1:auto_generated|ALTSYNCRAM  ; AUTO ; Simple Dual Port ; Single Clock ; 1024         ; 8            ; 1024         ; 8            ; yes                    ; no                      ; yes                    ; no                      ; 8192 ; 1024                        ; 8                           ; 1024                        ; 8                           ; 8192                ; 1           ; 0     ; db/coe181.ram2_async_memory_ed3809b0.hdl.mif ; M10K_X22_Y21_N0 ; Don't care           ; New data        ; New data        ; Off      ; No                     ; No - Address Too Wide ;
+; data_memory:data_mem|async_memory:data_seg|altsyncram:mem3_rtl_0|altsyncram_k8o1:auto_generated|ALTSYNCRAM  ; AUTO ; Simple Dual Port ; Single Clock ; 1024         ; 8            ; 1024         ; 8            ; yes                    ; no                      ; yes                    ; no                      ; 8192 ; 1024                        ; 8                           ; 1024                        ; 8                           ; 8192                ; 1           ; 0     ; db/coe181.ram3_async_memory_ed3809b0.hdl.mif ; M10K_X22_Y24_N0 ; Don't care           ; New data        ; New data        ; Off      ; No                     ; No - Address Too Wide ;
+; data_memory:data_mem|async_memory:stack_seg|altsyncram:mem0_rtl_0|altsyncram_0do1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; Single Clock ; 1024         ; 8            ; 1024         ; 8            ; yes                    ; no                      ; yes                    ; no                      ; 8192 ; 1024                        ; 8                           ; 1024                        ; 8                           ; 8192                ; 1           ; 0     ; db/coe181.ram0_async_memory_ea4acf6d.hdl.mif ; M10K_X30_Y21_N0 ; Don't care           ; New data        ; New data        ; Off      ; No                     ; No - Address Too Wide ;
+; data_memory:data_mem|async_memory:stack_seg|altsyncram:mem1_rtl_0|altsyncram_1do1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; Single Clock ; 1024         ; 8            ; 1024         ; 8            ; yes                    ; no                      ; yes                    ; no                      ; 8192 ; 1024                        ; 8                           ; 1024                        ; 8                           ; 8192                ; 1           ; 0     ; db/coe181.ram1_async_memory_ea4acf6d.hdl.mif ; M10K_X22_Y23_N0 ; Don't care           ; New data        ; New data        ; Off      ; No                     ; No - Address Too Wide ;
+; data_memory:data_mem|async_memory:stack_seg|altsyncram:mem2_rtl_0|altsyncram_2do1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; Single Clock ; 1024         ; 8            ; 1024         ; 8            ; yes                    ; no                      ; yes                    ; no                      ; 8192 ; 1024                        ; 8                           ; 1024                        ; 8                           ; 8192                ; 1           ; 0     ; db/coe181.ram2_async_memory_ea4acf6d.hdl.mif ; M10K_X22_Y17_N0 ; Don't care           ; New data        ; New data        ; Off      ; No                     ; No - Address Too Wide ;
+; data_memory:data_mem|async_memory:stack_seg|altsyncram:mem3_rtl_0|altsyncram_3do1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; Single Clock ; 1024         ; 8            ; 1024         ; 8            ; yes                    ; no                      ; yes                    ; no                      ; 8192 ; 1024                        ; 8                           ; 1024                        ; 8                           ; 8192                ; 1           ; 0     ; db/coe181.ram3_async_memory_ea4acf6d.hdl.mif ; M10K_X22_Y25_N0 ; Don't care           ; New data        ; New data        ; Off      ; No                     ; No - Address Too Wide ;
+; register:register_file|altsyncram:regs_rtl_0|altsyncram_6ji1:auto_generated|ALTSYNCRAM                      ; AUTO ; Simple Dual Port ; Single Clock ; 32           ; 32           ; 32           ; 32           ; yes                    ; no                      ; yes                    ; no                      ; 1024 ; 32                          ; 32                          ; 32                          ; 32                          ; 1024                ; 1           ; 0     ; None                                         ; M10K_X22_Y19_N0 ; Don't care           ; New data        ; New data        ; Off      ; No                     ; Yes                   ;
+; register:register_file|altsyncram:regs_rtl_1|altsyncram_6ji1:auto_generated|ALTSYNCRAM                      ; AUTO ; Simple Dual Port ; Single Clock ; 32           ; 32           ; 32           ; 32           ; yes                    ; no                      ; yes                    ; no                      ; 1024 ; 32                          ; 32                          ; 32                          ; 32                          ; 1024                ; 1           ; 0     ; None                                         ; M10K_X22_Y18_N0 ; Don't care           ; New data        ; New data        ; Off      ; No                     ; Yes                   ;
++-------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+-------------+-------+----------------------------------------------+-----------------+----------------------+-----------------+-----------------+----------+------------------------+-----------------------+
 Note: Fitter may spread logical memories into multiple blocks to improve timing. The actual required RAM blocks can be found in the Fitter Resource Usage section.
 
 
-+----------------------------------------------------------+
-; Routing Usage Summary                                    ;
-+------------------------------+---------------------------+
-; Routing Resource Type        ; Usage                     ;
-+------------------------------+---------------------------+
-; Block interconnects          ; 1,144 / 140,056 ( < 1 % ) ;
-; C12 interconnects            ; 6 / 6,048 ( < 1 % )       ;
-; C2 interconnects             ; 412 / 54,648 ( < 1 % )    ;
-; C4 interconnects             ; 186 / 25,920 ( < 1 % )    ;
-; DQS bus muxes                ; 0 / 17 ( 0 % )            ;
-; DQS-18 I/O buses             ; 0 / 17 ( 0 % )            ;
-; DQS-9 I/O buses              ; 0 / 17 ( 0 % )            ;
-; Direct links                 ; 63 / 140,056 ( < 1 % )    ;
-; Global clocks                ; 1 / 16 ( 6 % )            ;
-; Local interconnects          ; 144 / 36,960 ( < 1 % )    ;
-; Quadrant clocks              ; 0 / 88 ( 0 % )            ;
-; R14 interconnects            ; 14 / 5,984 ( < 1 % )      ;
-; R14/C12 interconnect drivers ; 19 / 9,504 ( < 1 % )      ;
-; R3 interconnects             ; 496 / 60,192 ( < 1 % )    ;
-; R6 interconnects             ; 624 / 127,072 ( < 1 % )   ;
-; Spine clocks                 ; 1 / 120 ( < 1 % )         ;
-; Wire stub REs                ; 0 / 7,344 ( 0 % )         ;
-+------------------------------+---------------------------+
++--------------------------------------------------------+
+; Routing Usage Summary                                  ;
++------------------------------+-------------------------+
+; Routing Resource Type        ; Usage                   ;
++------------------------------+-------------------------+
+; Block interconnects          ; 3,193 / 140,056 ( 2 % ) ;
+; C12 interconnects            ; 69 / 6,048 ( 1 % )      ;
+; C2 interconnects             ; 1,182 / 54,648 ( 2 % )  ;
+; C4 interconnects             ; 641 / 25,920 ( 2 % )    ;
+; DQS bus muxes                ; 0 / 17 ( 0 % )          ;
+; DQS-18 I/O buses             ; 0 / 17 ( 0 % )          ;
+; DQS-9 I/O buses              ; 0 / 17 ( 0 % )          ;
+; Direct links                 ; 159 / 140,056 ( < 1 % ) ;
+; Global clocks                ; 1 / 16 ( 6 % )          ;
+; Local interconnects          ; 639 / 36,960 ( 2 % )    ;
+; Quadrant clocks              ; 0 / 88 ( 0 % )          ;
+; R14 interconnects            ; 95 / 5,984 ( 2 % )      ;
+; R14/C12 interconnect drivers ; 146 / 9,504 ( 2 % )     ;
+; R3 interconnects             ; 1,386 / 60,192 ( 2 % )  ;
+; R6 interconnects             ; 2,308 / 127,072 ( 2 % ) ;
+; Spine clocks                 ; 3 / 120 ( 3 % )         ;
+; Wire stub REs                ; 0 / 7,344 ( 0 % )       ;
++------------------------------+-------------------------+
 
 
 +------------------------------------------+
@@ -1028,16 +1081,16 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 ; serial_wren_out    ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; clk                ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; reset              ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; serial_ready_in    ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; serial_valid_in    ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; serial_in[0]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; serial_in[2]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; serial_in[3]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; serial_in[1]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; serial_valid_in    ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; serial_ready_in    ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; serial_in[7]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; serial_in[4]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; serial_in[1]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; serial_in[5]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; serial_in[6]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; serial_in[7]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; serial_in[3]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; serial_in[2]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 +--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
 
 
@@ -1084,28 +1137,6 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 +---------------------------+--------+
 
 
-+------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Summary              ;
-+-----------------+----------------------+-------------------+
-; Source Clock(s) ; Destination Clock(s) ; Delay Added in ns ;
-+-----------------+----------------------+-------------------+
-Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
-This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
-
-
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Details                                                                                                                         ;
-+-------------------------------------+-------------------------------------------------------------------------------------------------------------+-------------------+
-; Source Register                     ; Destination Register                                                                                        ; Delay Added in ns ;
-+-------------------------------------+-------------------------------------------------------------------------------------------------------------+-------------------+
-; inst_rom:instruction_memory|out[22] ; register:register_file|altsyncram:regs_rtl_1|altsyncram_6ji1:auto_generated|ram_block1a3~porta_address_reg0 ; 0.102             ;
-; inst_rom:instruction_memory|out[11] ; register:register_file|altsyncram:regs_rtl_1|altsyncram_6ji1:auto_generated|ram_block1a3~porta_address_reg0 ; 0.057             ;
-; inst_rom:instruction_memory|out[2]  ; register:register_file|altsyncram:regs_rtl_1|altsyncram_6ji1:auto_generated|ram_block1a3~porta_address_reg0 ; 0.057             ;
-; inst_rom:instruction_memory|out[5]  ; register:register_file|altsyncram:regs_rtl_1|altsyncram_6ji1:auto_generated|ram_block1a3~porta_address_reg0 ; 0.057             ;
-+-------------------------------------+-------------------------------------------------------------------------------------------------------------+-------------------+
-Note: This table only shows the top 4 path(s) that have the largest delay added for hold.
-
-
 +-----------------+
 ; Fitter Messages ;
 +-----------------+
@@ -1121,7 +1152,7 @@ Info (176045): Design uses memory blocks. Violating setup or hold times of memor
 Critical Warning (169085): No exact pin location assignment(s) for 22 pins of 22 total pins. For the list of pins please refer to the I/O Assignment Warnings table in the fitter report.
 Info (184020): Starting Fitter periphery placement operations
 Info (11191): Automatically promoted 1 clock (1 global)
-    Info (11162): clk~inputCLKENA0 with 364 fanout uses global clock CLKCTRL_G9
+    Info (11162): clk~inputCLKENA0 with 412 fanout uses global clock CLKCTRL_G9
 Info (184021): Fitter periphery placement operations ending: elapsed time is 00:00:00
 Info (176233): Starting register packing
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'coe181.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
@@ -1131,31 +1162,31 @@ Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Tim
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:07
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:16
 Info (170189): Fitter placement preparation operations beginning
 Info (14951): The Fitter is using Advanced Physical Optimization.
-Info (170190): Fitter placement preparation operations ending: elapsed time is 00:01:05
+Info (170190): Fitter placement preparation operations ending: elapsed time is 00:05:00
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:03
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:13
 Info (170193): Fitter routing operations beginning
-Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 8% of the available device resources in the region that extends from location X0_Y11 to location X10_Y22
+Info (170195): Router estimated average interconnect usage is 1% of the available device resources
+    Info (170196): Router estimated peak interconnect usage is 12% of the available device resources in the region that extends from location X22_Y11 to location X32_Y22
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:05
-Info (11888): Total time spent on timing analysis during the Fitter is 3.42 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:25
+Info (11888): Total time spent on timing analysis during the Fitter is 10.45 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:09
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:16
 Info (144001): Generated suppressed messages file C:/intelFPGA_lite/18.0/new/output_files/coe181.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 6993 megabytes
-    Info: Processing ended: Sat Nov 29 02:08:47 2025
-    Info: Elapsed time: 00:02:45
-    Info: Total CPU time (on all processors): 00:12:30
+    Info: Peak virtual memory: 7012 megabytes
+    Info: Processing ended: Sun Dec 07 14:54:33 2025
+    Info: Elapsed time: 00:10:43
+    Info: Total CPU time (on all processors): 00:46:29
 
 
 +----------------------------+

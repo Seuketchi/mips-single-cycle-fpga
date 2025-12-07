@@ -1,5 +1,5 @@
 Analysis & Synthesis report for coe181
-Sat Nov 29 02:06:01 2025
+Sun Dec 07 14:43:49 2025
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -15,49 +15,61 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis RAM Summary
   9. Registers Removed During Synthesis
- 10. Removed Registers Triggering Further Register Optimizations
- 11. General Register Statistics
- 12. Registers Packed Into Inferred Megafunctions
- 13. Registers Added for RAM Pass-Through Logic
- 14. Multiplexer Restructuring Statistics (Restructuring Performed)
- 15. Source assignments for data_memory:data_mem|async_memory:stack_seg|altsyncram:mem3_rtl_0|altsyncram_3do1:auto_generated
- 16. Source assignments for data_memory:data_mem|async_memory:stack_seg|altsyncram:mem2_rtl_0|altsyncram_2do1:auto_generated
- 17. Source assignments for data_memory:data_mem|async_memory:stack_seg|altsyncram:mem1_rtl_0|altsyncram_1do1:auto_generated
- 18. Source assignments for data_memory:data_mem|async_memory:stack_seg|altsyncram:mem0_rtl_0|altsyncram_0do1:auto_generated
- 19. Source assignments for data_memory:data_mem|async_memory:data_seg|altsyncram:mem3_rtl_0|altsyncram_rbo1:auto_generated
- 20. Source assignments for data_memory:data_mem|async_memory:data_seg|altsyncram:mem2_rtl_0|altsyncram_qbo1:auto_generated
- 21. Source assignments for data_memory:data_mem|async_memory:data_seg|altsyncram:mem1_rtl_0|altsyncram_pbo1:auto_generated
- 22. Source assignments for data_memory:data_mem|async_memory:data_seg|altsyncram:mem0_rtl_0|altsyncram_obo1:auto_generated
- 23. Source assignments for register:register_file|altsyncram:regs_rtl_0|altsyncram_6ji1:auto_generated
- 24. Source assignments for register:register_file|altsyncram:regs_rtl_1|altsyncram_6ji1:auto_generated
- 25. Parameter Settings for User Entity Instance: program_counter:pc
- 26. Parameter Settings for User Entity Instance: adder:pc_adder
- 27. Parameter Settings for User Entity Instance: inst_rom:instruction_memory
- 28. Parameter Settings for User Entity Instance: mux2:write_reg_mux
- 29. Parameter Settings for User Entity Instance: sign_extender:sign_ext
- 30. Parameter Settings for User Entity Instance: mux2:alu_b_mux
- 31. Parameter Settings for User Entity Instance: data_memory:data_mem
- 32. Parameter Settings for User Entity Instance: data_memory:data_mem|async_memory:data_seg
- 33. Parameter Settings for User Entity Instance: data_memory:data_mem|async_memory:stack_seg
- 34. Parameter Settings for User Entity Instance: data_memory:data_mem|serial_buffer:ser
- 35. Parameter Settings for User Entity Instance: mux2:write_data_mux
- 36. Parameter Settings for Inferred Entity Instance: data_memory:data_mem|async_memory:stack_seg|altsyncram:mem3_rtl_0
- 37. Parameter Settings for Inferred Entity Instance: data_memory:data_mem|async_memory:stack_seg|altsyncram:mem2_rtl_0
- 38. Parameter Settings for Inferred Entity Instance: data_memory:data_mem|async_memory:stack_seg|altsyncram:mem1_rtl_0
- 39. Parameter Settings for Inferred Entity Instance: data_memory:data_mem|async_memory:stack_seg|altsyncram:mem0_rtl_0
- 40. Parameter Settings for Inferred Entity Instance: data_memory:data_mem|async_memory:data_seg|altsyncram:mem3_rtl_0
- 41. Parameter Settings for Inferred Entity Instance: data_memory:data_mem|async_memory:data_seg|altsyncram:mem2_rtl_0
- 42. Parameter Settings for Inferred Entity Instance: data_memory:data_mem|async_memory:data_seg|altsyncram:mem1_rtl_0
- 43. Parameter Settings for Inferred Entity Instance: data_memory:data_mem|async_memory:data_seg|altsyncram:mem0_rtl_0
- 44. Parameter Settings for Inferred Entity Instance: register:register_file|altsyncram:regs_rtl_0
- 45. Parameter Settings for Inferred Entity Instance: register:register_file|altsyncram:regs_rtl_1
- 46. altsyncram Parameter Settings by Entity Instance
- 47. Port Connectivity Checks: "data_memory:data_mem"
- 48. Port Connectivity Checks: "alu:alu_unit"
- 49. Port Connectivity Checks: "adder:pc_adder"
- 50. Post-Synthesis Netlist Statistics for Top Partition
- 51. Elapsed Time Per Partition
- 52. Analysis & Synthesis Messages
+ 10. General Register Statistics
+ 11. Registers Packed Into Inferred Megafunctions
+ 12. Registers Added for RAM Pass-Through Logic
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Source assignments for data_memory:data_mem|async_memory:stack_seg|altsyncram:mem3_rtl_0|altsyncram_3do1:auto_generated
+ 15. Source assignments for data_memory:data_mem|async_memory:stack_seg|altsyncram:mem2_rtl_0|altsyncram_2do1:auto_generated
+ 16. Source assignments for data_memory:data_mem|async_memory:stack_seg|altsyncram:mem1_rtl_0|altsyncram_1do1:auto_generated
+ 17. Source assignments for data_memory:data_mem|async_memory:stack_seg|altsyncram:mem0_rtl_0|altsyncram_0do1:auto_generated
+ 18. Source assignments for data_memory:data_mem|async_memory:data_seg|altsyncram:mem3_rtl_0|altsyncram_k8o1:auto_generated
+ 19. Source assignments for data_memory:data_mem|async_memory:data_seg|altsyncram:mem2_rtl_0|altsyncram_j8o1:auto_generated
+ 20. Source assignments for data_memory:data_mem|async_memory:data_seg|altsyncram:mem1_rtl_0|altsyncram_i8o1:auto_generated
+ 21. Source assignments for data_memory:data_mem|async_memory:data_seg|altsyncram:mem0_rtl_0|altsyncram_h8o1:auto_generated
+ 22. Source assignments for register:register_file|altsyncram:regs_rtl_0|altsyncram_6ji1:auto_generated
+ 23. Source assignments for register:register_file|altsyncram:regs_rtl_1|altsyncram_6ji1:auto_generated
+ 24. Parameter Settings for User Entity Instance: program_counter:pc
+ 25. Parameter Settings for User Entity Instance: adder:pc_adder
+ 26. Parameter Settings for User Entity Instance: shift_left_2:branch_shift
+ 27. Parameter Settings for User Entity Instance: adder:branch_adder
+ 28. Parameter Settings for User Entity Instance: mux4:pc_mux
+ 29. Parameter Settings for User Entity Instance: inst_rom:instruction_memory
+ 30. Parameter Settings for User Entity Instance: mux2:write_reg_mux_rt_rd
+ 31. Parameter Settings for User Entity Instance: mux2:write_reg_mux_ra
+ 32. Parameter Settings for User Entity Instance: sign_extender:sign_ext
+ 33. Parameter Settings for User Entity Instance: zero_extender:zero_ext
+ 34. Parameter Settings for User Entity Instance: mux2:extend_mux
+ 35. Parameter Settings for User Entity Instance: mux2:lui_mux
+ 36. Parameter Settings for User Entity Instance: mux2:alu_a_mux
+ 37. Parameter Settings for User Entity Instance: mux2:alu_b_mux
+ 38. Parameter Settings for User Entity Instance: data_memory:data_mem
+ 39. Parameter Settings for User Entity Instance: data_memory:data_mem|async_memory:data_seg
+ 40. Parameter Settings for User Entity Instance: data_memory:data_mem|async_memory:stack_seg
+ 41. Parameter Settings for User Entity Instance: data_memory:data_mem|serial_buffer:ser
+ 42. Parameter Settings for User Entity Instance: mux2:load_select_mux
+ 43. Parameter Settings for User Entity Instance: mux2:write_data_mux_alu_mem
+ 44. Parameter Settings for User Entity Instance: mux2:write_data_mux_pc
+ 45. Parameter Settings for Inferred Entity Instance: data_memory:data_mem|async_memory:stack_seg|altsyncram:mem3_rtl_0
+ 46. Parameter Settings for Inferred Entity Instance: data_memory:data_mem|async_memory:stack_seg|altsyncram:mem2_rtl_0
+ 47. Parameter Settings for Inferred Entity Instance: data_memory:data_mem|async_memory:stack_seg|altsyncram:mem1_rtl_0
+ 48. Parameter Settings for Inferred Entity Instance: data_memory:data_mem|async_memory:stack_seg|altsyncram:mem0_rtl_0
+ 49. Parameter Settings for Inferred Entity Instance: data_memory:data_mem|async_memory:data_seg|altsyncram:mem3_rtl_0
+ 50. Parameter Settings for Inferred Entity Instance: data_memory:data_mem|async_memory:data_seg|altsyncram:mem2_rtl_0
+ 51. Parameter Settings for Inferred Entity Instance: data_memory:data_mem|async_memory:data_seg|altsyncram:mem1_rtl_0
+ 52. Parameter Settings for Inferred Entity Instance: data_memory:data_mem|async_memory:data_seg|altsyncram:mem0_rtl_0
+ 53. Parameter Settings for Inferred Entity Instance: register:register_file|altsyncram:regs_rtl_0
+ 54. Parameter Settings for Inferred Entity Instance: register:register_file|altsyncram:regs_rtl_1
+ 55. altsyncram Parameter Settings by Entity Instance
+ 56. Port Connectivity Checks: "alu:alu_unit"
+ 57. Port Connectivity Checks: "mux2:alu_a_mux"
+ 58. Port Connectivity Checks: "mux2:lui_mux"
+ 59. Port Connectivity Checks: "mux2:write_reg_mux_ra"
+ 60. Port Connectivity Checks: "mux4:pc_mux"
+ 61. Port Connectivity Checks: "adder:pc_adder"
+ 62. Post-Synthesis Netlist Statistics for Top Partition
+ 63. Elapsed Time Per Partition
+ 64. Analysis & Synthesis Messages
 
 
 
@@ -83,13 +95,13 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sat Nov 29 02:06:01 2025       ;
+; Analysis & Synthesis Status     ; Successful - Sun Dec 07 14:43:48 2025       ;
 ; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                   ; coe181                                      ;
 ; Top-level Entity Name           ; processor                                   ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 108                                         ;
+; Total registers                 ; 156                                         ;
 ; Total pins                      ; 22                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 67,584                                      ;
@@ -231,6 +243,10 @@ refer to the applicable agreement for further details.
 ; sign_extender.v                              ; yes             ; User Verilog HDL File                                 ; C:/intelFPGA_lite/18.0/new/sign_extender.v                                   ;         ;
 ; processor.v                                  ; yes             ; User Verilog HDL File                                 ; C:/intelFPGA_lite/18.0/new/processor.v                                       ;         ;
 ; control_unit.v                               ; yes             ; User Verilog HDL File                                 ; C:/intelFPGA_lite/18.0/new/control_unit.v                                    ;         ;
+; mux4.v                                       ; yes             ; User Verilog HDL File                                 ; C:/intelFPGA_lite/18.0/new/mux4.v                                            ;         ;
+; zero_extender.v                              ; yes             ; User Verilog HDL File                                 ; C:/intelFPGA_lite/18.0/new/zero_extender.v                                   ;         ;
+; shift_left_2.v                               ; yes             ; User Verilog HDL File                                 ; C:/intelFPGA_lite/18.0/new/shift_left_2.v                                    ;         ;
+; load_extender.v                              ; yes             ; User Verilog HDL File                                 ; C:/intelFPGA_lite/18.0/new/load_extender.v                                   ;         ;
 ; altsyncram.tdf                               ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
 ; stratix_ram_block.inc                        ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
 ; lpm_mux.inc                                  ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
@@ -248,14 +264,14 @@ refer to the applicable agreement for further details.
 ; db/coe181.ram1_async_memory_ea4acf6d.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/intelFPGA_lite/18.0/new/db/coe181.ram1_async_memory_ea4acf6d.hdl.mif      ;         ;
 ; db/altsyncram_0do1.tdf                       ; yes             ; Auto-Generated Megafunction                           ; C:/intelFPGA_lite/18.0/new/db/altsyncram_0do1.tdf                            ;         ;
 ; db/coe181.ram0_async_memory_ea4acf6d.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/intelFPGA_lite/18.0/new/db/coe181.ram0_async_memory_ea4acf6d.hdl.mif      ;         ;
-; db/altsyncram_rbo1.tdf                       ; yes             ; Auto-Generated Megafunction                           ; C:/intelFPGA_lite/18.0/new/db/altsyncram_rbo1.tdf                            ;         ;
-; db/coe181.ram3_async_memory_9d7ce1cf.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/intelFPGA_lite/18.0/new/db/coe181.ram3_async_memory_9d7ce1cf.hdl.mif      ;         ;
-; db/altsyncram_qbo1.tdf                       ; yes             ; Auto-Generated Megafunction                           ; C:/intelFPGA_lite/18.0/new/db/altsyncram_qbo1.tdf                            ;         ;
-; db/coe181.ram2_async_memory_9d7ce1cf.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/intelFPGA_lite/18.0/new/db/coe181.ram2_async_memory_9d7ce1cf.hdl.mif      ;         ;
-; db/altsyncram_pbo1.tdf                       ; yes             ; Auto-Generated Megafunction                           ; C:/intelFPGA_lite/18.0/new/db/altsyncram_pbo1.tdf                            ;         ;
-; db/coe181.ram1_async_memory_9d7ce1cf.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/intelFPGA_lite/18.0/new/db/coe181.ram1_async_memory_9d7ce1cf.hdl.mif      ;         ;
-; db/altsyncram_obo1.tdf                       ; yes             ; Auto-Generated Megafunction                           ; C:/intelFPGA_lite/18.0/new/db/altsyncram_obo1.tdf                            ;         ;
-; db/coe181.ram0_async_memory_9d7ce1cf.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/intelFPGA_lite/18.0/new/db/coe181.ram0_async_memory_9d7ce1cf.hdl.mif      ;         ;
+; db/altsyncram_k8o1.tdf                       ; yes             ; Auto-Generated Megafunction                           ; C:/intelFPGA_lite/18.0/new/db/altsyncram_k8o1.tdf                            ;         ;
+; db/coe181.ram3_async_memory_ed3809b0.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/intelFPGA_lite/18.0/new/db/coe181.ram3_async_memory_ed3809b0.hdl.mif      ;         ;
+; db/altsyncram_j8o1.tdf                       ; yes             ; Auto-Generated Megafunction                           ; C:/intelFPGA_lite/18.0/new/db/altsyncram_j8o1.tdf                            ;         ;
+; db/coe181.ram2_async_memory_ed3809b0.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/intelFPGA_lite/18.0/new/db/coe181.ram2_async_memory_ed3809b0.hdl.mif      ;         ;
+; db/altsyncram_i8o1.tdf                       ; yes             ; Auto-Generated Megafunction                           ; C:/intelFPGA_lite/18.0/new/db/altsyncram_i8o1.tdf                            ;         ;
+; db/coe181.ram1_async_memory_ed3809b0.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/intelFPGA_lite/18.0/new/db/coe181.ram1_async_memory_ed3809b0.hdl.mif      ;         ;
+; db/altsyncram_h8o1.tdf                       ; yes             ; Auto-Generated Megafunction                           ; C:/intelFPGA_lite/18.0/new/db/altsyncram_h8o1.tdf                            ;         ;
+; db/coe181.ram0_async_memory_ed3809b0.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/intelFPGA_lite/18.0/new/db/coe181.ram0_async_memory_ed3809b0.hdl.mif      ;         ;
 ; db/altsyncram_6ji1.tdf                       ; yes             ; Auto-Generated Megafunction                           ; C:/intelFPGA_lite/18.0/new/db/altsyncram_6ji1.tdf                            ;         ;
 +----------------------------------------------+-----------------+-------------------------------------------------------+------------------------------------------------------------------------------+---------+
 
@@ -265,16 +281,16 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 289       ;
+; Estimate of Logic utilization (ALMs needed) ; 930       ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 393       ;
-;     -- 7 input functions                    ; 4         ;
-;     -- 6 input functions                    ; 176       ;
-;     -- 5 input functions                    ; 85        ;
-;     -- 4 input functions                    ; 55        ;
-;     -- <=3 input functions                  ; 73        ;
+; Combinational ALUT usage for logic          ; 1257      ;
+;     -- 7 input functions                    ; 51        ;
+;     -- 6 input functions                    ; 546       ;
+;     -- 5 input functions                    ; 247       ;
+;     -- 4 input functions                    ; 238       ;
+;     -- <=3 input functions                  ; 175       ;
 ;                                             ;           ;
-; Dedicated logic registers                   ; 108       ;
+; Dedicated logic registers                   ; 156       ;
 ;                                             ;           ;
 ; I/O pins                                    ; 22        ;
 ; Total MLAB memory bits                      ; 0         ;
@@ -283,9 +299,9 @@ refer to the applicable agreement for further details.
 ; Total DSP Blocks                            ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 236       ;
-; Total fan-out                               ; 3574      ;
-; Average fan-out                             ; 5.31      ;
+; Maximum fan-out                             ; 284       ;
+; Total fan-out                               ; 8311      ;
+; Average fan-out                             ; 5.24      ;
 +---------------------------------------------+-----------+
 
 
@@ -294,21 +310,22 @@ refer to the applicable agreement for further details.
 +----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                         ; Entity Name     ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------+-----------------+--------------+
-; |processor                                   ; 393 (1)             ; 108 (0)                   ; 67584             ; 0          ; 22   ; 0            ; |processor                                                                                                  ; processor       ; work         ;
-;    |adder:pc_adder|                          ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|adder:pc_adder                                                                                   ; adder           ; work         ;
-;    |alu:alu_unit|                            ; 146 (146)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|alu:alu_unit                                                                                     ; alu             ; work         ;
-;    |control_unit:CU|                         ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|control_unit:CU                                                                                  ; control_unit    ; work         ;
-;    |data_memory:data_mem|                    ; 32 (24)             ; 9 (0)                     ; 65536             ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem                                                                             ; data_memory     ; work         ;
-;       |async_memory:data_seg|                ; 4 (4)               ; 0 (0)                     ; 32768             ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:data_seg                                                       ; async_memory    ; work         ;
+; |processor                                   ; 1257 (3)            ; 156 (0)                   ; 67584             ; 0          ; 22   ; 0            ; |processor                                                                                                  ; processor       ; work         ;
+;    |adder:branch_adder|                      ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|adder:branch_adder                                                                               ; adder           ; work         ;
+;    |adder:pc_adder|                          ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|adder:pc_adder                                                                                   ; adder           ; work         ;
+;    |alu:alu_unit|                            ; 428 (428)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|alu:alu_unit                                                                                     ; alu             ; work         ;
+;    |control_unit:CU|                         ; 36 (36)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|control_unit:CU                                                                                  ; control_unit    ; work         ;
+;    |data_memory:data_mem|                    ; 109 (55)            ; 9 (0)                     ; 65536             ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem                                                                             ; data_memory     ; work         ;
+;       |async_memory:data_seg|                ; 5 (5)               ; 0 (0)                     ; 32768             ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:data_seg                                                       ; async_memory    ; work         ;
 ;          |altsyncram:mem0_rtl_0|             ; 0 (0)               ; 0 (0)                     ; 8192              ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:data_seg|altsyncram:mem0_rtl_0                                 ; altsyncram      ; work         ;
-;             |altsyncram_obo1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 8192              ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:data_seg|altsyncram:mem0_rtl_0|altsyncram_obo1:auto_generated  ; altsyncram_obo1 ; work         ;
+;             |altsyncram_h8o1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 8192              ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:data_seg|altsyncram:mem0_rtl_0|altsyncram_h8o1:auto_generated  ; altsyncram_h8o1 ; work         ;
 ;          |altsyncram:mem1_rtl_0|             ; 0 (0)               ; 0 (0)                     ; 8192              ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:data_seg|altsyncram:mem1_rtl_0                                 ; altsyncram      ; work         ;
-;             |altsyncram_pbo1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 8192              ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:data_seg|altsyncram:mem1_rtl_0|altsyncram_pbo1:auto_generated  ; altsyncram_pbo1 ; work         ;
+;             |altsyncram_i8o1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 8192              ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:data_seg|altsyncram:mem1_rtl_0|altsyncram_i8o1:auto_generated  ; altsyncram_i8o1 ; work         ;
 ;          |altsyncram:mem2_rtl_0|             ; 0 (0)               ; 0 (0)                     ; 8192              ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:data_seg|altsyncram:mem2_rtl_0                                 ; altsyncram      ; work         ;
-;             |altsyncram_qbo1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 8192              ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:data_seg|altsyncram:mem2_rtl_0|altsyncram_qbo1:auto_generated  ; altsyncram_qbo1 ; work         ;
+;             |altsyncram_j8o1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 8192              ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:data_seg|altsyncram:mem2_rtl_0|altsyncram_j8o1:auto_generated  ; altsyncram_j8o1 ; work         ;
 ;          |altsyncram:mem3_rtl_0|             ; 0 (0)               ; 0 (0)                     ; 8192              ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:data_seg|altsyncram:mem3_rtl_0                                 ; altsyncram      ; work         ;
-;             |altsyncram_rbo1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 8192              ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:data_seg|altsyncram:mem3_rtl_0|altsyncram_rbo1:auto_generated  ; altsyncram_rbo1 ; work         ;
-;       |async_memory:stack_seg|               ; 1 (1)               ; 0 (0)                     ; 32768             ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:stack_seg                                                      ; async_memory    ; work         ;
+;             |altsyncram_k8o1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 8192              ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:data_seg|altsyncram:mem3_rtl_0|altsyncram_k8o1:auto_generated  ; altsyncram_k8o1 ; work         ;
+;       |async_memory:stack_seg|               ; 47 (47)             ; 0 (0)                     ; 32768             ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:stack_seg                                                      ; async_memory    ; work         ;
 ;          |altsyncram:mem0_rtl_0|             ; 0 (0)               ; 0 (0)                     ; 8192              ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:stack_seg|altsyncram:mem0_rtl_0                                ; altsyncram      ; work         ;
 ;             |altsyncram_0do1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 8192              ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:stack_seg|altsyncram:mem0_rtl_0|altsyncram_0do1:auto_generated ; altsyncram_0do1 ; work         ;
 ;          |altsyncram:mem1_rtl_0|             ; 0 (0)               ; 0 (0)                     ; 8192              ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:stack_seg|altsyncram:mem1_rtl_0                                ; altsyncram      ; work         ;
@@ -317,13 +334,16 @@ refer to the applicable agreement for further details.
 ;             |altsyncram_2do1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 8192              ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:stack_seg|altsyncram:mem2_rtl_0|altsyncram_2do1:auto_generated ; altsyncram_2do1 ; work         ;
 ;          |altsyncram:mem3_rtl_0|             ; 0 (0)               ; 0 (0)                     ; 8192              ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:stack_seg|altsyncram:mem3_rtl_0                                ; altsyncram      ; work         ;
 ;             |altsyncram_3do1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 8192              ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|async_memory:stack_seg|altsyncram:mem3_rtl_0|altsyncram_3do1:auto_generated ; altsyncram_3do1 ; work         ;
-;       |serial_buffer:ser|                    ; 3 (3)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|serial_buffer:ser                                                           ; serial_buffer   ; work         ;
-;    |inst_rom:instruction_memory|             ; 18 (18)             ; 13 (13)                   ; 0                 ; 0          ; 0    ; 0            ; |processor|inst_rom:instruction_memory                                                                      ; inst_rom        ; work         ;
-;    |mux2:alu_b_mux|                          ; 26 (26)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|mux2:alu_b_mux                                                                                   ; mux2            ; work         ;
-;    |mux2:write_data_mux|                     ; 56 (56)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|mux2:write_data_mux                                                                              ; mux2            ; work         ;
-;    |mux2:write_reg_mux|                      ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|mux2:write_reg_mux                                                                               ; mux2            ; work         ;
-;    |program_counter:pc|                      ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|program_counter:pc                                                                               ; program_counter ; work         ;
-;    |register:register_file|                  ; 99 (99)             ; 78 (78)                   ; 2048              ; 0          ; 0    ; 0            ; |processor|register:register_file                                                                           ; register        ; work         ;
+;       |serial_buffer:ser|                    ; 2 (2)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|data_memory:data_mem|serial_buffer:ser                                                           ; serial_buffer   ; work         ;
+;    |inst_rom:instruction_memory|             ; 295 (295)           ; 29 (29)                   ; 0                 ; 0          ; 0    ; 0            ; |processor|inst_rom:instruction_memory                                                                      ; inst_rom        ; work         ;
+;    |load_extender:load_ext|                  ; 11 (11)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|load_extender:load_ext                                                                           ; load_extender   ; work         ;
+;    |mux2:alu_a_mux|                          ; 36 (36)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|mux2:alu_a_mux                                                                                   ; mux2            ; work         ;
+;    |mux2:alu_b_mux|                          ; 73 (73)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|mux2:alu_b_mux                                                                                   ; mux2            ; work         ;
+;    |mux2:write_data_mux_pc|                  ; 90 (90)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|mux2:write_data_mux_pc                                                                           ; mux2            ; work         ;
+;    |mux2:write_reg_mux_ra|                   ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|mux2:write_reg_mux_ra                                                                            ; mux2            ; work         ;
+;    |mux4:pc_mux|                             ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|mux4:pc_mux                                                                                      ; mux4            ; work         ;
+;    |program_counter:pc|                      ; 35 (35)             ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |processor|program_counter:pc                                                                               ; program_counter ; work         ;
+;    |register:register_file|                  ; 66 (66)             ; 86 (86)                   ; 2048              ; 0          ; 0    ; 0            ; |processor|register:register_file                                                                           ; register        ; work         ;
 ;       |altsyncram:regs_rtl_0|                ; 0 (0)               ; 0 (0)                     ; 1024              ; 0          ; 0    ; 0            ; |processor|register:register_file|altsyncram:regs_rtl_0                                                     ; altsyncram      ; work         ;
 ;          |altsyncram_6ji1:auto_generated|    ; 0 (0)               ; 0 (0)                     ; 1024              ; 0          ; 0    ; 0            ; |processor|register:register_file|altsyncram:regs_rtl_0|altsyncram_6ji1:auto_generated                      ; altsyncram_6ji1 ; work         ;
 ;       |altsyncram:regs_rtl_1|                ; 0 (0)               ; 0 (0)                     ; 1024              ; 0          ; 0    ; 0            ; |processor|register:register_file|altsyncram:regs_rtl_1                                                     ; altsyncram      ; work         ;
@@ -337,10 +357,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+----------------------------------------------+
 ; Name                                                                                                        ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF                                          ;
 +-------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+----------------------------------------------+
-; data_memory:data_mem|async_memory:data_seg|altsyncram:mem0_rtl_0|altsyncram_obo1:auto_generated|ALTSYNCRAM  ; AUTO ; Simple Dual Port ; 1024         ; 8            ; 1024         ; 8            ; 8192 ; db/coe181.ram0_async_memory_9d7ce1cf.hdl.mif ;
-; data_memory:data_mem|async_memory:data_seg|altsyncram:mem1_rtl_0|altsyncram_pbo1:auto_generated|ALTSYNCRAM  ; AUTO ; Simple Dual Port ; 1024         ; 8            ; 1024         ; 8            ; 8192 ; db/coe181.ram1_async_memory_9d7ce1cf.hdl.mif ;
-; data_memory:data_mem|async_memory:data_seg|altsyncram:mem2_rtl_0|altsyncram_qbo1:auto_generated|ALTSYNCRAM  ; AUTO ; Simple Dual Port ; 1024         ; 8            ; 1024         ; 8            ; 8192 ; db/coe181.ram2_async_memory_9d7ce1cf.hdl.mif ;
-; data_memory:data_mem|async_memory:data_seg|altsyncram:mem3_rtl_0|altsyncram_rbo1:auto_generated|ALTSYNCRAM  ; AUTO ; Simple Dual Port ; 1024         ; 8            ; 1024         ; 8            ; 8192 ; db/coe181.ram3_async_memory_9d7ce1cf.hdl.mif ;
+; data_memory:data_mem|async_memory:data_seg|altsyncram:mem0_rtl_0|altsyncram_h8o1:auto_generated|ALTSYNCRAM  ; AUTO ; Simple Dual Port ; 1024         ; 8            ; 1024         ; 8            ; 8192 ; db/coe181.ram0_async_memory_ed3809b0.hdl.mif ;
+; data_memory:data_mem|async_memory:data_seg|altsyncram:mem1_rtl_0|altsyncram_i8o1:auto_generated|ALTSYNCRAM  ; AUTO ; Simple Dual Port ; 1024         ; 8            ; 1024         ; 8            ; 8192 ; db/coe181.ram1_async_memory_ed3809b0.hdl.mif ;
+; data_memory:data_mem|async_memory:data_seg|altsyncram:mem2_rtl_0|altsyncram_j8o1:auto_generated|ALTSYNCRAM  ; AUTO ; Simple Dual Port ; 1024         ; 8            ; 1024         ; 8            ; 8192 ; db/coe181.ram2_async_memory_ed3809b0.hdl.mif ;
+; data_memory:data_mem|async_memory:data_seg|altsyncram:mem3_rtl_0|altsyncram_k8o1:auto_generated|ALTSYNCRAM  ; AUTO ; Simple Dual Port ; 1024         ; 8            ; 1024         ; 8            ; 8192 ; db/coe181.ram3_async_memory_ed3809b0.hdl.mif ;
 ; data_memory:data_mem|async_memory:stack_seg|altsyncram:mem0_rtl_0|altsyncram_0do1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 1024         ; 8            ; 1024         ; 8            ; 8192 ; db/coe181.ram0_async_memory_ea4acf6d.hdl.mif ;
 ; data_memory:data_mem|async_memory:stack_seg|altsyncram:mem1_rtl_0|altsyncram_1do1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 1024         ; 8            ; 1024         ; 8            ; 8192 ; db/coe181.ram1_async_memory_ea4acf6d.hdl.mif ;
 ; data_memory:data_mem|async_memory:stack_seg|altsyncram:mem2_rtl_0|altsyncram_2do1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 1024         ; 8            ; 1024         ; 8            ; 8192 ; db/coe181.ram2_async_memory_ea4acf6d.hdl.mif ;
@@ -350,37 +370,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+----------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                   ;
-+----------------------------------------------------+-------------------------------------------------+
-; Register name                                      ; Reason for Removal                              ;
-+----------------------------------------------------+-------------------------------------------------+
-; data_memory:data_mem|serial_buffer:ser|read_en     ; Stuck at GND due to stuck port data_in          ;
-; program_counter:pc|pc_out[1]                       ; Merged with program_counter:pc|pc_out[0]        ;
-; program_counter:pc|pc_out[0]                       ; Stuck at GND due to stuck port data_in          ;
-; register:register_file|regs_rtl_0_bypass[2,4,8]    ; Stuck at GND due to stuck port data_in          ;
-; inst_rom:instruction_memory|out[0,4,6,13,14]       ; Stuck at GND due to stuck port data_in          ;
-; register:register_file|regs_rtl_1_bypass[2,6,10]   ; Stuck at GND due to stuck port data_in          ;
-; inst_rom:instruction_memory|out[8,10,12,16..20,31] ; Stuck at GND due to stuck port data_in          ;
-; register:register_file|regs_rtl_0_bypass[1]        ; Stuck at GND due to stuck port data_in          ;
-; register:register_file|regs_rtl_1_bypass[1]        ; Stuck at GND due to stuck port data_in          ;
-; inst_rom:instruction_memory|out[3,7]               ; Merged with inst_rom:instruction_memory|out[2]  ;
-; inst_rom:instruction_memory|out[23]                ; Merged with inst_rom:instruction_memory|out[21] ;
-; inst_rom:instruction_memory|out[1]                 ; Merged with inst_rom:instruction_memory|out[15] ;
-; inst_rom:instruction_memory|out[9]                 ; Merged with inst_rom:instruction_memory|out[11] ;
-; program_counter:pc|pc_out[10..31]                  ; Lost fanout                                     ;
-; Total Number of Removed Registers = 52             ;                                                 ;
-+----------------------------------------------------+-------------------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                   ;
-+------------------------------------+---------------------------+----------------------------------------------+
-; Register name                      ; Reason for Removal        ; Registers Removed due to This Register       ;
-+------------------------------------+---------------------------+----------------------------------------------+
-; inst_rom:instruction_memory|out[8] ; Stuck at GND              ; register:register_file|regs_rtl_0_bypass[1], ;
-;                                    ; due to stuck port data_in ; register:register_file|regs_rtl_1_bypass[1]  ;
-+------------------------------------+---------------------------+----------------------------------------------+
++--------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                               ;
++------------------------------------------------+-------------------------------------------------+
+; Register name                                  ; Reason for Removal                              ;
++------------------------------------------------+-------------------------------------------------+
+; data_memory:data_mem|serial_buffer:ser|read_en ; Stuck at GND due to stuck port data_in          ;
+; inst_rom:instruction_memory|out[6]             ; Stuck at GND due to stuck port data_in          ;
+; inst_rom:instruction_memory|out[18]            ; Merged with inst_rom:instruction_memory|out[17] ;
+; inst_rom:instruction_memory|out[1]             ; Merged with inst_rom:instruction_memory|out[0]  ;
+; Total Number of Removed Registers = 4          ;                                                 ;
++------------------------------------------------+-------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -388,12 +388,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 108   ;
-; Number of registers using Synchronous Clear  ; 18    ;
-; Number of registers using Synchronous Load   ; 8     ;
+; Total registers                              ; 156   ;
+; Number of registers using Synchronous Clear  ; 34    ;
+; Number of registers using Synchronous Load   ; 10    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 8     ;
+; Number of registers using Clock Enable       ; 10    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -508,18 +508,44 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-----------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------+
-; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |processor|data_memory:data_mem|serial_buffer:ser|sbyte[3] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |processor|register:register_file|r_data1[17]              ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |processor|register:register_file|r_data2[4]               ;
-; 7:1                ; 27 bits   ; 108 LEs       ; 108 LEs              ; 0 LEs                  ; No         ; |processor|alu:alu_unit|O_out[26]                          ;
-; 8:1                ; 4 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |processor|mux2:write_data_mux|y[12]                       ;
-; 6:1                ; 7 bits    ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; No         ; |processor|mux2:write_data_mux|y[7]                        ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------+
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |processor|data_memory:data_mem|serial_buffer:ser|sbyte[7]       ;
+; 5:1                ; 10 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; Yes        ; |processor|program_counter:pc|pc_out[13]                         ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; Yes        ; |processor|program_counter:pc|pc_out[1]                          ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |processor|program_counter:pc|pc_out[31]                         ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; Yes        ; |processor|program_counter:pc|pc_out[27]                         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |processor|register:register_file|r_data2[7]                     ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |processor|mux2:alu_b_mux|y[6]                                   ;
+; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; No         ; |processor|mux2:alu_b_mux|y[22]                                  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |processor|register:register_file|r_data1[21]                    ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |processor|alu:alu_unit|ShiftLeft0                               ;
+; 4:1                ; 49 bits   ; 98 LEs        ; 98 LEs               ; 0 LEs                  ; No         ; |processor|alu:alu_unit|ShiftRight1                              ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |processor|alu:alu_unit|ShiftLeft0                               ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |processor|alu:alu_unit|ShiftLeft0                               ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |processor|alu:alu_unit|ShiftLeft0                               ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |processor|alu:alu_unit|ShiftRight0                              ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |processor|alu:alu_unit|ShiftRight1                              ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |processor|data_memory:data_mem|async_memory:stack_seg|mem1      ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |processor|data_memory:data_mem|async_memory:data_seg|mem0       ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |processor|mux2:write_reg_mux_ra|y[4]                            ;
+; 4:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |processor|mux4:pc_mux|Mux20                                     ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |processor|mux2:write_data_mux_pc|y[17]                          ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |processor|data_memory:data_mem|async_memory:stack_seg|Selector4 ;
+; 32:1               ; 5 bits    ; 105 LEs       ; 65 LEs               ; 40 LEs                 ; No         ; |processor|control_unit:CU|Selector12                            ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |processor|mux2:write_data_mux_pc|y[8]                           ;
+; 11:1               ; 6 bits    ; 42 LEs        ; 36 LEs               ; 6 LEs                  ; No         ; |processor|mux2:write_data_mux_pc|y[3]                           ;
+; 17:1               ; 8 bits    ; 88 LEs        ; 88 LEs               ; 0 LEs                  ; No         ; |processor|alu:alu_unit|O_out[24]                                ;
+; 16:1               ; 5 bits    ; 50 LEs        ; 50 LEs               ; 0 LEs                  ; No         ; |processor|alu:alu_unit|O_out[8]                                 ;
+; 18:1               ; 2 bits    ; 24 LEs        ; 22 LEs               ; 2 LEs                  ; No         ; |processor|alu:alu_unit|O_out[9]                                 ;
+; 20:1               ; 3 bits    ; 39 LEs        ; 36 LEs               ; 3 LEs                  ; No         ; |processor|alu:alu_unit|O_out[30]                                ;
+; 19:1               ; 2 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |processor|alu:alu_unit|O_out[26]                                ;
+; 19:1               ; 3 bits    ; 36 LEs        ; 36 LEs               ; 0 LEs                  ; No         ; |processor|alu:alu_unit|O_out[2]                                 ;
+; 21:1               ; 3 bits    ; 42 LEs        ; 39 LEs               ; 3 LEs                  ; No         ; |processor|mux2:write_data_mux_pc|y[12]                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------+
@@ -559,7 +585,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for data_memory:data_mem|async_memory:data_seg|altsyncram:mem3_rtl_0|altsyncram_rbo1:auto_generated ;
+; Source assignments for data_memory:data_mem|async_memory:data_seg|altsyncram:mem3_rtl_0|altsyncram_k8o1:auto_generated ;
 +---------------------------------+--------------------+------+----------------------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                                       ;
 +---------------------------------+--------------------+------+----------------------------------------------------------+
@@ -568,7 +594,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for data_memory:data_mem|async_memory:data_seg|altsyncram:mem2_rtl_0|altsyncram_qbo1:auto_generated ;
+; Source assignments for data_memory:data_mem|async_memory:data_seg|altsyncram:mem2_rtl_0|altsyncram_j8o1:auto_generated ;
 +---------------------------------+--------------------+------+----------------------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                                       ;
 +---------------------------------+--------------------+------+----------------------------------------------------------+
@@ -577,7 +603,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for data_memory:data_mem|async_memory:data_seg|altsyncram:mem1_rtl_0|altsyncram_pbo1:auto_generated ;
+; Source assignments for data_memory:data_mem|async_memory:data_seg|altsyncram:mem1_rtl_0|altsyncram_i8o1:auto_generated ;
 +---------------------------------+--------------------+------+----------------------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                                       ;
 +---------------------------------+--------------------+------+----------------------------------------------------------+
@@ -586,7 +612,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for data_memory:data_mem|async_memory:data_seg|altsyncram:mem0_rtl_0|altsyncram_obo1:auto_generated ;
+; Source assignments for data_memory:data_mem|async_memory:data_seg|altsyncram:mem0_rtl_0|altsyncram_h8o1:auto_generated ;
 +---------------------------------+--------------------+------+----------------------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                                       ;
 +---------------------------------+--------------------+------+----------------------------------------------------------+
@@ -632,24 +658,64 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: inst_rom:instruction_memory                ;
-+----------------+-------------------------------------------------------+----------------+
-; Parameter Name ; Value                                                 ; Type           ;
-+----------------+-------------------------------------------------------+----------------+
-; ADDR_WIDTH     ; 8                                                     ; Signed Integer ;
-; INIT_PROGRAM   ; C:/intelFPGA_lite/18.0/new/nbhelloworld.inst_rom.memh ; String         ;
-+----------------+-------------------------------------------------------+----------------+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: shift_left_2:branch_shift ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: mux2:write_reg_mux ;
+; Parameter Settings for User Entity Instance: adder:branch_adder ;
 +----------------+-------+----------------------------------------+
 ; Parameter Name ; Value ; Type                                   ;
 +----------------+-------+----------------------------------------+
-; WIDTH          ; 5     ; Signed Integer                         ;
+; WIDTH          ; 32    ; Signed Integer                         ;
 +----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux4:pc_mux ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; WIDTH          ; 32    ; Signed Integer                  ;
++----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: inst_rom:instruction_memory                            ;
++----------------+-------------------------------------------------------------------+----------------+
+; Parameter Name ; Value                                                             ; Type           ;
++----------------+-------------------------------------------------------------------+----------------+
+; ADDR_WIDTH     ; 10                                                                ; Signed Integer ;
+; INIT_PROGRAM   ; C:/intelFPGA_lite/18.0/new/lab-8-files/memh/fib/fib.inst_rom.memh ; String         ;
++----------------+-------------------------------------------------------------------+----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux2:write_reg_mux_rt_rd ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; WIDTH          ; 5     ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux2:write_reg_mux_ra ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; WIDTH          ; 5     ; Signed Integer                            ;
++----------------+-------+-------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -664,6 +730,47 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: zero_extender:zero_ext ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; IN_WIDTH       ; 16    ; Signed Integer                             ;
+; OUT_WIDTH      ; 32    ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux2:extend_mux ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux2:lui_mux ;
++----------------+-------+----------------------------------+
+; Parameter Name ; Value ; Type                             ;
++----------------+-------+----------------------------------+
+; WIDTH          ; 32    ; Signed Integer                   ;
++----------------+-------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux2:alu_a_mux ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                     ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: mux2:alu_b_mux ;
 +----------------+-------+------------------------------------+
@@ -674,31 +781,31 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: data_memory:data_mem                ;
-+----------------+--------------------------------------------------------+--------+
-; Parameter Name ; Value                                                  ; Type   ;
-+----------------+--------------------------------------------------------+--------+
-; INIT_PROGRAM0  ; C:/intelFPGA_lite/18.0/new/nbhelloworld.data_ram0.memh ; String ;
-; INIT_PROGRAM1  ; C:/intelFPGA_lite/18.0/new/nbhelloworld.data_ram1.memh ; String ;
-; INIT_PROGRAM2  ; C:/intelFPGA_lite/18.0/new/nbhelloworld.data_ram2.memh ; String ;
-; INIT_PROGRAM3  ; C:/intelFPGA_lite/18.0/new/nbhelloworld.data_ram3.memh ; String ;
-+----------------+--------------------------------------------------------+--------+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: data_memory:data_mem                            ;
++----------------+--------------------------------------------------------------------+--------+
+; Parameter Name ; Value                                                              ; Type   ;
++----------------+--------------------------------------------------------------------+--------+
+; INIT_PROGRAM0  ; C:/intelFPGA_lite/18.0/new/lab-8-files/memh/fib/fib.data_ram0.memh ; String ;
+; INIT_PROGRAM1  ; C:/intelFPGA_lite/18.0/new/lab-8-files/memh/fib/fib.data_ram1.memh ; String ;
+; INIT_PROGRAM2  ; C:/intelFPGA_lite/18.0/new/lab-8-files/memh/fib/fib.data_ram2.memh ; String ;
+; INIT_PROGRAM3  ; C:/intelFPGA_lite/18.0/new/lab-8-files/memh/fib/fib.data_ram3.memh ; String ;
++----------------+--------------------------------------------------------------------+--------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: data_memory:data_mem|async_memory:data_seg   ;
-+----------------+--------------------------------------------------------+-----------------+
-; Parameter Name ; Value                                                  ; Type            ;
-+----------------+--------------------------------------------------------+-----------------+
-; MEM_ADDR       ; 0001000000000000                                       ; Unsigned Binary ;
-; DO_INIT        ; 1                                                      ; Signed Integer  ;
-; INIT_PROGRAM0  ; C:/intelFPGA_lite/18.0/new/nbhelloworld.data_ram0.memh ; String          ;
-; INIT_PROGRAM1  ; C:/intelFPGA_lite/18.0/new/nbhelloworld.data_ram1.memh ; String          ;
-; INIT_PROGRAM2  ; C:/intelFPGA_lite/18.0/new/nbhelloworld.data_ram2.memh ; String          ;
-; INIT_PROGRAM3  ; C:/intelFPGA_lite/18.0/new/nbhelloworld.data_ram3.memh ; String          ;
-+----------------+--------------------------------------------------------+-----------------+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: data_memory:data_mem|async_memory:data_seg               ;
++----------------+--------------------------------------------------------------------+-----------------+
+; Parameter Name ; Value                                                              ; Type            ;
++----------------+--------------------------------------------------------------------+-----------------+
+; MEM_ADDR       ; 0001000000000000                                                   ; Unsigned Binary ;
+; DO_INIT        ; 1                                                                  ; Signed Integer  ;
+; INIT_PROGRAM0  ; C:/intelFPGA_lite/18.0/new/lab-8-files/memh/fib/fib.data_ram0.memh ; String          ;
+; INIT_PROGRAM1  ; C:/intelFPGA_lite/18.0/new/lab-8-files/memh/fib/fib.data_ram1.memh ; String          ;
+; INIT_PROGRAM2  ; C:/intelFPGA_lite/18.0/new/lab-8-files/memh/fib/fib.data_ram2.memh ; String          ;
+; INIT_PROGRAM3  ; C:/intelFPGA_lite/18.0/new/lab-8-files/memh/fib/fib.data_ram3.memh ; String          ;
++----------------+--------------------------------------------------------------------+-----------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -727,13 +834,33 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: mux2:write_data_mux ;
-+----------------+-------+-----------------------------------------+
-; Parameter Name ; Value ; Type                                    ;
-+----------------+-------+-----------------------------------------+
-; WIDTH          ; 32    ; Signed Integer                          ;
-+----------------+-------+-----------------------------------------+
++-------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux2:load_select_mux ;
++----------------+-------+------------------------------------------+
+; Parameter Name ; Value ; Type                                     ;
++----------------+-------+------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                           ;
++----------------+-------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux2:write_data_mux_alu_mem ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux2:write_data_mux_pc ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1024,7 +1151,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                    ; Untyped                       ;
 ; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                         ; Untyped                       ;
 ; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                         ; Untyped                       ;
-; INIT_FILE                          ; db/coe181.ram3_async_memory_9d7ce1cf.hdl.mif ; Untyped                       ;
+; INIT_FILE                          ; db/coe181.ram3_async_memory_ed3809b0.hdl.mif ; Untyped                       ;
 ; INIT_FILE_LAYOUT                   ; PORT_A                                       ; Untyped                       ;
 ; MAXIMUM_DEPTH                      ; 0                                            ; Untyped                       ;
 ; CLOCK_ENABLE_INPUT_A               ; NORMAL                                       ; Untyped                       ;
@@ -1037,7 +1164,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                        ; Untyped                       ;
 ; WIDTH_ECCSTATUS                    ; 3                                            ; Untyped                       ;
 ; DEVICE_FAMILY                      ; Cyclone V                                    ; Untyped                       ;
-; CBXI_PARAMETER                     ; altsyncram_rbo1                              ; Untyped                       ;
+; CBXI_PARAMETER                     ; altsyncram_k8o1                              ; Untyped                       ;
 +------------------------------------+----------------------------------------------+-------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1085,7 +1212,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                    ; Untyped                       ;
 ; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                         ; Untyped                       ;
 ; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                         ; Untyped                       ;
-; INIT_FILE                          ; db/coe181.ram2_async_memory_9d7ce1cf.hdl.mif ; Untyped                       ;
+; INIT_FILE                          ; db/coe181.ram2_async_memory_ed3809b0.hdl.mif ; Untyped                       ;
 ; INIT_FILE_LAYOUT                   ; PORT_A                                       ; Untyped                       ;
 ; MAXIMUM_DEPTH                      ; 0                                            ; Untyped                       ;
 ; CLOCK_ENABLE_INPUT_A               ; NORMAL                                       ; Untyped                       ;
@@ -1098,7 +1225,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                        ; Untyped                       ;
 ; WIDTH_ECCSTATUS                    ; 3                                            ; Untyped                       ;
 ; DEVICE_FAMILY                      ; Cyclone V                                    ; Untyped                       ;
-; CBXI_PARAMETER                     ; altsyncram_qbo1                              ; Untyped                       ;
+; CBXI_PARAMETER                     ; altsyncram_j8o1                              ; Untyped                       ;
 +------------------------------------+----------------------------------------------+-------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1146,7 +1273,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                    ; Untyped                       ;
 ; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                         ; Untyped                       ;
 ; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                         ; Untyped                       ;
-; INIT_FILE                          ; db/coe181.ram1_async_memory_9d7ce1cf.hdl.mif ; Untyped                       ;
+; INIT_FILE                          ; db/coe181.ram1_async_memory_ed3809b0.hdl.mif ; Untyped                       ;
 ; INIT_FILE_LAYOUT                   ; PORT_A                                       ; Untyped                       ;
 ; MAXIMUM_DEPTH                      ; 0                                            ; Untyped                       ;
 ; CLOCK_ENABLE_INPUT_A               ; NORMAL                                       ; Untyped                       ;
@@ -1159,7 +1286,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                        ; Untyped                       ;
 ; WIDTH_ECCSTATUS                    ; 3                                            ; Untyped                       ;
 ; DEVICE_FAMILY                      ; Cyclone V                                    ; Untyped                       ;
-; CBXI_PARAMETER                     ; altsyncram_pbo1                              ; Untyped                       ;
+; CBXI_PARAMETER                     ; altsyncram_i8o1                              ; Untyped                       ;
 +------------------------------------+----------------------------------------------+-------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1207,7 +1334,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                    ; Untyped                       ;
 ; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                         ; Untyped                       ;
 ; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                         ; Untyped                       ;
-; INIT_FILE                          ; db/coe181.ram0_async_memory_9d7ce1cf.hdl.mif ; Untyped                       ;
+; INIT_FILE                          ; db/coe181.ram0_async_memory_ed3809b0.hdl.mif ; Untyped                       ;
 ; INIT_FILE_LAYOUT                   ; PORT_A                                       ; Untyped                       ;
 ; MAXIMUM_DEPTH                      ; 0                                            ; Untyped                       ;
 ; CLOCK_ENABLE_INPUT_A               ; NORMAL                                       ; Untyped                       ;
@@ -1220,7 +1347,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                        ; Untyped                       ;
 ; WIDTH_ECCSTATUS                    ; 3                                            ; Untyped                       ;
 ; DEVICE_FAMILY                      ; Cyclone V                                    ; Untyped                       ;
-; CBXI_PARAMETER                     ; altsyncram_obo1                              ; Untyped                       ;
+; CBXI_PARAMETER                     ; altsyncram_h8o1                              ; Untyped                       ;
 +------------------------------------+----------------------------------------------+-------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1466,23 +1593,49 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------------------+-------------------------------------------------------------------+
 
 
-+--------------------------------------------------+
-; Port Connectivity Checks: "data_memory:data_mem" ;
-+---------+-------+----------+---------------------+
-; Port    ; Type  ; Severity ; Details             ;
-+---------+-------+----------+---------------------+
-; size_in ; Input ; Info     ; Stuck at VCC        ;
-+---------+-------+----------+---------------------+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:alu_unit"                                                                           ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Jump_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "alu:alu_unit"                                                                             ;
-+------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port       ; Type   ; Severity ; Details                                                                             ;
-+------------+--------+----------+-------------------------------------------------------------------------------------+
-; Branch_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; Jump_out   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------------+--------+----------+-------------------------------------------------------------------------------------+
++--------------------------------------------+
+; Port Connectivity Checks: "mux2:alu_a_mux" ;
++----------+-------+----------+--------------+
+; Port     ; Type  ; Severity ; Details      ;
++----------+-------+----------+--------------+
+; b[31..5] ; Input ; Info     ; Stuck at GND ;
++----------+-------+----------+--------------+
+
+
++--------------------------------------------+
+; Port Connectivity Checks: "mux2:lui_mux"   ;
++----------+-------+----------+--------------+
+; Port     ; Type  ; Severity ; Details      ;
++----------+-------+----------+--------------+
+; b[15..0] ; Input ; Info     ; Stuck at GND ;
++----------+-------+----------+--------------+
+
+
++---------------------------------------------------+
+; Port Connectivity Checks: "mux2:write_reg_mux_ra" ;
++------+-------+----------+-------------------------+
+; Port ; Type  ; Severity ; Details                 ;
++------+-------+----------+-------------------------+
+; b    ; Input ; Info     ; Stuck at VCC            ;
++------+-------+----------+-------------------------+
+
+
++-------------------------------------------+
+; Port Connectivity Checks: "mux4:pc_mux"   ;
++---------+-------+----------+--------------+
+; Port    ; Type  ; Severity ; Details      ;
++---------+-------+----------+--------------+
+; c[1..0] ; Input ; Info     ; Stuck at GND ;
++---------+-------+----------+--------------+
 
 
 +--------------------------------------------+
@@ -1501,32 +1654,32 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 108                         ;
+; arriav_ff             ; 156                         ;
+;     ENA               ; 2                           ;
 ;     ENA SCLR          ; 8                           ;
-;     SCLR              ; 10                          ;
-;     SLD               ; 8                           ;
-;     plain             ; 82                          ;
-; arriav_lcell_comb     ; 393                         ;
-;     arith             ; 8                           ;
-;         1 data inputs ; 8                           ;
-;     extend            ; 4                           ;
-;         7 data inputs ; 4                           ;
-;     normal            ; 349                         ;
+;     SCLR              ; 26                          ;
+;     SLD               ; 10                          ;
+;     plain             ; 110                         ;
+; arriav_lcell_comb     ; 1258                        ;
+;     arith             ; 60                          ;
+;         1 data inputs ; 30                          ;
+;         2 data inputs ; 30                          ;
+;     extend            ; 51                          ;
+;         7 data inputs ; 51                          ;
+;     normal            ; 1115                        ;
 ;         0 data inputs ; 1                           ;
-;         2 data inputs ; 17                          ;
-;         3 data inputs ; 45                          ;
-;         4 data inputs ; 25                          ;
-;         5 data inputs ; 85                          ;
-;         6 data inputs ; 176                         ;
+;         2 data inputs ; 62                          ;
+;         3 data inputs ; 53                          ;
+;         4 data inputs ; 206                         ;
+;         5 data inputs ; 247                         ;
+;         6 data inputs ; 546                         ;
 ;     shared            ; 32                          ;
-;         2 data inputs ; 1                           ;
-;         3 data inputs ; 1                           ;
-;         4 data inputs ; 30                          ;
+;         4 data inputs ; 32                          ;
 ; boundary_port         ; 22                          ;
 ; stratixv_ram_block    ; 128                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 11.00                       ;
-; Average LUT depth     ; 7.40                        ;
+; Max LUT depth         ; 14.00                       ;
+; Average LUT depth     ; 10.91                       ;
 +-----------------------+-----------------------------+
 
 
@@ -1535,7 +1688,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:08     ;
+; Top            ; 00:00:20     ;
 +----------------+--------------+
 
 
@@ -1545,7 +1698,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Sat Nov 29 02:05:11 2025
+    Info: Processing started: Sun Dec 07 14:42:54 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off coe181 -c coe181
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -1584,31 +1737,43 @@ Info (12021): Found 1 design units, including 1 entities, in source file sign_ex
 Info (12021): Found 1 design units, including 1 entities, in source file processor.v
     Info (12023): Found entity 1: processor File: C:/intelFPGA_lite/18.0/new/processor.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file control_unit.v
-    Info (12023): Found entity 1: control_unit File: C:/intelFPGA_lite/18.0/new/control_unit.v Line: 15
+    Info (12023): Found entity 1: control_unit File: C:/intelFPGA_lite/18.0/new/control_unit.v Line: 19
 Info (12021): Found 1 design units, including 1 entities, in source file control_unit_tb.v
     Info (12023): Found entity 1: control_unit_tb File: C:/intelFPGA_lite/18.0/new/control_unit_tb.v Line: 16
+Info (12021): Found 1 design units, including 1 entities, in source file mux4.v
+    Info (12023): Found entity 1: mux4 File: C:/intelFPGA_lite/18.0/new/mux4.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file zero_extender.v
+    Info (12023): Found entity 1: zero_extender File: C:/intelFPGA_lite/18.0/new/zero_extender.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file shift_left_2.v
+    Info (12023): Found entity 1: shift_left_2 File: C:/intelFPGA_lite/18.0/new/shift_left_2.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file load_extender.v
+    Info (12023): Found entity 1: load_extender File: C:/intelFPGA_lite/18.0/new/load_extender.v Line: 3
 Info (12127): Elaborating entity "processor" for the top level hierarchy
-Info (12128): Elaborating entity "program_counter" for hierarchy "program_counter:pc" File: C:/intelFPGA_lite/18.0/new/processor.v Line: 91
-Info (12128): Elaborating entity "adder" for hierarchy "adder:pc_adder" File: C:/intelFPGA_lite/18.0/new/processor.v Line: 97
-Info (12128): Elaborating entity "inst_rom" for hierarchy "inst_rom:instruction_memory" File: C:/intelFPGA_lite/18.0/new/processor.v Line: 111
-Warning (10850): Verilog HDL warning at inst_rom.v(30): number of words (28) in memory file does not match the number of elements in the address range [0:255] File: C:/intelFPGA_lite/18.0/new/inst_rom.v Line: 30
+Info (12128): Elaborating entity "program_counter" for hierarchy "program_counter:pc" File: C:/intelFPGA_lite/18.0/new/processor.v Line: 125
+Info (12128): Elaborating entity "adder" for hierarchy "adder:pc_adder" File: C:/intelFPGA_lite/18.0/new/processor.v Line: 132
+Info (12128): Elaborating entity "shift_left_2" for hierarchy "shift_left_2:branch_shift" File: C:/intelFPGA_lite/18.0/new/processor.v Line: 142
+Info (12128): Elaborating entity "mux4" for hierarchy "mux4:pc_mux" File: C:/intelFPGA_lite/18.0/new/processor.v Line: 186
+Info (12128): Elaborating entity "inst_rom" for hierarchy "inst_rom:instruction_memory" File: C:/intelFPGA_lite/18.0/new/processor.v Line: 205
+Warning (10850): Verilog HDL warning at inst_rom.v(30): number of words (400) in memory file does not match the number of elements in the address range [0:1023] File: C:/intelFPGA_lite/18.0/new/inst_rom.v Line: 30
 Warning (10030): Net "rom.data_a" at inst_rom.v(23) has no driver or initial value, using a default initial value '0' File: C:/intelFPGA_lite/18.0/new/inst_rom.v Line: 23
 Warning (10030): Net "rom.waddr_a" at inst_rom.v(23) has no driver or initial value, using a default initial value '0' File: C:/intelFPGA_lite/18.0/new/inst_rom.v Line: 23
 Warning (10030): Net "rom.we_a" at inst_rom.v(23) has no driver or initial value, using a default initial value '0' File: C:/intelFPGA_lite/18.0/new/inst_rom.v Line: 23
-Info (12128): Elaborating entity "mux2" for hierarchy "mux2:write_reg_mux" File: C:/intelFPGA_lite/18.0/new/processor.v Line: 122
-Info (12128): Elaborating entity "register" for hierarchy "register:register_file" File: C:/intelFPGA_lite/18.0/new/processor.v Line: 133
-Info (12128): Elaborating entity "sign_extender" for hierarchy "sign_extender:sign_ext" File: C:/intelFPGA_lite/18.0/new/processor.v Line: 142
-Info (12128): Elaborating entity "mux2" for hierarchy "mux2:alu_b_mux" File: C:/intelFPGA_lite/18.0/new/processor.v Line: 153
-Info (12128): Elaborating entity "alu" for hierarchy "alu:alu_unit" File: C:/intelFPGA_lite/18.0/new/processor.v Line: 166
-Info (12128): Elaborating entity "data_memory" for hierarchy "data_memory:data_mem" File: C:/intelFPGA_lite/18.0/new/processor.v Line: 196
+Info (12128): Elaborating entity "mux2" for hierarchy "mux2:write_reg_mux_rt_rd" File: C:/intelFPGA_lite/18.0/new/processor.v Line: 222
+Info (12128): Elaborating entity "register" for hierarchy "register:register_file" File: C:/intelFPGA_lite/18.0/new/processor.v Line: 241
+Info (12128): Elaborating entity "sign_extender" for hierarchy "sign_extender:sign_ext" File: C:/intelFPGA_lite/18.0/new/processor.v Line: 250
+Info (12128): Elaborating entity "zero_extender" for hierarchy "zero_extender:zero_ext" File: C:/intelFPGA_lite/18.0/new/processor.v Line: 259
+Info (12128): Elaborating entity "mux2" for hierarchy "mux2:extend_mux" File: C:/intelFPGA_lite/18.0/new/processor.v Line: 273
+Info (12128): Elaborating entity "alu" for hierarchy "alu:alu_unit" File: C:/intelFPGA_lite/18.0/new/processor.v Line: 330
+Info (12128): Elaborating entity "data_memory" for hierarchy "data_memory:data_mem" File: C:/intelFPGA_lite/18.0/new/processor.v Line: 372
 Info (12128): Elaborating entity "async_memory" for hierarchy "data_memory:data_mem|async_memory:data_seg" File: C:/intelFPGA_lite/18.0/new/data_memory.v Line: 92
-Warning (10850): Verilog HDL warning at async_memory.v(64): number of words (0) in memory file does not match the number of elements in the address range [0:1023] File: C:/intelFPGA_lite/18.0/new/async_memory.v Line: 64
-Warning (10850): Verilog HDL warning at async_memory.v(65): number of words (0) in memory file does not match the number of elements in the address range [0:1023] File: C:/intelFPGA_lite/18.0/new/async_memory.v Line: 65
-Warning (10850): Verilog HDL warning at async_memory.v(66): number of words (0) in memory file does not match the number of elements in the address range [0:1023] File: C:/intelFPGA_lite/18.0/new/async_memory.v Line: 66
-Warning (10850): Verilog HDL warning at async_memory.v(67): number of words (0) in memory file does not match the number of elements in the address range [0:1023] File: C:/intelFPGA_lite/18.0/new/async_memory.v Line: 67
+Warning (10850): Verilog HDL warning at async_memory.v(64): number of words (4) in memory file does not match the number of elements in the address range [0:1023] File: C:/intelFPGA_lite/18.0/new/async_memory.v Line: 64
+Warning (10850): Verilog HDL warning at async_memory.v(65): number of words (4) in memory file does not match the number of elements in the address range [0:1023] File: C:/intelFPGA_lite/18.0/new/async_memory.v Line: 65
+Warning (10850): Verilog HDL warning at async_memory.v(66): number of words (4) in memory file does not match the number of elements in the address range [0:1023] File: C:/intelFPGA_lite/18.0/new/async_memory.v Line: 66
+Warning (10850): Verilog HDL warning at async_memory.v(67): number of words (4) in memory file does not match the number of elements in the address range [0:1023] File: C:/intelFPGA_lite/18.0/new/async_memory.v Line: 67
 Info (12128): Elaborating entity "async_memory" for hierarchy "data_memory:data_mem|async_memory:stack_seg" File: C:/intelFPGA_lite/18.0/new/data_memory.v Line: 110
 Info (12128): Elaborating entity "serial_buffer" for hierarchy "data_memory:data_mem|serial_buffer:ser" File: C:/intelFPGA_lite/18.0/new/data_memory.v Line: 134
-Info (12128): Elaborating entity "control_unit" for hierarchy "control_unit:CU" File: C:/intelFPGA_lite/18.0/new/processor.v Line: 222
+Info (12128): Elaborating entity "load_extender" for hierarchy "load_extender:load_ext" File: C:/intelFPGA_lite/18.0/new/processor.v Line: 385
+Info (12128): Elaborating entity "control_unit" for hierarchy "control_unit:CU" File: C:/intelFPGA_lite/18.0/new/processor.v Line: 445
 Warning (276027): Inferred dual-clock RAM node "data_memory:data_mem|async_memory:stack_seg|mem3_rtl_0" from synchronous design logic.  The read-during-write behavior of a dual-clock RAM is undefined and may not match the behavior of the original design.
 Warning (276027): Inferred dual-clock RAM node "data_memory:data_mem|async_memory:stack_seg|mem2_rtl_0" from synchronous design logic.  The read-during-write behavior of a dual-clock RAM is undefined and may not match the behavior of the original design.
 Warning (276027): Inferred dual-clock RAM node "data_memory:data_mem|async_memory:stack_seg|mem1_rtl_0" from synchronous design logic.  The read-during-write behavior of a dual-clock RAM is undefined and may not match the behavior of the original design.
@@ -1621,7 +1786,7 @@ Warning (276020): Inferred RAM node "register:register_file|regs_rtl_0" from syn
 Warning (276020): Inferred RAM node "register:register_file|regs_rtl_1" from synchronous design logic.  Pass-through logic has been added to match the read-during-write behavior of the original design.
 Info (276014): Found 1 instances of uninferred RAM logic
     Info (276007): RAM logic "inst_rom:instruction_memory|rom" is uninferred due to asynchronous read logic File: C:/intelFPGA_lite/18.0/new/inst_rom.v Line: 23
-Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/intelFPGA_lite/18.0/new/db/coe181.ram0_inst_rom_5d4da04e.hdl.mif" contains "don't care" values -- overwriting them with 0s
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/intelFPGA_lite/18.0/new/db/coe181.ram0_inst_rom_49a67ece.hdl.mif" contains "don't care" values -- overwriting them with 0s
 Info (19000): Inferred 10 megafunctions from design logic
     Info (276029): Inferred altsyncram megafunction from the following design logic: "data_memory:data_mem|async_memory:stack_seg|mem3_rtl_0" 
         Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
@@ -1702,7 +1867,7 @@ Info (19000): Inferred 10 megafunctions from design logic
         Info (286033): Parameter ADDRESS_REG_B set to CLOCK1
         Info (286033): Parameter INDATA_ACLR_A set to NONE
         Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
-        Info (286033): Parameter INIT_FILE set to db/coe181.ram3_async_memory_9d7ce1cf.hdl.mif
+        Info (286033): Parameter INIT_FILE set to db/coe181.ram3_async_memory_ed3809b0.hdl.mif
     Info (276029): Inferred altsyncram megafunction from the following design logic: "data_memory:data_mem|async_memory:data_seg|mem2_rtl_0" 
         Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
         Info (286033): Parameter WIDTH_A set to 8
@@ -1718,7 +1883,7 @@ Info (19000): Inferred 10 megafunctions from design logic
         Info (286033): Parameter ADDRESS_REG_B set to CLOCK1
         Info (286033): Parameter INDATA_ACLR_A set to NONE
         Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
-        Info (286033): Parameter INIT_FILE set to db/coe181.ram2_async_memory_9d7ce1cf.hdl.mif
+        Info (286033): Parameter INIT_FILE set to db/coe181.ram2_async_memory_ed3809b0.hdl.mif
     Info (276029): Inferred altsyncram megafunction from the following design logic: "data_memory:data_mem|async_memory:data_seg|mem1_rtl_0" 
         Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
         Info (286033): Parameter WIDTH_A set to 8
@@ -1734,7 +1899,7 @@ Info (19000): Inferred 10 megafunctions from design logic
         Info (286033): Parameter ADDRESS_REG_B set to CLOCK1
         Info (286033): Parameter INDATA_ACLR_A set to NONE
         Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
-        Info (286033): Parameter INIT_FILE set to db/coe181.ram1_async_memory_9d7ce1cf.hdl.mif
+        Info (286033): Parameter INIT_FILE set to db/coe181.ram1_async_memory_ed3809b0.hdl.mif
     Info (276029): Inferred altsyncram megafunction from the following design logic: "data_memory:data_mem|async_memory:data_seg|mem0_rtl_0" 
         Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
         Info (286033): Parameter WIDTH_A set to 8
@@ -1750,7 +1915,7 @@ Info (19000): Inferred 10 megafunctions from design logic
         Info (286033): Parameter ADDRESS_REG_B set to CLOCK1
         Info (286033): Parameter INDATA_ACLR_A set to NONE
         Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
-        Info (286033): Parameter INIT_FILE set to db/coe181.ram0_async_memory_9d7ce1cf.hdl.mif
+        Info (286033): Parameter INIT_FILE set to db/coe181.ram0_async_memory_ed3809b0.hdl.mif
     Info (276029): Inferred altsyncram megafunction from the following design logic: "register:register_file|regs_rtl_0" 
         Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
         Info (286033): Parameter WIDTH_A set to 32
@@ -1873,9 +2038,9 @@ Info (12133): Instantiated megafunction "data_memory:data_mem|async_memory:data_
     Info (12134): Parameter "ADDRESS_REG_B" = "CLOCK1"
     Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
     Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
-    Info (12134): Parameter "INIT_FILE" = "db/coe181.ram3_async_memory_9d7ce1cf.hdl.mif"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_rbo1.tdf
-    Info (12023): Found entity 1: altsyncram_rbo1 File: C:/intelFPGA_lite/18.0/new/db/altsyncram_rbo1.tdf Line: 27
+    Info (12134): Parameter "INIT_FILE" = "db/coe181.ram3_async_memory_ed3809b0.hdl.mif"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_k8o1.tdf
+    Info (12023): Found entity 1: altsyncram_k8o1 File: C:/intelFPGA_lite/18.0/new/db/altsyncram_k8o1.tdf Line: 27
 Info (12130): Elaborated megafunction instantiation "data_memory:data_mem|async_memory:data_seg|altsyncram:mem2_rtl_0"
 Info (12133): Instantiated megafunction "data_memory:data_mem|async_memory:data_seg|altsyncram:mem2_rtl_0" with the following parameter:
     Info (12134): Parameter "OPERATION_MODE" = "DUAL_PORT"
@@ -1892,9 +2057,9 @@ Info (12133): Instantiated megafunction "data_memory:data_mem|async_memory:data_
     Info (12134): Parameter "ADDRESS_REG_B" = "CLOCK1"
     Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
     Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
-    Info (12134): Parameter "INIT_FILE" = "db/coe181.ram2_async_memory_9d7ce1cf.hdl.mif"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_qbo1.tdf
-    Info (12023): Found entity 1: altsyncram_qbo1 File: C:/intelFPGA_lite/18.0/new/db/altsyncram_qbo1.tdf Line: 27
+    Info (12134): Parameter "INIT_FILE" = "db/coe181.ram2_async_memory_ed3809b0.hdl.mif"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_j8o1.tdf
+    Info (12023): Found entity 1: altsyncram_j8o1 File: C:/intelFPGA_lite/18.0/new/db/altsyncram_j8o1.tdf Line: 27
 Info (12130): Elaborated megafunction instantiation "data_memory:data_mem|async_memory:data_seg|altsyncram:mem1_rtl_0"
 Info (12133): Instantiated megafunction "data_memory:data_mem|async_memory:data_seg|altsyncram:mem1_rtl_0" with the following parameter:
     Info (12134): Parameter "OPERATION_MODE" = "DUAL_PORT"
@@ -1911,9 +2076,9 @@ Info (12133): Instantiated megafunction "data_memory:data_mem|async_memory:data_
     Info (12134): Parameter "ADDRESS_REG_B" = "CLOCK1"
     Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
     Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
-    Info (12134): Parameter "INIT_FILE" = "db/coe181.ram1_async_memory_9d7ce1cf.hdl.mif"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_pbo1.tdf
-    Info (12023): Found entity 1: altsyncram_pbo1 File: C:/intelFPGA_lite/18.0/new/db/altsyncram_pbo1.tdf Line: 27
+    Info (12134): Parameter "INIT_FILE" = "db/coe181.ram1_async_memory_ed3809b0.hdl.mif"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_i8o1.tdf
+    Info (12023): Found entity 1: altsyncram_i8o1 File: C:/intelFPGA_lite/18.0/new/db/altsyncram_i8o1.tdf Line: 27
 Info (12130): Elaborated megafunction instantiation "data_memory:data_mem|async_memory:data_seg|altsyncram:mem0_rtl_0"
 Info (12133): Instantiated megafunction "data_memory:data_mem|async_memory:data_seg|altsyncram:mem0_rtl_0" with the following parameter:
     Info (12134): Parameter "OPERATION_MODE" = "DUAL_PORT"
@@ -1930,9 +2095,9 @@ Info (12133): Instantiated megafunction "data_memory:data_mem|async_memory:data_
     Info (12134): Parameter "ADDRESS_REG_B" = "CLOCK1"
     Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
     Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
-    Info (12134): Parameter "INIT_FILE" = "db/coe181.ram0_async_memory_9d7ce1cf.hdl.mif"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_obo1.tdf
-    Info (12023): Found entity 1: altsyncram_obo1 File: C:/intelFPGA_lite/18.0/new/db/altsyncram_obo1.tdf Line: 27
+    Info (12134): Parameter "INIT_FILE" = "db/coe181.ram0_async_memory_ed3809b0.hdl.mif"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_h8o1.tdf
+    Info (12023): Found entity 1: altsyncram_h8o1 File: C:/intelFPGA_lite/18.0/new/db/altsyncram_h8o1.tdf Line: 27
 Info (12130): Elaborated megafunction instantiation "register:register_file|altsyncram:regs_rtl_0"
 Info (12133): Instantiated megafunction "register:register_file|altsyncram:regs_rtl_0" with the following parameter:
     Info (12134): Parameter "OPERATION_MODE" = "DUAL_PORT"
@@ -1951,37 +2116,20 @@ Info (12133): Instantiated megafunction "register:register_file|altsyncram:regs_
     Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_6ji1.tdf
     Info (12023): Found entity 1: altsyncram_6ji1 File: C:/intelFPGA_lite/18.0/new/db/altsyncram_6ji1.tdf Line: 27
-Info (12130): Elaborated megafunction instantiation "register:register_file|altsyncram:regs_rtl_1"
-Info (12133): Instantiated megafunction "register:register_file|altsyncram:regs_rtl_1" with the following parameter:
-    Info (12134): Parameter "OPERATION_MODE" = "DUAL_PORT"
-    Info (12134): Parameter "WIDTH_A" = "32"
-    Info (12134): Parameter "WIDTHAD_A" = "5"
-    Info (12134): Parameter "NUMWORDS_A" = "32"
-    Info (12134): Parameter "WIDTH_B" = "32"
-    Info (12134): Parameter "WIDTHAD_B" = "5"
-    Info (12134): Parameter "NUMWORDS_B" = "32"
-    Info (12134): Parameter "ADDRESS_ACLR_A" = "NONE"
-    Info (12134): Parameter "OUTDATA_REG_B" = "UNREGISTERED"
-    Info (12134): Parameter "ADDRESS_ACLR_B" = "NONE"
-    Info (12134): Parameter "OUTDATA_ACLR_B" = "NONE"
-    Info (12134): Parameter "ADDRESS_REG_B" = "CLOCK0"
-    Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
-    Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "serial_rden_out" is stuck at GND File: C:/intelFPGA_lite/18.0/new/processor.v Line: 12
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 22 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 639 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1511 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 12 input pins
     Info (21059): Implemented 10 output pins
-    Info (21061): Implemented 489 logic cells
+    Info (21061): Implemented 1361 logic cells
     Info (21064): Implemented 128 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 22 warnings
-    Info: Peak virtual memory: 4923 megabytes
-    Info: Processing ended: Sat Nov 29 02:06:01 2025
-    Info: Elapsed time: 00:00:50
-    Info: Total CPU time (on all processors): 00:00:47
+    Info: Peak virtual memory: 4907 megabytes
+    Info: Processing ended: Sun Dec 07 14:43:49 2025
+    Info: Elapsed time: 00:00:55
+    Info: Total CPU time (on all processors): 00:01:30
 
 

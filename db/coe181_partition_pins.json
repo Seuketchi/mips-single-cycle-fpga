@@ -48,7 +48,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "serial_ready_in",
+					"name" : "serial_in[0]",
 					"strict" : false
 				},
 				{
@@ -56,23 +56,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "serial_in[0]",
+					"name" : "serial_ready_in",
 					"strict" : false
 				},
 				{
-					"name" : "serial_in[2]",
-					"strict" : false
-				},
-				{
-					"name" : "serial_in[3]",
-					"strict" : false
-				},
-				{
-					"name" : "serial_in[1]",
+					"name" : "serial_in[7]",
 					"strict" : false
 				},
 				{
 					"name" : "serial_in[4]",
+					"strict" : false
+				},
+				{
+					"name" : "serial_in[1]",
 					"strict" : false
 				},
 				{
@@ -84,7 +80,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "serial_in[7]",
+					"name" : "serial_in[3]",
+					"strict" : false
+				},
+				{
+					"name" : "serial_in[2]",
 					"strict" : false
 				}
 			]
